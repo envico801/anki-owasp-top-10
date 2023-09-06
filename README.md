@@ -56,51 +56,59 @@ A:: Force browsing is the act of accessing authenticated pages as an unauthentic
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What is the first step in preventing cryptographic failures?  
-A:: The first step is to classify data processed, stored, or transmitted by an application and identify which data is sensitive according to privacy laws, regulatory requirements, or business needs.
+### Part III - A02:2021-Cryptographic Failures
 
-Q:: Why should sensitive data be discarded or tokenized if not needed?  
-A:: Storing sensitive data unnecessarily increases the risk of data breaches. It should be discarded as soon as possible or tokenized to protect it.
+#### Chapter 1 - Overview
 
-Q:: What is the importance of encrypting sensitive data at rest?  
-A:: Encrypting sensitive data at rest ensures that even if the data is physically stolen, it remains protected.
+#### Chapter 2 - How to Prevent?
 
-Q:: What should be ensured regarding cryptographic algorithms, protocols, and keys?  
-A:: Up-to-date and strong standard algorithms, protocols, and keys should be used, and proper key management should be in place.
+### Part IV - A03:2021-Injection
 
-Q:: How should data in transit be protected?  
-A:: All data in transit should be encrypted with secure protocols like TLS, using forward secrecy (FS) ciphers and cipher prioritization. Enforcement can be done using directives like HTTP Strict Transport Security (HSTS).
+#### Chapter 1 - Overview
 
-Q:: Why should caching be disabled for responses containing sensitive data?  
-A:: Disabling caching prevents sensitive data from being stored in caches, reducing the risk of exposure.
+#### Chapter 2 - How to Prevent?
 
-Q:: What is the significance of applying required security controls based on data classification?  
-A:: Applying required security controls based on data classification ensures that the appropriate level of protection is applied to data, aligning with its sensitivity and importance.
-Front of Flashcard 5:
+### Part V - A04:2021-Insecure Design
 
-Q:: Why is it discouraged to use legacy protocols like FTP and SMTP for transporting sensitive data?  
-A:: Using legacy protocols like FTP and SMTP for transporting sensitive data is discouraged because they lack the security features and encryption needed to protect sensitive information from interception and unauthorized access.
+#### Chapter 1 - Overview
 
-Q:: What is the importance of using strong adaptive and salted hashing functions for storing passwords?  
-A:: Strong adaptive and salted hashing functions make it difficult for attackers to recover plaintext passwords from stored hashes.
+#### Chapter 2 - How to Prevent?
 
-Q:: How should initialization vectors (IV) be chosen and used?  
-A:: Initialization vectors should be chosen appropriately for the mode of operation and never used twice for a fixed key.
+### Part VI - A05:2021-Security Misconfiguration
 
-Q:: What should be used instead of just encryption?  
-A:: Authenticated encryption should be used to ensure both data confidentiality and integrity.
+#### Chapter 1 - Overview
 
-Q:: How should cryptographic keys be generated and stored?  
-A:: Keys should be generated cryptographically randomly and stored in memory as byte arrays. Passwords should be converted to keys using appropriate key derivation functions.
+#### Chapter 2 - How to Prevent?
 
-Q:: What should be ensured about cryptographic randomness?  
-A:: Cryptographic randomness should not be seeded in a predictable way or with low entropy.
+### Part VII - A06:2021-Vulnerable and Outdated Components
 
-Q:: Why should deprecated cryptographic functions and padding schemes be avoided?  
-A:: Deprecated cryptographic functions and padding schemes like MD5, SHA1, and PKCS #1 v1.5 are known to have vulnerabilities and should be avoided.
+#### Chapter 1 - Overview
 
-Q:: What is the significance of verifying independently the effectiveness of configuration and settings?  
-A:: Verifying independently the effectiveness of configuration and settings is crucial to ensure that cryptographic implementations and security measures are functioning correctly and providing the intended level of protection.
+#### Chapter 2 - How to Prevent?
+
+### Part VIII - A07:2021-Identification and Authentication Failures
+
+#### Chapter 1 - Overview
+
+#### Chapter 2 - How to Prevent?
+
+### Part IX - A08:2021-Software and Data Integrity Failures
+
+#### Chapter 1 - Overview
+
+#### Chapter 2 - How to Prevent?
+
+### Part X - A09:2021-Security Logging and Monitoring Failures
+
+#### Chapter 1 - Overview
+
+#### Chapter 2 - How to Prevent?
+
+### Part XI - A10:2021-Server-Side Request Forgery
+
+#### Chapter 1 - Overview
+
+#### Chapter 2 - How to Prevent?
 
 ---
 
