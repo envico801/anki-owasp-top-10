@@ -56,6 +56,33 @@ A:: Force browsing is the act of accessing authenticated pages as an unauthentic
 
 #### Chapter 2 - How to Prevent?
 
+Q:: In which type of code is access control effective in preventing broken access control?  
+A:: Access control is only effective in trusted server-side code or server-less API, where attackers cannot modify access control checks or metadata.
+
+Q:: What is the recommended default access control policy for resources?  
+A:: Except for public resources, the recommended default access control policy is to deny access by default.
+
+Q:: How should access control mechanisms be implemented and used?  
+A:: Implement access control mechanisms once and re-use them throughout the application, including minimizing Cross-Origin Resource Sharing (CORS) usage.
+
+Q:: What should model access controls enforce?  
+A:: Model access controls should enforce record ownership rather than assuming that users can create, read, update, or delete any record.
+
+Q:: How should unique application business limit requirements be enforced?  
+A:: Unique application business limit requirements should be enforced by domain models.
+
+Q:: Why is it important to disable web server directory listing?  
+A:: Disabling web server directory listing helps prevent exposure of sensitive information and files.
+
+Q:: What should be done in case of access control failures?  
+A:: Access control failures should be logged, and appropriate alerts, such as notifying administrators, should be triggered.
+
+Q:: What is the purpose of rate limiting API and controller access?  
+A:: Rate limiting API and controller access helps minimize the harm from automated attack tooling, preventing abuse of the application.
+
+Q:: How should session identifiers be handled after logout?  
+A:: Stateful session identifiers should be invalidated on the server after logout. Stateless JWT tokens should be short-lived, and for longer-lived JWTs, it's recommended to follow OAuth standards for revoking access.
+
 ### Part III - A02:2021-Cryptographic Failures
 
 #### Chapter 1 - Overview
