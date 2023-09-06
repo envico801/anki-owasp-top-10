@@ -83,6 +83,38 @@ A:: Rate limiting API and controller access helps minimize the harm from automat
 Q:: How should session identifiers be handled after logout?  
 A:: Stateful session identifiers should be invalidated on the server after logout. Stateless JWT tokens should be short-lived, and for longer-lived JWTs, it's recommended to follow OAuth standards for revoking access.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is being performed in this situation?
+
+The application uses unverified data in a SQL call that is accessing account information:
+
+```java
+ pstmt.setString(1, request.getParameter("acct"));
+ ResultSet results = pstmt.executeQuery( );
+```
+
+An attacker simply modifies the browser's 'acct' parameter to send whatever account number they want. If not correctly verified, the attacker can access any user's account.
+
+```plaintext
+ https://example.com/app/accountInfo?acct=notmyacct
+```
+A:: A01 Broken Access Control
+
+Q:: What type of attack is happening here?
+
+An attacker simply forces browsing to target URLs. Admin rights are required for access to the admin page.
+
+```plaintext
+ https://example.com/app/getappInfo
+ https://example.com/app/admin_getappInfo
+```
+
+- If an unauthenticated user can access either page, it's a flaw.
+- If a non-admin can access the admin page, this is a flaw.
+
+A:: A01 Broken Access Control
+
 ### Part III - A02:2021-Cryptographic Failures
 
 #### Chapter 1 - Overview
