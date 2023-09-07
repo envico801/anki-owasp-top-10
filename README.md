@@ -14,6 +14,8 @@ A:: OWASP Top 10 is a list of the top 10 most critical web application security 
 
 ### Part II - A01:2021-Broken Access Control
 
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Broken_Access_Control.png)
+
 #### Chapter 1 - Overview
 
 Q:: What is the purpose of access control?  
@@ -117,6 +119,8 @@ A:: A01 Broken Access Control
 
 ### Part III - A02:2021-Cryptographic Failures
 
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Crypto_Failures.png)
+
 #### Chapter 1 - Overview
 
 #### Chapter 2 - How to Prevent?
@@ -169,11 +173,15 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 ### Part IV - A03:2021-Injection
 
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Injection.png)
+
 #### Chapter 1 - Overview
 
 #### Chapter 2 - How to Prevent?
 
 ### Part V - A04:2021-Insecure Design
+
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Insecure_Design.png)
 
 #### Chapter 1 - Overview
 
@@ -181,11 +189,15 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 ### Part VI - A05:2021-Security Misconfiguration
 
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Misconfiguration.png)
+
 #### Chapter 1 - Overview
 
 #### Chapter 2 - How to Prevent?
 
 ### Part VII - A06:2021-Vulnerable and Outdated Components
+
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png)
 
 #### Chapter 1 - Overview
 
@@ -193,11 +205,15 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 ### Part VIII - A07:2021-Identification and Authentication Failures
 
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png)
+
 #### Chapter 1 - Overview
 
 #### Chapter 2 - How to Prevent?
 
 ### Part IX - A08:2021-Software and Data Integrity Failures
+
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png)
 
 #### Chapter 1 - Overview
 
@@ -205,11 +221,15 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 ### Part X - A09:2021-Security Logging and Monitoring Failures
 
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png)
+
 #### Chapter 1 - Overview
 
 #### Chapter 2 - How to Prevent?
 
 ### Part XI - A10:2021-Server-Side Request Forgery
+
+![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png)
 
 #### Chapter 1 - Overview
 
