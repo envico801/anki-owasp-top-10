@@ -74,16 +74,19 @@ Q:: How should unique application business limit requirements be enforced?
 A:: Unique application business limit requirements should be enforced by domain models.
 
 Q:: Why is it important to disable web server directory listing?  
-A:: Disabling web server directory listing helps prevent exposure of sensitive information and files.
+A:: Disabling web server directory listing helps prevent exposure of sensitive information and files and ensure file metadata (e.g., .git)
 
 Q:: What should be done in case of access control failures?  
-A:: Access control failures should be logged, and appropriate alerts, such as notifying administrators, should be triggered.
+A:: Access control failures should be logged, and appropriate alerts, such as notifying administrators, should be triggered (e.g., repeated failures).
 
 Q:: What is the purpose of rate limiting API and controller access?  
 A:: Rate limiting API and controller access helps minimize the harm from automated attack tooling, preventing abuse of the application.
 
 Q:: How should session identifiers be handled after logout?  
 A:: Stateful session identifiers should be invalidated on the server after logout. Stateless JWT tokens should be short-lived, and for longer-lived JWTs, it's recommended to follow OAuth standards for revoking access.
+
+Q:: What is the role of functional access control unit and integration tests in secure development?
+A:: Functional access control unit and integration tests are essential for ensuring that access control mechanisms are implemented correctly and that unauthorized access attempts are detected and prevented during the development and testing phases.
 
 #### Chapter 3 - Example Attack Scenarios
 
