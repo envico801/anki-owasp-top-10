@@ -18,6 +18,9 @@ A:: OWASP Top 10 is a list of the top 10 most critical web application security 
 
 #### Chapter 1 - Overview
 
+Q:: What is the "Broken Access Control" category about?  
+A:: **A01:2021 - Broken Access Control**: This category is now the most serious web application security risk. It focuses on issues related to access control, where users can access resources or perform actions they shouldn't. It includes numerous Common Weakness Enumerations (CWEs) and is a prevalent risk.
+
 Q:: What is the purpose of access control?  
 A:: Access control enforces policy to prevent users from acting outside their intended permissions. Failures can lead to unauthorized information disclosure, modification, or destruction of data, or performing unauthorized business functions.
 
@@ -126,6 +129,9 @@ A:: A01 Broken Access Control
 
 #### Chapter 1 - Overview
 
+Q:: What is the "Cryptographic Failures" category about?  
+A:: **A02:2021 - Cryptographic Failures**: This category, previously known as Sensitive Data Exposure (A3:2017), has been renamed to emphasize issues related to cryptographic failures. It often leads to sensitive data exposure or system compromise.
+
 Q:: What data requires extra protection in terms of cryptography?  
 A:: Data such as passwords, credit card numbers, health records, personal information, and business secrets require extra protection through cryptography, especially if they fall under privacy laws or regulations.
 
@@ -219,6 +225,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 #### Chapter 1 - Overview
 
+Q:: What is the "Injection" category about?  
+A:: **A03:2021 - Injection**: Injection vulnerabilities have moved down to the third position. It includes various forms of injection attacks, such as SQL injection, and now also includes Cross-Site Scripting (XSS).
+
 #### Chapter 2 - How to Prevent?
 
 ### Part V - A04:2021-Insecure Design
@@ -226,6 +235,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Insecure_Design.png)
 
 #### Chapter 1 - Overview
+
+Q:: What is the "Insecure Design" category about?  
+A:: **A04:2021 - Insecure Design**: This is a new category for 2021, emphasizing the importance of secure design patterns, threat modeling, and reference architectures. Insecure design flaws cannot be fixed by perfect implementation alone.
 
 #### Chapter 2 - How to Prevent?
 
@@ -235,6 +247,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 #### Chapter 1 - Overview
 
+Q:: What is the "Security Misconfiguration" category about?  
+A:: **A05:2021 - Security Misconfiguration**: This category has moved up from its previous ranking. It addresses issues related to misconfigurations in applications, which can lead to vulnerabilities. It now includes XML External Entities (XXE).
+
 #### Chapter 2 - How to Prevent?
 
 ### Part VII - A06:2021-Vulnerable and Outdated Components
@@ -242,6 +257,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png)
 
 #### Chapter 1 - Overview
+
+Q:: What is the "Vulnerable and Outdated Components" category about?  
+A:: **A06:2021 - Vulnerable and Outdated Components**: This category, previously titled "Using Components with Known Vulnerabilities," has moved up in the ranking. It focuses on the risks associated with outdated and vulnerable software components.
 
 #### Chapter 2 - How to Prevent?
 
@@ -251,6 +269,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 #### Chapter 1 - Overview
 
+Q:: What is the "Identification and Authentication Failures" category about?  
+A:: **A07:2021 - Identification and Authentication Failures**: This category, formerly known as "Broken Authentication," has slid down in ranking. It now includes CWEs related to identification failures and is influenced by the availability of standardized frameworks.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part IX - A08:2021-Software and Data Integrity Failures
@@ -258,6 +279,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png)
 
 #### Chapter 1 - Overview
+
+Q:: What is the "Software and Data Integrity Failures" category about?  
+A:: **A08:2021 - Software and Data Integrity Failures**: This is a new category highlighting issues related to assumptions about software updates, critical data, and CI/CD pipelines without proper verification. It includes Insecure Deserialization from the previous edition.
 
 #### Chapter 2 - How to Prevent?
 
@@ -267,6 +291,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 
 #### Chapter 1 - Overview
 
+Q:: What is the "Security Logging and Monitoring Failures" category about?  
+A:: **A09:2021 - Security Logging and Monitoring Failures**: Previously known as "Insufficient Logging & Monitoring," this category has moved up in ranking and is expanded to include more types of failures related to security logging and monitoring.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part XI - A10:2021-Server-Side Request Forgery
@@ -274,6 +301,9 @@ A:: Verifying independently the effectiveness of configuration and settings is c
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png)
 
 #### Chapter 1 - Overview
+
+Q:: What is the "Server-Side Request Forgery" category about?  
+A:: ***A10:2021 - Server-Side Request Forgery**: Added from the Top 10 community survey, this category represents scenarios where security community members have identified the importance, even though it may not be widely illustrated in the data. It deals with the risk of server-side request forgery attacks.
 
 #### Chapter 2 - How to Prevent?
 
