@@ -85,7 +85,7 @@ A:: Rate limiting API and controller access helps minimize the harm from automat
 Q:: How should session identifiers be handled after logout?  
 A:: Stateful session identifiers should be invalidated on the server after logout. Stateless JWT tokens should be short-lived, and for longer-lived JWTs, it's recommended to follow OAuth standards for revoking access.
 
-Q:: What is the role of functional access control unit and integration tests in secure development?
+Q:: What is the role of functional access control unit and integration tests in secure development?  
 A:: Functional access control unit and integration tests are essential for ensuring that access control mechanisms are implemented correctly and that unauthorized access attempts are detected and prevented during the development and testing phases.
 
 #### Chapter 3 - Example Attack Scenarios
@@ -125,6 +125,45 @@ A:: A01 Broken Access Control
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Crypto_Failures.png)
 
 #### Chapter 1 - Overview
+
+Q:: What data requires extra protection in terms of cryptography?  
+A:: Data such as passwords, credit card numbers, health records, personal information, and business secrets require extra protection through cryptography, especially if they fall under privacy laws or regulations.
+
+Q:: What is the concern regarding data transmitted in clear text?  
+A:: Data transmitted in clear text, especially over external internet traffic, is vulnerable to interception. It's important to verify the security of all internal traffic as well, not just external communication.
+
+Q:: What should you check for regarding cryptographic algorithms or protocols?  
+A:: Check for the use of old or weak cryptographic algorithms or protocols, especially in older code.
+
+Q:: Why is proper key management essential in cryptography?  
+A:: Proper key management is essential to ensure that default crypto keys are not in use, weak crypto keys are not generated or reused, and keys are not accidentally checked into source code repositories.
+
+Q:: Why is encryption enforcement important, and where can it be enforced?  
+A:: Encryption enforcement is important to protect data. Ensure that encryption is enforced not just in external communication but also within internal systems, including between load balancers, web servers, or back-end systems.
+
+Q:: What should you check regarding server certificates in cryptography?  
+A:: Verify that the received server certificate and the trust chain are properly validated to prevent man-in-the-middle attacks.
+
+Q:: What is the importance of initialization vectors in cryptographic operations?  
+A:: Initialization vectors should not be ignored, reused, or generated in an insecure manner. The cryptographic mode of operation should be appropriate, and insecure modes like ECB should be avoided.
+
+Q:: Why is using passwords as cryptographic keys a concern?  
+A:: Using passwords as cryptographic keys without a proper key derivation function can lead to security vulnerabilities.
+
+Q:: What is the significance of randomness in cryptographic purposes?  
+A:: Randomness used for cryptographic purposes must meet cryptographic requirements and should not be overwritten with insufficiently unpredictable seeds by developers.
+
+Q:: What are some deprecated hash functions that should be avoided in cryptography?  
+A:: Deprecated hash functions like MD5 or SHA1 should be avoided, and cryptographic hash functions should be used when needed.
+
+Q:: Why should cryptographic padding methods like PKCS #1 v1.5 be checked?  
+A:: Check for the use of deprecated cryptographic padding methods like PKCS #1 v1.5 and avoid their usage.
+
+Q:: How can cryptographic error messages or side channel information be exploited?  
+A:: Cryptographic error messages or side channel information can be exploited, for example, in padding oracle attacks. They should be carefully managed to prevent security vulnerabilities.
+
+Q:: What OWASP components should be referred to for guidance on cryptographic issues?  
+A:: Refer to ASVS Crypto (V7), Data Protection (V9), and SSL/TLS (V10) for guidance on cryptographic issues.
 
 #### Chapter 2 - How to Prevent?
 
