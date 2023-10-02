@@ -280,6 +280,28 @@ A:: The types of data inputs that should be subject to automated testing to iden
 
 #### Chapter 2 - How to Prevent?
 
+Q:: What is the preferred option to prevent injection attacks?  
+A:: The preferred option is to use a safe API that avoids using the interpreter entirely, provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs).
+
+> **Note:** Even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().
+
+Q:: Can stored procedures introduce SQL injection vulnerabilities?  
+A:: Yes, even when parameterized, stored procedures can introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().
+
+Q:: What is the role of positive server-side input validation in preventing injection?  
+A:: Positive server-side input validation helps prevent injection by ensuring that input adheres to expected patterns and formats. However, it's not a complete defense in cases where special characters are required.
+
+Q:: How can special characters in residual dynamic queries be handled to prevent injection?  
+A:: Special characters in residual dynamic queries should be escaped using the specific escape syntax for that interpreter.
+
+> **Note:** SQL structures such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software.
+
+Q:: What is the limitation of escaping user-supplied structure names in SQL queries?  
+A:: User-supplied structure names, such as table names or column names, cannot be escaped, making them dangerous if directly used in queries. This is a common issue in report-writing software.
+
+Q:: How can mass disclosure of records in case of SQL injection be prevented?  
+A:: To prevent mass disclosure of records in case of SQL injection, use controls like LIMIT and other SQL controls within queries.
+
 ### Part V - A04:2021-Insecure Design
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Insecure_Design.png)
