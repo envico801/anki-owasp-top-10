@@ -302,6 +302,34 @@ A:: User-supplied structure names, such as table names or column names, cannot b
 Q:: How can mass disclosure of records in case of SQL injection be prevented?  
 A:: To prevent mass disclosure of records in case of SQL injection, use controls like LIMIT and other SQL controls within queries.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is being carried out in this situation?
+
+An application uses untrusted data in the construction of the following vulnerable SQL call:
+
+```java
+String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";
+```  
+A:: A03 Injection
+
+Q:: Can you identify the type of attack happening here?
+
+Similarly, an application’s blind trust in frameworks may result in queries that are still vulnerable, (e.g., Hibernate Query Language (HQL)):
+
+```java
+Query HQLQuery = session.createQuery("FROM accounts WHERE custID='" + request.getParameter("id") + "'");
+```
+
+In both cases, the attacker modifies the ‘id’ parameter value in their browser to send: ' UNION SLEEP(10);--. For example:
+
+```plaintext
+http://example.com/app/accountView?id=' UNION SELECT SLEEP(10);--
+```
+
+This changes the meaning of both queries to return all the records from the accounts table. More dangerous attacks could modify or delete data or even invoke stored procedures.  
+A:: A03 Injection
+
 ### Part V - A04:2021-Insecure Design
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Insecure_Design.png)
