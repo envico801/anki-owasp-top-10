@@ -395,6 +395,23 @@ A:: Tenant segregation ensures that tenants (e.g., different customers or users)
 Q:: How can resource consumption be limited to prevent insecure design?  
 A:: Resource consumption can be limited by user or service to prevent excessive resource usage that could lead to insecure design.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is associated with this situation?
+
+A credential recovery workflow might include “questions and answers,” which is prohibited by NIST 800-63b, the OWASP ASVS, and the OWASP Top 10. Questions and answers cannot be trusted as evidence of identity as more than one person can know the answers, which is why they are prohibited. Such code should be removed and replaced with a more secure design.  
+A:: A04 Insecure Design
+
+Q:: Can you identify the type of attack happening here?
+
+A cinema chain allows group booking discounts and has a maximum of fifteen attendees before requiring a deposit. Attackers could threat model this flow and test if they could book six hundred seats and all cinemas at once in a few requests, causing a massive loss of income.  
+A:: A04 Insecure Design
+
+Q:: What kind of attack is described in this situation?
+
+A retail chain’s e-commerce website does not have protection against bots run by scalpers buying high-end video cards to resell on auction websites. This creates terrible publicity for the video card makers and retail chain owners and enduring bad blood with enthusiasts who cannot obtain these cards at any price. Careful anti-bot design and domain logic rules, such as purchases made within a few seconds of availability, might identify inauthentic purchases and reject such transactions.  
+A:: A04 Insecure Design
+
 ### Part VI - A05:2021-Security Misconfiguration
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Misconfiguration.png)
