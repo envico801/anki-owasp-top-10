@@ -247,6 +247,37 @@ A:: A02 Cryptographic Failures
 Q:: What is the "Injection" category about?  
 A:: **A03:2021 - Injection**: Injection vulnerabilities have moved down to the third position. It includes various forms of injection attacks, such as SQL injection, and now also includes Cross-Site Scripting (XSS).
 
+Q:: What makes an application vulnerable to injection attacks?  
+A:: An application is vulnerable to injection attacks when:
+- User-supplied data is not properly validated, filtered, or sanitized.
+- Dynamic queries or non-parameterized calls are used without context-aware escaping.
+- Hostile data is used in ORM search parameters.
+- Hostile data is directly used or concatenated in SQL queries, commands, or stored procedures.
+
+Q:: What is the risk of not validating user-supplied data in an application?  
+A:: Not validating user-supplied data can lead to injection vulnerabilities, where attackers can manipulate input to execute malicious code.
+
+Q:: Why is it important to use parameterized calls and context-aware escaping?  
+A:: Parameterized calls and context-aware escaping help prevent injection vulnerabilities by ensuring that input data is treated as data, not code.
+
+Q:: How can attackers exploit object-relational mapping (ORM) search parameters?  
+A:: Attackers can exploit ORM search parameters by using hostile data to extract additional, sensitive records from the database.
+
+Q:: What is the danger of directly using or concatenating hostile data in dynamic queries or commands?  
+A:: Directly using or concatenating hostile data in dynamic queries, commands, or stored procedures can lead to injection attacks, where malicious code is injected and executed.
+
+Q:: What are some common examples of injection attacks?  
+A:: Common examples of injection attacks include SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection
+
+Q:: What is the most effective method to detect injection vulnerabilities in software applications?  
+A:: The best method for detecting injection vulnerabilities in software applications is source code review.
+
+Q:: In the context of application security, how can organizations incorporate automated testing?  
+A:: Organizations can incorporate automated testing by including static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline.
+
+Q:: Which types of data inputs should be subject to automated testing to identify injection flaws?  
+A:: The types of data inputs that should be subject to automated testing to identify injection flaws include, parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part V - A04:2021-Insecure Design
