@@ -368,6 +368,33 @@ A:: Secure design is not a one-time addition but a culture and methodology that 
 
 #### Chapter 2 - How to Prevent?
 
+Q:: What is the role of AppSec professionals in preventing insecure design?  
+A:: AppSec professionals can help evaluate and design security and privacy-related controls as part of a secure development lifecycle.
+
+Q:: How can a library of secure design patterns be useful in preventing insecure design?  
+A:: A library of secure design patterns provides ready-to-use components that adhere to secure design principles, reducing the risk of insecure design choices.
+
+Q:: What is threat modeling, and how can it be used to prevent insecure design?  
+A:: Threat modeling involves identifying and evaluating potential threats to critical aspects of the application, including authentication, access control, business logic, and key flows, helping prevent insecure design decisions.
+
+Q:: How can security language and controls be integrated into user stories?  
+A:: Integrating security language and controls into user stories ensures that security considerations are part of the development process from the beginning.
+
+Q:: Why is it important to integrate plausibility checks at each tier of the application?  
+A:: Integrating plausibility checks at each tier ensures that inputs and processes are checked for validity and correctness, reducing the risk of insecure design.
+
+Q:: What is the purpose of unit and integration tests in preventing insecure design?  
+A:: Unit and integration tests validate that all critical flows in the application are resistant to the threat model, ensuring that insecure design choices are not present.
+
+Q:: How can tier layers be segregated on the system and network layers?  
+A:: Tier layers can be segregated based on their exposure and protection needs to prevent insecure design.
+
+Q:: Why is tenant segregation important in preventing insecure design?  
+A:: Tenant segregation ensures that tenants (e.g., different customers or users) are kept separate throughout all tiers of the application, preventing insecure design.
+
+Q:: How can resource consumption be limited to prevent insecure design?  
+A:: Resource consumption can be limited by user or service to prevent excessive resource usage that could lead to insecure design.
+
 ### Part VI - A05:2021-Security Misconfiguration
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Misconfiguration.png)
