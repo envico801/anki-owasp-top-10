@@ -339,6 +339,33 @@ A:: A03 Injection
 Q:: What is the "Insecure Design" category about?  
 A:: **A04:2021 - Insecure Design**: This is a new category for 2021, emphasizing the importance of secure design patterns, threat modeling, and reference architectures. Insecure design flaws cannot be fixed by perfect implementation alone.
 
+Q:: How is insecure design different from insecure implementation?  
+A:: Insecure design and insecure implementation are different. Insecure design relates to weaknesses in control design, while insecure implementation refers to defects in the actual coding. They have different root causes and require different remediation approaches.
+
+Q:: Can a secure design have implementation defects that lead to vulnerabilities?  
+A:: Yes, a secure design can still have implementation defects that may result in vulnerabilities. However, an insecure design, by definition, lacks the necessary security controls to defend against specific attacks and cannot be fixed by perfect implementation.
+
+Q:: What contributes to insecure design in software development?  
+A:: One factor contributing to insecure design is the lack of business risk profiling in the software or system being developed, leading to a failure to determine the required level of security design.
+
+Q:: What should be considered during requirements and resource management in secure design?  
+A:: During requirements and resource management, collect and negotiate business requirements, protection requirements (confidentiality, integrity, availability, authenticity), and technical requirements. Plan and budget for all design, build, testing, and operation activities, including security.
+
+Q:: What is the importance of secure design in preventing known attack methods?  
+A:: Secure design constantly evaluates threats and ensures that code is robustly designed and tested to prevent known attack methods. It is a proactive approach to security.
+
+Q:: How can threat modeling be integrated into the software development process?  
+A:: Threat modeling can be integrated into refinement sessions or similar activities during user story development. It involves analyzing data flows, access control, security controls, and assumptions related to expected and failure flows.
+
+Q:: Why is it important to involve security specialists throughout the software development lifecycle?  
+A:: Involving security specialists from the beginning of a software project and throughout its lifecycle is crucial to ensure secure development. It helps identify and address security concerns early.
+
+Q:: What is the OWASP Software Assurance Maturity Model (SAMM), and how can it be used?  
+A:: The OWASP SAMM is a model that helps structure secure software development efforts. It can be leveraged to guide and improve the security practices and maturity of a software development organization.
+
+Q:: Is secure design a one-time addition, or is it an ongoing practice in software development?  
+A:: Secure design is not a one-time addition but a culture and methodology that should be integrated into the entire software development lifecycle. It involves continuous evaluation of threats and proactive security measures.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part VI - A05:2021-Security Misconfiguration
