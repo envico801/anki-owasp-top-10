@@ -431,7 +431,7 @@ A:: An application is vulnerable to security misconfigurations if:
 - Latest security features are disabled for upgraded systems.
 - Security settings in application servers, frameworks, libraries, databases, etc., are not configured securely.
 - Security headers or directives are missing or not set to secure values.
-- The software is out of date or vulnerable. (see [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A05_2021-Security_Misconfiguration//../A06_2021-Vulnerable_and_Outdated_Components/)).
+- The software is out of date or vulnerable. (see [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)).
 
 Q:: What is the risk of missing security hardening across the application stack?  
 A:: Missing security hardening across the application stack can lead to vulnerabilities and exploitation by attackers.
@@ -455,7 +455,7 @@ Q:: Why should security headers or directives be set to secure values?
 A:: Setting security headers or directives to secure values helps protect the application against various security threats.
 
 Q:: What should be considered in terms of software to avoid vulnerabilities?  
-A:: To avoid vulnerabilities, it is essential to ensure that the software is up-to-date and not vulnerable to known security issues, as highlighted in [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A05_2021-Security_Misconfiguration//../A06_2021-Vulnerable_and_Outdated_Components/).
+A:: To avoid vulnerabilities, it is essential to ensure that the software is up-to-date and not vulnerable to known security issues, as highlighted in [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/).
 
 Q:: Why is a concerted, repeatable application security configuration process important?  
 A:: A concerted, repeatable application security configuration process is important because it reduces the risk of vulnerabilities by ensuring consistent and secure settings across the application and its components, helping to protect against potential threats.
