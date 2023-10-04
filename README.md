@@ -421,6 +421,45 @@ A:: A04 Insecure Design
 Q:: What is the "Security Misconfiguration" category about?  
 A:: **A05:2021 - Security Misconfiguration**: This category has moved up from its previous ranking. It addresses issues related to misconfigurations in applications, which can lead to vulnerabilities. It now includes XML External Entities (XXE).
 
+Q:: What makes an application vulnerable to security misconfigurations?  
+A:: An application is vulnerable to security misconfigurations if:
+- Appropriate security hardening is missing across any part of the application stack.
+- Permissions on cloud services are improperly configured.
+- Unnecessary features are enabled or installed.
+- Default accounts and their passwords remain enabled and unchanged.
+- Error handling reveals overly informative error messages.
+- Latest security features are disabled for upgraded systems.
+- Security settings in application servers, frameworks, libraries, databases, etc., are not configured securely.
+- Security headers or directives are missing or not set to secure values.
+- The software is out of date or vulnerable. (see [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A05_2021-Security_Misconfiguration//../A06_2021-Vulnerable_and_Outdated_Components/)).
+
+Q:: What is the risk of missing security hardening across the application stack?  
+A:: Missing security hardening across the application stack can lead to vulnerabilities and exploitation by attackers.
+
+Q:: Why should unnecessary features not be enabled or installed?  
+A:: Enabling unnecessary features can increase the attack surface and provide opportunities for attackers to exploit vulnerabilities.
+
+Q:: What is the danger of keeping default accounts and passwords enabled and unchanged?  
+A:: Keeping default accounts and passwords unchanged can lead to unauthorized access to the system.
+
+Q:: What is the risk of revealing stack traces or overly informative error messages to users?  
+A:: Revealing stack traces or overly informative error messages can provide valuable information to attackers and aid in exploiting vulnerabilities.
+
+Q:: Why is it important to configure the latest security features securely for upgraded systems?  
+A:: Configuring the latest security features securely is crucial to ensure that upgraded systems remain protected against new threats.
+
+Q:: What components should have their security settings configured to secure values?  
+A:: Security settings in application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, and other components should be configured to secure values.
+
+Q:: Why should security headers or directives be set to secure values?  
+A:: Setting security headers or directives to secure values helps protect the application against various security threats.
+
+Q:: What should be considered in terms of software to avoid vulnerabilities?  
+A:: To avoid vulnerabilities, it is essential to ensure that the software is up-to-date and not vulnerable to known security issues, as highlighted in [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A05_2021-Security_Misconfiguration//../A06_2021-Vulnerable_and_Outdated_Components/).
+
+Q:: Why is a concerted, repeatable application security configuration process important?  
+A:: A concerted, repeatable application security configuration process is important because it reduces the risk of vulnerabilities by ensuring consistent and secure settings across the application and its components, helping to protect against potential threats.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part VII - A06:2021-Vulnerable and Outdated Components
