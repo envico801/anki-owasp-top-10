@@ -462,6 +462,24 @@ A:: A concerted, repeatable application security configuration process is import
 
 #### Chapter 2 - How to Prevent?
 
+Q:: What is the role of a repeatable hardening process in preventing security misconfigurations?  
+A:: A repeatable hardening process makes it fast and easy to deploy secure environments and ensures that development, QA, and production environments are configured identically.
+
+Q:: Why is it important to have a minimal platform without unnecessary features and components?  
+A:: A minimal platform reduces the attack surface by eliminating unused features and frameworks, preventing security misconfigurations.
+
+Q:: What is the purpose of reviewing and updating configurations as part of the patch management process?  
+A:: Reviewing and updating configurations as part of patch management ensures that security notes, updates, and patches are applied to maintain a secure environment.
+
+Q:: How can a segmented application architecture prevent security misconfigurations?  
+A:: A segmented application architecture provides secure separation between components or tenants using techniques like segmentation, containerization, or cloud security groups (ACLs).
+
+Q:: What is the significance of sending security directives to clients, such as Security Headers?  
+A:: Sending security directives to clients via headers helps ensure that client-side security settings align with the desired security posture.
+
+Q:: How can the effectiveness of configurations and settings be verified in all environments?  
+A:: An automated process should be used to verify the effectiveness of configurations and settings in all environments to prevent security misconfigurations.
+
 ### Part VII - A06:2021-Vulnerable and Outdated Components
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png)
