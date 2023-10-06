@@ -480,6 +480,28 @@ A:: Sending security directives to clients via headers helps ensure that client-
 Q:: How can the effectiveness of configurations and settings be verified in all environments?  
 A:: An automated process should be used to verify the effectiveness of configurations and settings in all environments to prevent security misconfigurations.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is taking place in this situation?
+
+The application server comes with sample applications not removed from the production server. These sample applications have known security flaws attackers use to compromise the server. Suppose one of these applications is the admin console, and default accounts weren't changed. In that case, the attacker logs in with default passwords and takes over.  
+A:: A05 Security Misconfiguration
+
+Q:: Can you identify the type of attack happening here?
+
+Directory listing is not disabled on the server. An attacker discovers they can simply list directories. The attacker finds and downloads the compiled Java classes, which they decompile and reverse engineer to view the code. The attacker then finds a severe access control flaw in the application.  
+A:: A05 Security Misconfiguration
+
+Q:: What kind of attack is described in this situation?
+
+The application server's configuration allows detailed error messages, e.g., stack traces, to be returned to users. This potentially exposes sensitive information or underlying flaws such as component versions that are known to be vulnerable.  
+A:: A05 Security Misconfiguration
+
+Q:: What type of attack is being demonstrated here?
+
+A cloud service provider (CSP) has default sharing permissions open to the Internet by other CSP users. This allows sensitive data stored within cloud storage to be accessed.  
+A:: A05 Security Misconfiguration
+
 ### Part VII - A06:2021-Vulnerable and Outdated Components
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png)
