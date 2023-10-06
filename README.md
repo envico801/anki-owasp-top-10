@@ -511,6 +511,24 @@ A:: A05 Security Misconfiguration
 Q:: What is the "Vulnerable and Outdated Components" category about?  
 A:: **A06:2021 - Vulnerable and Outdated Components**: This category, previously titled "Using Components with Known Vulnerabilities," has moved up in the ranking. It focuses on the risks associated with outdated and vulnerable software components.
 
+Q:: Why is it crucial to know the versions of all components you use in your software?  
+A:: It's crucial to know the versions of all components to avoid vulnerabilities and ensure software security.
+
+Q:: What can happen if your software is using vulnerable, unsupported, or outdated components?  
+A:: Using such components can lead to security risks and potential exploitation of vulnerabilities.
+
+Q:: How can you proactively address vulnerabilities related to the components you use in your software?  
+A:: Regularly scanning for vulnerabilities and subscribing to security bulletins is a proactive approach.
+
+Q:: What are the consequences of not fixing or upgrading underlying platform, frameworks, and dependencies in a timely manner?  
+A:: Delaying these updates can expose your organization to unnecessary risks from known vulnerabilities.
+
+Q:: How can software developers contribute to mitigating risks related to components in software?  
+A:: Software developers can contribute by testing the compatibility of updated, upgraded, or patched libraries.
+
+Q:: In addition to updating components, what else can help secure software components?  
+A:: Securing the components' configurations is also important to prevent security misconfigurations. (see [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)).
+
 #### Chapter 2 - How to Prevent?
 
 ### Part VIII - A07:2021-Identification and Authentication Failures
