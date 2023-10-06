@@ -531,6 +531,18 @@ A:: Securing the components' configurations is also important to prevent securit
 
 #### Chapter 2 - How to Prevent?
 
+Q:: What should be removed as part of the patch management process to prevent vulnerabilities?  
+A:: As part of the patch management process, remove unused dependencies, unnecessary features, components, files, and documentation to reduce the attack surface.
+
+Q:: How can the versions of client-side and server-side components be continuously inventoried?  
+A:: Continuously inventory component versions and dependencies using tools like versions, OWASP Dependency Check, retire.js, etc. Monitor sources like CVE and NVD for vulnerabilities and use software composition analysis tools for automation.
+
+Q:: What is the importance of obtaining components from official sources over secure links?  
+A:: Obtaining components from official sources over secure links reduces the risk of including modified, malicious components and enhances software and data integrity. (See [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)).
+
+Q:: How can libraries and components that are unmaintained or lack security patches be handled?  
+A:: Monitor for unmaintained libraries and components and consider deploying virtual patches to monitor, detect, or protect against discovered issues when patching is not possible.
+
 ### Part VIII - A07:2021-Identification and Authentication Failures
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png)
