@@ -565,6 +565,48 @@ A:: A06 Vulnerable and Outdated Components
 Q:: What is the "Identification and Authentication Failures" category about?  
 A:: **A07:2021 - Identification and Authentication Failures**: This category, formerly known as "Broken Authentication," has slid down in ranking. It now includes CWEs related to identification failures and is influenced by the availability of standardized frameworks.
 
+Q:: Why is confirmation of the user's identity, authentication, and session management critical?  
+A:: Confirmation of the user's identity and proper authentication and session management are critical to protect against authentication-related attacks.
+
+Q:: What are some signs of authentication weaknesses in an application?  
+A:: Authentication weaknesses may be present if the application:
+- Permits automated attacks like credential stuffing.
+- Allows brute force or other automated attacks.
+- Permits the use of default, weak, or well-known passwords.
+- Uses ineffective credential recovery and forgot-password processes.
+- Stores passwords in plain text, encrypted, or weakly hashed formats.
+- Lacks or has ineffective multi-factor authentication.
+- Exposes session identifiers in the URL.
+- Reuses session identifiers after successful login.
+- Fails to correctly invalidate session IDs.
+
+Q:: What is credential stuffing, and why is it a concern?  
+A:: Credential stuffing is when an attacker uses a list of valid usernames and passwords obtained from breaches to gain unauthorized access. It's a concern because it exploits weak authentication systems.
+
+Q:: What is the risk associated with permitting brute force attacks?  
+A:: Permitting brute force attacks poses a risk because attackers can systematically try various combinations of usernames and passwords until they find the correct combination to gain unauthorized access.
+
+Q:: Why are default, weak, or well-known passwords a security risk?  
+A:: Default, weak, or well-known passwords pose a security risk because they are easily guessable and can be exploited by attackers.
+
+Q:: Why are "knowledge-based answers" for credential recovery not safe?  
+A:: "Knowledge-based answers" for credential recovery are not safe because they can often be guessed or obtained through social engineering.
+
+Q:: What are some issues with storing passwords in plain text, encrypted, or weakly hashed formats?  
+A:: Storing passwords in such formats can lead to security vulnerabilities, as attackers can easily obtain and crack the passwords.
+
+Q:: Why is multi-factor authentication important?  
+A:: Multi-factor authentication adds an extra layer of security by requiring users to provide two or more forms of authentication, making it more challenging for attackers to gain access.
+
+Q:: What are the risks associated with exposing session identifiers in the URL?  
+A:: Exposing session identifiers in the URL can lead to session hijacking and unauthorized access.
+
+Q:: How can reusing session identifiers after a successful login pose a security risk?  
+A:: Reusing session identifiers after a successful login is risky because it can allow unauthorized users to continue or take over authenticated sessions, potentially compromising security.
+
+Q:: Why is it essential to correctly invalidate session IDs?  
+A:: Correctly invalidating session IDs ensures that user sessions or authentication tokens are terminated during logout or periods of inactivity, preventing unauthorized access.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part IX - A08:2021-Software and Data Integrity Failures
