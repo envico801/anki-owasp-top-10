@@ -609,6 +609,27 @@ A:: Correctly invalidating session IDs ensures that user sessions or authenticat
 
 #### Chapter 2 - How to Prevent?
 
+Q:: What is the role of multi-factor authentication in preventing identification and authentication failures?  
+A:: Multi-factor authentication should be implemented where possible to prevent automated credential stuffing, brute force, and stolen credential reuse attacks.
+
+Q:: What should be avoided when shipping or deploying an application to prevent identification and authentication failures?  
+A:: Do not ship or deploy with any default credentials, especially for admin users, to prevent unauthorized access.
+
+Q:: How can weak password checks be implemented to prevent identification and authentication failures?  
+A:: Implement weak password checks, such as testing new or changed passwords against the top 10,000 worst passwords list, to ensure stronger password choices.
+
+Q:: What guidelines can be followed for password length, complexity, and rotation policies?  
+A:: Align password length, complexity, and rotation policies with NIST 800-63b's guidelines in section 5.1.1 for Memorized Secrets or other modern, evidence-based password policies.
+
+Q:: How can account enumeration attacks be prevented during registration and credential recovery?  
+A:: Harden registration, credential recovery, and API pathways against account enumeration attacks by using the same messages for all outcomes.
+
+Q:: Why is it important to limit or increasingly delay failed login attempts?  
+A:: Limit or increasingly delay failed login attempts to prevent credential stuffing, brute force, or other attacks. However, ensure this does not create a denial of service scenario.
+
+Q:: What are the characteristics of a secure session manager for preventing identification and authentication failures?  
+A:: Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. The session identifier should not be in the URL, be securely stored, and invalidated after logout, idle, and absolute timeouts.
+
 ### Part IX - A08:2021-Software and Data Integrity Failures
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png)
