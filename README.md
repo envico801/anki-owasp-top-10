@@ -543,6 +543,19 @@ A:: Obtaining components from official sources over secure links reduces the ris
 Q:: How can libraries and components that are unmaintained or lack security patches be handled?  
 A:: Monitor for unmaintained libraries and components and consider deploying virtual patches to monitor, detect, or protect against discovered issues when patching is not possible.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is demonstrated in this scenario?
+
+Components typically run with the same privileges as the application itself, so flaws in any component can result in serious impact. Such flaws can be accidental (e.g., coding error) or intentional (e.g., a backdoor in a component). Some example exploitable component vulnerabilities discovered are:
+
+- CVE-2017-5638, a Struts 2 remote code execution vulnerability that enables the execution of arbitrary code on the server, has been blamed for significant breaches.
+
+- While the internet of things (IoT) is frequently difficult or impossible to patch, the importance of patching them can be great (e.g., biomedical devices).
+
+There are automated tools to help attackers find unpatched or misconfigured systems. For example, the Shodan IoT search engine can help you find devices that still suffer from Heartbleed vulnerability patched in April 2014.  
+A:: A06 Vulnerable and Outdated Components
+
 ### Part VIII - A07:2021-Identification and Authentication Failures
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png)
