@@ -630,6 +630,23 @@ A:: Limit or increasingly delay failed login attempts to prevent credential stuf
 Q:: What are the characteristics of a secure session manager for preventing identification and authentication failures?  
 A:: Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. The session identifier should not be in the URL, be securely stored, and invalidated after logout, idle, and absolute timeouts.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is happening in this scenario?
+
+Credential stuffing, the use of lists of known passwords, is a common attack. Suppose an application does not implement automated threat or credential stuffing protection. In that case, the application can be used as a password oracle to determine if the credentials are valid.  
+A:: A07 Identification and Authentication Failures
+
+Q:: Can you identify the type of attack happening here?
+
+Most authentication attacks occur due to the continued use of passwords as a sole factor. Once considered best practices, password rotation and complexity requirements encourage users to use and reuse weak passwords. Organizations are recommended to stop these practices per NIST 800-63 and use multi-factor authentication.  
+A:: A07 Identification and Authentication Failures
+
+Q:: What kind of attack is described in this situation?
+
+Application session timeouts aren't set correctly. A user uses a public computer to access an application. Instead of selecting "logout," the user simply closes the browser tab and walks away. An attacker uses the same browser an hour later, and the user is still authenticated.  
+A:: A07 Identification and Authentication Failures
+
 ### Part IX - A08:2021-Software and Data Integrity Failures
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png)
