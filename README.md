@@ -656,6 +656,24 @@ A:: A07 Identification and Authentication Failures
 Q:: What is the "Software and Data Integrity Failures" category about?  
 A:: **A08:2021 - Software and Data Integrity Failures**: This is a new category highlighting issues related to assumptions about software updates, critical data, and CI/CD pipelines without proper verification. It includes Insecure Deserialization from the previous edition.
 
+Q:: How can relying on plugins, libraries, or modules from untrusted sources impact software integrity?  
+A:: Relying on plugins, libraries, or modules from untrusted sources can impact software integrity by introducing potential security vulnerabilities, malicious code, or system compromise into the application.
+
+Q:: What is the potential risk associated with an insecure CI/CD pipeline?  
+A:: An insecure CI/CD pipeline can introduce the potential for unauthorized access, the injection of malicious code, or compromise of the system during the software development and deployment process.
+
+Q:: What security concern is raised by auto-update functionality in applications?  
+A:: Auto-update functionality in applications can be a security concern when updates are downloaded and applied without sufficient integrity verification. Attackers may exploit this to distribute and run their own malicious updates on all installations.
+
+Q:: What is the concept of insecure deserialization, and why is it a vulnerability?  
+A:: Insecure deserialization refers to the process of decoding or deserializing data from a serialized format. It becomes a vulnerability when an attacker can view and modify the serialized data, potentially leading to security issues.
+
+Q:: How can organizations protect against software and data integrity failures?  
+A:: Organizations can protect against software and data integrity failures by carefully vetting and verifying the sources of plugins, libraries, and modules, implementing secure CI/CD pipelines, conducting integrity verification for updates, and addressing insecure deserialization vulnerabilities.
+
+Q:: How can organizations assess and mitigate the risks associated with insecure deserialization?  
+A:: Organizations can assess and mitigate the risks of insecure deserialization by implementing input validation, using safe deserialization methods, and staying informed about potential vulnerabilities in the deserialization process.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part X - A09:2021-Security Logging and Monitoring Failures
