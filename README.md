@@ -694,6 +694,23 @@ A:: Proper segregation, configuration, and access control in CI/CD pipelines ens
 Q:: How can the transmission of unsigned or unencrypted serialized data to untrusted clients be made more secure?  
 A:: To enhance security, unsigned or unencrypted serialized data should not be sent to untrusted clients without some form of integrity check or digital signature to detect tampering or replay.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is demonstrated in this scenario?
+
+Many home routers, set-top boxes, device firmware, and others do not verify updates via signed firmware. Unsigned firmware is a growing target for attackers and is expected to only get worse. This is a major concern as many times there is no mechanism to remediate other than to fix in a future version and wait for previous versions to age out.  
+A:: A08 Software and Data Integrity Failures
+
+Q:: Can you identify the type of attack happening here?
+
+Nation-states have been known to attack update mechanisms, with a recent notable attack being the SolarWinds Orion attack. The company that develops the software had secure build and update integrity processes. Still, these were able to be subverted, and for several months, the firm distributed a highly targeted malicious update to more than 18,000 organizations, of which around 100 or so were affected. This is one of the most far-reaching and most significant breaches of this nature in history.  
+A:: A08 Software and Data Integrity Failures
+
+Q:: What kind of attack is described in this situation?
+
+A React application calls a set of Spring Boot microservices. Being functional programmers, they tried to ensure that their code is immutable. The solution they came up with is serializing the user state and passing it back and forth with each request. An attacker notices the "rO0" Java object signature (in base64) and uses the Java Serial Killer tool to gain remote code execution on the application server.  
+A:: A08 Software and Data Integrity Failures
+
 ### Part X - A09:2021-Security Logging and Monitoring Failures
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png)
