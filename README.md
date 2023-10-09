@@ -720,6 +720,40 @@ A:: A08 Software and Data Integrity Failures
 Q:: What is the "Security Logging and Monitoring Failures" category about?  
 A:: **A09:2021 - Security Logging and Monitoring Failures**: Previously known as "Insufficient Logging & Monitoring," this category has moved up in ranking and is expanded to include more types of failures related to security logging and monitoring.
 
+Q:: Why is logging and monitoring critical for security?  
+A:: Logging and monitoring are critical for security because they help detect, escalate, and respond to active breaches. Without them, breaches cannot be detected.
+
+Q:: What are some indicators of insufficient logging and monitoring?  
+A:: Insufficient logging and monitoring occur when:
+- Auditable events like logins and high-value transactions are not logged.
+- Warnings and errors generate no, inadequate, or unclear log messages.
+- Logs of applications and APIs are not monitored for suspicious activity.
+- Logs are only stored locally.
+- Alerting thresholds and response escalation processes are absent or ineffective.
+- Penetration testing and DAST tool scans do not trigger alerts.
+- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.
+
+Q:: Why is it important to log auditable events like logins and high-value transactions?  
+A:: Logging auditable events is important for tracking and auditing user actions, which can help in detecting unauthorized or malicious activity.
+
+Q:: What is the risk of generating inadequate or unclear log messages for warnings and errors?  
+A:: Inadequate or unclear log messages can hinder the ability to understand and respond to potential issues or attacks.
+
+Q:: Why should logs of applications and APIs be monitored for suspicious activity?  
+A:: Monitoring logs for suspicious activity is crucial for early detection of security threats and breaches.
+
+Q:: What are the consequences of only storing logs locally?  
+A:: Storing logs only locally can be a security risk because it may result in the loss of critical log data in the event of a breach or system failure, making it difficult to investigate incidents.
+
+Q:: What is the significance of alerting thresholds and response escalation processes?  
+A:: Alerting thresholds and response escalation processes help ensure that security incidents are promptly detected, reported, and escalated for action.
+
+Q:: How can penetration testing and DAST tool scans be integrated with monitoring?  
+A:: Penetration testing and DAST tool scans should trigger alerts when potential vulnerabilities or attacks are detected.
+
+Q:: Why is real-time or near real-time detection of active attacks important?  
+A:: Real-time or near real-time detection of active attacks allows for immediate response, reducing the potential impact of security incidents.
+
 #### Chapter 2 - How to Prevent?
 
 ### Part XI - A10:2021-Server-Side Request Forgery
