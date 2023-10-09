@@ -676,6 +676,24 @@ A:: Organizations can assess and mitigate the risks of insecure deserialization 
 
 #### Chapter 2 - How to Prevent?
 
+Q:: How can digital signatures or similar mechanisms be used to prevent software and data integrity failures?  
+A:: Digital signatures or similar mechanisms can be used to verify that the software or data is from the expected source and has not been altered, ensuring integrity.
+
+Q:: Why is it important to ensure that libraries and dependencies are consuming trusted repositories?  
+A:: Ensuring that libraries and dependencies use trusted repositories reduces the risk of including compromised or malicious components in your software.
+
+Q:: How can software supply chain security tools like OWASP Dependency Check or OWASP CycloneDX be used to prevent integrity failures?  
+A:: These tools can be used to verify that components do not contain known vulnerabilities, enhancing the integrity of your software.
+
+Q:: What is the purpose of a review process for code and configuration changes in preventing integrity failures?  
+A:: A review process minimizes the chance that malicious code or configuration could be introduced into your software pipeline, ensuring its integrity.
+
+Q:: What role does proper segregation, configuration, and access control play in preventing integrity failures in CI/CD pipelines?  
+A:: Proper segregation, configuration, and access control in CI/CD pipelines ensure the integrity of the code flowing through the build and deploy processes, preventing unauthorized changes.
+
+Q:: How can the transmission of unsigned or unencrypted serialized data to untrusted clients be made more secure?  
+A:: To enhance security, unsigned or unencrypted serialized data should not be sent to untrusted clients without some form of integrity check or digital signature to detect tampering or replay.
+
 ### Part X - A09:2021-Security Logging and Monitoring Failures
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png)
