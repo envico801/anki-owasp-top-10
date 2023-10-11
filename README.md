@@ -756,6 +756,24 @@ A:: Real-time or near real-time detection of active attacks allows for immediate
 
 #### Chapter 2 - How to Prevent?
 
+Q:: What should be ensured regarding the logging of login, access control, and server-side input validation failures?  
+A:: Ensure that all login, access control, and server-side input validation failures can be logged with sufficient user context to identify suspicious or malicious accounts and held for enough time for forensic analysis.
+
+Q:: Why is it important to generate logs in a format that log management solutions can easily consume?  
+A:: Logs should be generated in a format that log management solutions can easily consume to facilitate efficient analysis and monitoring.
+
+Q:: How can log data be protected from injections or attacks on logging and monitoring systems?  
+A:: Ensure log data is encoded correctly to prevent injections or attacks on the logging or monitoring systems, enhancing data integrity.
+
+Q:: What should be established for high-value transactions to prevent tampering or deletion?  
+A:: High-value transactions should have an audit trail with integrity controls to prevent tampering or deletion, such as append-only database tables or similar mechanisms.
+
+Q:: What is the role of DevSecOps teams in preventing security logging and monitoring failures?  
+A:: DevSecOps teams should establish effective monitoring and alerting systems to quickly detect and respond to suspicious activities, enhancing security.
+
+Q:: What plans should be established or adopted to address security incidents?  
+A:: Establish or adopt an incident response and recovery plan, such as NIST 800-61r2 or later, to effectively address security incidents.
+
 ### Part XI - A10:2021-Server-Side Request Forgery
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png)
