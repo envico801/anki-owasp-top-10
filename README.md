@@ -774,6 +774,23 @@ A:: DevSecOps teams should establish effective monitoring and alerting systems t
 Q:: What plans should be established or adopted to address security incidents?  
 A:: Establish or adopt an incident response and recovery plan, such as NIST 800-61r2 or later, to effectively address security incidents.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is illustrated in this scenario?
+
+A children's health plan provider's website operator couldn't detect a breach due to a lack of monitoring and logging. An external party informed the health plan provider that an attacker had accessed and modified thousands of sensitive health records of more than 3.5 million children. A post-incident review found that the website developers had not addressed significant vulnerabilities. As there was no logging or monitoring of the system, the data breach could have been in progress since 2013, a period of more than seven years.  
+A:: A09 Security Logging and Monitoring Failures
+
+Q:: Can you identify the type of attack happening here?
+
+A major Indian airline had a data breach involving more than ten years' worth of personal data of millions of passengers, including passport and credit card data. The data breach occurred at a third-party cloud hosting provider, who notified the airline of the breach after some time.  
+A:: A09 Security Logging and Monitoring Failures
+
+Q:: What kind of attack is described in this situation?
+
+A major European airline suffered a GDPR reportable breach. The breach was reportedly caused by payment application security vulnerabilities exploited by attackers, who harvested more than 400,000 customer payment records. The airline was fined 20 million pounds as a result by the privacy regulator.  
+A:: A09 Security Logging and Monitoring Failures
+
 ### Part XI - A10:2021-Server-Side Request Forgery
 
 ![icon](https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png)
