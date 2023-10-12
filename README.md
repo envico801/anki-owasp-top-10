@@ -25,14 +25,14 @@ Q:: What is the purpose of access control?
 A:: Access control enforces policy to prevent users from acting outside their intended permissions. Failures can lead to unauthorized information disclosure, modification, or destruction of data, or performing unauthorized business functions.
 
 Q:: Name some common access control vulnerabilities.  
-A:: Common access control vulnerabilities include:
-- Violation of the principle of least privilege
-- Bypassing access control checks
-- Insecure direct object references
-- Missing access controls for POST, PUT, and DELETE
-- Elevation of privilege
-- Metadata manipulation
-- CORS misconfiguration
+A:: Common access control vulnerabilities include:  
+- Violation of the principle of least privilege  
+- Bypassing access control checks  
+- Insecure direct object references  
+- Missing access controls for POST, PUT, and DELETE  
+- Elevation of privilege  
+- Metadata manipulation  
+- CORS misconfiguration  
 - Force browsing to authenticated or privileged pages
 
 Q:: What is meant by "violation of the principle of least privilege" in access control?  
@@ -248,10 +248,10 @@ Q:: What is the "Injection" category about?
 A:: **A03:2021 - Injection**: Injection vulnerabilities have moved down to the third position. It includes various forms of injection attacks, such as SQL injection, and now also includes Cross-Site Scripting (XSS).
 
 Q:: What makes an application vulnerable to injection attacks?  
-A:: An application is vulnerable to injection attacks when:
-- User-supplied data is not properly validated, filtered, or sanitized.
-- Dynamic queries or non-parameterized calls are used without context-aware escaping.
-- Hostile data is used in ORM search parameters.
+A:: An application is vulnerable to injection attacks when:  
+- User-supplied data is not properly validated, filtered, or sanitized.  
+- Dynamic queries or non-parameterized calls are used without context-aware escaping.  
+- Hostile data is used in ORM search parameters.  
 - Hostile data is directly used or concatenated in SQL queries, commands, or stored procedures.
 
 Q:: What is the risk of not validating user-supplied data in an application?  
@@ -422,15 +422,15 @@ Q:: What is the "Security Misconfiguration" category about?
 A:: **A05:2021 - Security Misconfiguration**: This category has moved up from its previous ranking. It addresses issues related to misconfigurations in applications, which can lead to vulnerabilities. It now includes XML External Entities (XXE).
 
 Q:: What makes an application vulnerable to security misconfigurations?  
-A:: An application is vulnerable to security misconfigurations if:
-- Appropriate security hardening is missing across any part of the application stack.
-- Permissions on cloud services are improperly configured.
-- Unnecessary features are enabled or installed.
-- Default accounts and their passwords remain enabled and unchanged.
-- Error handling reveals overly informative error messages.
-- Latest security features are disabled for upgraded systems.
-- Security settings in application servers, frameworks, libraries, databases, etc., are not configured securely.
-- Security headers or directives are missing or not set to secure values.
+A:: An application is vulnerable to security misconfigurations if:  
+- Appropriate security hardening is missing across any part of the application stack.  
+- Permissions on cloud services are improperly configured.  
+- Unnecessary features are enabled or installed.  
+- Default accounts and their passwords remain enabled and unchanged.  
+- Error handling reveals overly informative error messages.  
+- Latest security features are disabled for upgraded systems.  
+- Security settings in application servers, frameworks, libraries, databases, etc., are not configured securely.  
+- Security headers or directives are missing or not set to secure values.  
 - The software is out of date or vulnerable. (see [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)).
 
 Q:: What is the risk of missing security hardening across the application stack?  
@@ -569,15 +569,15 @@ Q:: Why is confirmation of the user's identity, authentication, and session mana
 A:: Confirmation of the user's identity and proper authentication and session management are critical to protect against authentication-related attacks.
 
 Q:: What are some signs of authentication weaknesses in an application?  
-A:: Authentication weaknesses may be present if the application:
-- Permits automated attacks like credential stuffing.
-- Allows brute force or other automated attacks.
-- Permits the use of default, weak, or well-known passwords.
-- Uses ineffective credential recovery and forgot-password processes.
-- Stores passwords in plain text, encrypted, or weakly hashed formats.
-- Lacks or has ineffective multi-factor authentication.
-- Exposes session identifiers in the URL.
-- Reuses session identifiers after successful login.
+A:: Authentication weaknesses may be present if the application:  
+- Permits automated attacks like credential stuffing.  
+- Allows brute force or other automated attacks.  
+- Permits the use of default, weak, or well-known passwords.  
+- Uses ineffective credential recovery and forgot-password processes.  
+- Stores passwords in plain text, encrypted, or weakly hashed formats.  
+- Lacks or has ineffective multi-factor authentication.  
+- Exposes session identifiers in the URL.  
+- Reuses session identifiers after successful login.  
 - Fails to correctly invalidate session IDs.
 
 Q:: What is credential stuffing, and why is it a concern?  
@@ -724,13 +724,13 @@ Q:: Why is logging and monitoring critical for security?
 A:: Logging and monitoring are critical for security because they help detect, escalate, and respond to active breaches. Without them, breaches cannot be detected.
 
 Q:: What are some indicators of insufficient logging and monitoring?  
-A:: Insufficient logging and monitoring occur when:
-- Auditable events like logins and high-value transactions are not logged.
-- Warnings and errors generate no, inadequate, or unclear log messages.
-- Logs of applications and APIs are not monitored for suspicious activity.
-- Logs are only stored locally.
-- Alerting thresholds and response escalation processes are absent or ineffective.
-- Penetration testing and DAST tool scans do not trigger alerts.
+A:: Insufficient logging and monitoring occur when:  
+- Auditable events like logins and high-value transactions are not logged.  
+- Warnings and errors generate no, inadequate, or unclear log messages.  
+- Logs of applications and APIs are not monitored for suspicious activity.  
+- Logs are only stored locally.  
+- Alerting thresholds and response escalation processes are absent or ineffective.  
+- Penetration testing and DAST tool scans do not trigger alerts.  
 - The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.
 
 Q:: Why is it important to log auditable events like logins and high-value transactions?  
