@@ -800,6 +800,18 @@ A:: A09 Security Logging and Monitoring Failures
 Q:: What is the "Server-Side Request Forgery" category about?  
 A:: ***A10:2021 - Server-Side Request Forgery**: Added from the Top 10 community survey, this category represents scenarios where security community members have identified the importance, even though it may not be widely illustrated in the data. It deals with the risk of server-side request forgery attacks.
 
+Q:: What is SSRF, and when does it occur in web applications?  
+A:: SSRF stands for Server-Side Request Forgery, and it occurs in web applications when they fetch a remote resource without properly validating the user-supplied URL. It allows attackers to manipulate the application into sending crafted requests to unexpected destinations.
+
+Q:: What can make SSRF attacks particularly severe?  
+A:: SSRF attacks can be particularly severe due to the growing adoption of cloud services and the increasing complexity of application architectures. These factors raise the potential impact of SSRF vulnerabilities.
+
+Q:: How can SSRF vulnerabilities occur in modern web applications?  
+A:: SSRF vulnerabilities are increasingly common in modern web applications because fetching URLs has become a standard scenario. This convenience feature can inadvertently expose applications to SSRF risks.
+
+Q:: Why is it a concern that SSRF can bypass network access control mechanisms like firewalls and VPNs?  
+A:: SSRF is a concern because it allows attackers to coerce the application into sending requests to unexpected destinations even when protected by firewalls, VPNs, or other network access control lists (ACLs).
+
 #### Chapter 2 - How to Prevent?
 
 ---
