@@ -814,6 +814,48 @@ A:: SSRF is a concern because it allows attackers to coerce the application into
 
 #### Chapter 2 - How to Prevent?
 
+Q:: How can SSRF be reduced from a network layer?  
+A:: SSRF can be reduced by segmenting remote resource access functionality in separate networks.
+
+Q:: What policies can be enforced to prevent SSRF?  
+A:: "Deny by default" firewall policies or network access control rules can be enforced to block all but essential intranet traffic.
+
+Q:: What should be built around firewall rules based on applications to prevent SSRF?  
+A:: An ownership and a lifecycle should be established for firewall rules based on applications.
+
+Q:: What is recommended for logging on firewalls to prevent SSRF?  
+A:: It is recommended to log all accepted and blocked network flows on firewalls to prevent SSRF.
+
+Q:: What does SSRF stand for in the context of web application security?  
+A:: Server-Side Request Forgery.
+
+Q:: Why should developers sanitize and validate all client-supplied input data to prevent SSRF?  
+A:: To eliminate harmful, strange, or unexpected data which may lead to SSRF attack.
+
+Q:: In SSRF prevention, how does enforcing the URL schema, port, and destination with a positive allow list help?  
+A:: It restricts the outbound HTTP traffic to trusted and known destinations, thereby reducing SSRF attack surface.
+
+Q:: Why is it important not to send raw responses to clients as part of SSRF prevention?  
+A:: It prevents the exposure of potentially sensitive information obtained from the attack to the client.
+
+Q:: Why should HTTP redirections be disabled in preventing SSRF attacks?  
+A:: To stop the application from being tricked into accessing untrusted or manipulated sites.
+
+Q:: What attack risks can you avoid by being aware of the URL consistency?  
+A:: DNS rebinding attacks and TOCTOU (time of check, time of use) race conditions.
+
+Q:: Why is denial list or regular expression mitigation not advised in preventing SSRF attacks?  
+A:: Because attackers have payload lists, tools, and masking techniques to bypass these security measures.
+
+Q:: Why is it important not to deploy other security-relevant services on front systems?  
+A:: It's important not to deploy other security-relevant services on front systems to minimize the attack surface. By keeping front systems dedicated to their primary purpose, you reduce the risk of exposing additional attack vectors.
+
+Q:: How can you control local traffic on front systems to enhance security?  
+A:: You can control local traffic on front systems by ensuring that requests to security-relevant services are restricted to the local system, for example, by using "localhost" as the destination address.
+
+Q:: What is the recommended security measure for frontends with dedicated and manageable user groups?  
+A:: For frontends with dedicated and manageable user groups, it is recommended to use network encryption, such as VPNs, on independent systems. This is advised for scenarios where very high protection needs exist.
+
 ---
 
 DECK INFO
