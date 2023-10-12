@@ -856,6 +856,28 @@ A:: You can control local traffic on front systems by ensuring that requests to 
 Q:: What is the recommended security measure for frontends with dedicated and manageable user groups?  
 A:: For frontends with dedicated and manageable user groups, it is recommended to use network encryption, such as VPNs, on independent systems. This is advised for scenarios where very high protection needs exist.
 
+#### Chapter 3 - Example Attack Scenarios
+
+Q:: What type of attack is demonstrated in this scenario?
+
+Port scan internal servers – If the network architecture is unsegmented, attackers can map out internal networks and determine if ports are open or closed on internal servers from connection results or elapsed time to connect or reject SSRF payload connections.  
+A:: A10 Server Side Request Forgery (SSRF)
+
+Q:: Can you identify the type of attack happening here?
+
+Sensitive data exposure – Attackers can access local files or internal services to gain sensitive information such as `file:///etc/passwd` and `http://localhost:28017/`.  
+A:: A10 Server Side Request Forgery (SSRF)
+
+Q:: What kind of attack is described in this situation?
+
+Access metadata storage of cloud services – Most cloud providers have metadata storage such as `http://169.254.169.254/`. An attacker can read the metadata to gain sensitive information.  
+A:: A10 Server Side Request Forgery (SSRF)
+
+Q:: What type of attack is being demonstrated here?
+
+Compromise internal services – The attacker can abuse internal services to conduct further attacks such as Remote Code Execution (RCE) or Denial of Service (DoS).  
+A:: A10 Server Side Request Forgery (SSRF)
+
 ---
 
 DECK INFO
