@@ -272,67 +272,63 @@ A:: A02 Cryptographic Failures
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Injection" category about?  
-A:: **A03:2021 - Injection**: Injection vulnerabilities have moved down to the third position. It includes various forms of injection attacks, such as SQL injection, and now also includes Cross-Site Scripting (XSS).
+Q:: What is "Injection" in OWASP Top 10 2021?  
+A:: Vulnerabilities allowing attackers to insert malicious code into applications.  
+Example: SQL injection attack manipulating a database query.
 
-Q:: What makes an application vulnerable to injection attacks?  
-A:: An application is vulnerable to injection attacks when:
+Q:: What makes an application vulnerable to injection?  
+A:: Improper handling of user-supplied data in queries or commands.  
+Example: Directly concatenating user input into an SQL query.
 
-- User-supplied data is not properly validated, filtered, or sanitized.
+Q:: Why is data validation crucial?  
+A:: To prevent malicious input from being executed as code.  
+Example: Sanitizing user input to remove potential SQL commands.
 
-- Dynamic queries or non-parameterized calls are used without context-aware escaping.
+Q:: What are parameterized queries?  
+A:: Queries separating data from SQL commands, preventing injection.  
+Example: Using prepared statements in Java with JDBC.
 
-- Hostile data is used in ORM search parameters.
+Q:: How can ORM be exploited?  
+A:: By manipulating search parameters to access unauthorized data.  
+Example: Modifying an ORM query to bypass filters and access all records.
 
-- Hostile data is directly used or concatenated in SQL queries, commands, or stored procedures.
+Q:: What's the risk of concatenating user input in queries?  
+A:: It can allow attackers to modify or inject malicious commands.  
+Example: User input changing "WHERE id = " + userId to "WHERE id = 1 OR 1=1".
 
-Q:: What is the risk of not validating user-supplied data in an application?  
-A:: Not validating user-supplied data can lead to injection vulnerabilities, where attackers can manipulate input to execute malicious code.
+Q:: What are common types of injection attacks?  
+A:: SQL, NoSQL, OS command, LDAP, and Expression Language injection.  
+Example: OS command injection in a file upload feature.
 
-Q:: Why is it important to use parameterized calls and context-aware escaping?  
-A:: Parameterized calls and context-aware escaping help prevent injection vulnerabilities by ensuring that input data is treated as data, not code.
-
-Q:: How can attackers exploit object-relational mapping (ORM) search parameters?  
-A:: Attackers can exploit ORM search parameters by using hostile data to extract additional, sensitive records from the database.
-
-Q:: What is the danger of directly using or concatenating hostile data in dynamic queries or commands?  
-A:: Directly using or concatenating hostile data in dynamic queries, commands, or stored procedures can lead to injection attacks, where malicious code is injected and executed.
-
-Q:: What are some common examples of injection attacks?  
-A:: Common examples of injection attacks include SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection
-
-Q:: What is the most effective method to detect injection vulnerabilities in software applications?  
-A:: The best method for detecting injection vulnerabilities in software applications is source code review.
-
-Q:: In the context of application security, how can organizations incorporate automated testing?  
-A:: Organizations can incorporate automated testing by including static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline.
-
-Q:: Which types of data inputs should be subject to automated testing to identify injection flaws?  
-A:: The types of data inputs that should be subject to automated testing to identify injection flaws include, parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs.
+Q:: How to best detect injection vulnerabilities?  
+A:: Through source code review and automated security testing.  
+Example: Using SAST tools to analyze code for potential SQL injection points.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What is the preferred option to prevent injection attacks?  
-A:: The preferred option is to use a safe API that avoids using the interpreter entirely, provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs).
+Q:: What's the best way to prevent injection attacks?  
+A:: Use safe APIs or ORMs that avoid interpreters entirely.  
+Example: Using Hibernate ORM instead of writing raw SQL queries.
 
-> **Note:** Even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().
+Q:: Can stored procedures be vulnerable to injection?  
+A:: Yes, if they concatenate queries and data unsafely.  
+Example: Using EXECUTE IMMEDIATE with user input in PL/SQL.
 
-Q:: Can stored procedures introduce SQL injection vulnerabilities?  
-A:: Yes, even when parameterized, stored procedures can introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().
+Q:: What's the role of input validation in preventing injection?  
+A:: It helps ensure input matches expected patterns, but isn't a complete defense.  
+Example: Validating that a username contains only alphanumeric characters.
 
-Q:: What is the role of positive server-side input validation in preventing injection?  
-A:: Positive server-side input validation helps prevent injection by ensuring that input adheres to expected patterns and formats. However, it's not a complete defense in cases where special characters are required.
+Q:: How to handle special characters in dynamic queries?  
+A:: Escape them using the specific syntax for that interpreter.  
+Example: Using MySQLi's real_escape_string() for MySQL queries in PHP.
 
-Q:: How can special characters in residual dynamic queries be handled to prevent injection?  
-A:: Special characters in residual dynamic queries should be escaped using the specific escape syntax for that interpreter.
+Q:: Why are user-supplied structure names dangerous in SQL?  
+A:: They can't be safely escaped, allowing potential schema manipulation.  
+Example: Allowing users to specify table names in a custom report builder.
 
-> **Note:** SQL structures such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software.
-
-Q:: What is the limitation of escaping user-supplied structure names in SQL queries?  
-A:: User-supplied structure names, such as table names or column names, cannot be escaped, making them dangerous if directly used in queries. This is a common issue in report-writing software.
-
-Q:: How can mass disclosure of records in case of SQL injection be prevented?  
-A:: To prevent mass disclosure of records in case of SQL injection, use controls like LIMIT and other SQL controls within queries.
+Q:: How to prevent mass record disclosure in SQL injection?  
+A:: Use SQL controls like LIMIT to restrict query results.  
+Example: Adding "LIMIT 1000" to queries to cap the number of returned records.
 
 #### Chapter 3 - Example Attack Scenarios
 
@@ -368,64 +364,75 @@ A:: A03 Injection
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Insecure Design" category about?  
-A:: **A04:2021 - Insecure Design**: This is a new category for 2021, emphasizing the importance of secure design patterns, threat modeling, and reference architectures. Insecure design flaws cannot be fixed by perfect implementation alone.
+Q:: What is "Insecure Design" in OWASP Top 10 2021?  
+A:: Security flaws resulting from poor design choices, not just implementation.  
+Example: A system allowing unlimited login attempts without any lockout mechanism.
 
-Q:: How is insecure design different from insecure implementation?  
-A:: Insecure design and insecure implementation are different. Insecure design relates to weaknesses in control design, while insecure implementation refers to defects in the actual coding. They have different root causes and require different remediation approaches.
+Q:: How does insecure design differ from insecure implementation?  
+A:: Design flaws are in the system's architecture; implementation flaws are in the code.  
+Example: Designing a system without access controls vs. incorrectly coding access checks.
 
-Q:: Can a secure design have implementation defects that lead to vulnerabilities?  
-A:: Yes, a secure design can still have implementation defects that may result in vulnerabilities. However, an insecure design, by definition, lacks the necessary security controls to defend against specific attacks and cannot be fixed by perfect implementation.
+Q:: Can secure designs have vulnerabilities?  
+A:: Yes, through implementation errors, but they're easier to fix than design flaws.  
+Example: A well-designed authentication system with a bug in password hashing.
 
-Q:: What contributes to insecure design in software development?  
-A:: One factor contributing to insecure design is the lack of business risk profiling in the software or system being developed, leading to a failure to determine the required level of security design.
+Q:: What contributes to insecure design?  
+A:: Lack of risk assessment and security planning in early development stages.  
+Example: Not considering potential data breaches when designing a user database.
 
-Q:: What should be considered during requirements and resource management in secure design?  
-A:: During requirements and resource management, collect and negotiate business requirements, protection requirements (confidentiality, integrity, availability, authenticity), and technical requirements. Plan and budget for all design, build, testing, and operation activities, including security.
+Q:: What's crucial in secure design requirements?  
+A:: Balancing business needs with security requirements from the start.  
+Example: Planning for both user-friendly features and robust data encryption.
 
-Q:: What is the importance of secure design in preventing known attack methods?  
-A:: Secure design constantly evaluates threats and ensures that code is robustly designed and tested to prevent known attack methods. It is a proactive approach to security.
+Q:: Why is threat modeling important in secure design?  
+A:: It helps identify potential attacks and necessary defenses early.  
+Example: Modeling threats to an e-commerce site to design appropriate security measures.
 
-Q:: How can threat modeling be integrated into the software development process?  
-A:: Threat modeling can be integrated into refinement sessions or similar activities during user story development. It involves analyzing data flows, access control, security controls, and assumptions related to expected and failure flows.
-
-Q:: Why is it important to involve security specialists throughout the software development lifecycle?  
-A:: Involving security specialists from the beginning of a software project and throughout its lifecycle is crucial to ensure secure development. It helps identify and address security concerns early.
-
-Q:: What is the OWASP Software Assurance Maturity Model (SAMM), and how can it be used?  
-A:: The OWASP SAMM is a model that helps structure secure software development efforts. It can be leveraged to guide and improve the security practices and maturity of a software development organization.
-
-Q:: Is secure design a one-time addition, or is it an ongoing practice in software development?  
-A:: Secure design is not a one-time addition but a culture and methodology that should be integrated into the entire software development lifecycle. It involves continuous evaluation of threats and proactive security measures.
+Q:: How can security be integrated throughout development?  
+A:: By involving security experts from project inception to completion.  
+Example: Having security reviews at each stage of an agile development process.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What is the role of AppSec professionals in preventing insecure design?  
-A:: AppSec professionals can help evaluate and design security and privacy-related controls as part of a secure development lifecycle.
+Q:: What is "Insecure Design" in OWASP Top 10 2021?  
+A:: A category of security risks resulting from missing or ineffective security controls in software design.  
+Example: A banking app allowing unlimited login attempts without lockouts.
 
-Q:: How can a library of secure design patterns be useful in preventing insecure design?  
-A:: A library of secure design patterns provides ready-to-use components that adhere to secure design principles, reducing the risk of insecure design choices.
+Q:: How can AppSec professionals help prevent insecure design?  
+A:: By evaluating and designing security controls as part of the secure development lifecycle.  
+Example: Reviewing authentication mechanisms before implementation.
 
-Q:: What is threat modeling, and how can it be used to prevent insecure design?  
-A:: Threat modeling involves identifying and evaluating potential threats to critical aspects of the application, including authentication, access control, business logic, and key flows, helping prevent insecure design decisions.
+Q:: What is a secure design pattern library?  
+A:: A collection of pre-approved, secure software components that developers can use.  
+Example: A library containing a properly implemented password hashing function.
 
-Q:: How can security language and controls be integrated into user stories?  
-A:: Integrating security language and controls into user stories ensures that security considerations are part of the development process from the beginning.
+Q:: How does threat modeling contribute to secure design?  
+A:: By identifying potential threats to critical aspects of the application early in development.  
+Example: Analyzing possible attacks on a new payment processing feature.
 
-Q:: Why is it important to integrate plausibility checks at each tier of the application?  
-A:: Integrating plausibility checks at each tier ensures that inputs and processes are checked for validity and correctness, reducing the risk of insecure design.
+Q:: Why integrate security into user stories?  
+A:: To ensure security is considered from the beginning of the development process.  
+Example: Including "verify user identity" in a story about account creation.
 
-Q:: What is the purpose of unit and integration tests in preventing insecure design?  
-A:: Unit and integration tests validate that all critical flows in the application are resistant to the threat model, ensuring that insecure design choices are not present.
+Q:: What are plausibility checks in application design?  
+A:: Validations at each tier of the app to ensure inputs and processes are correct and secure.  
+Example: Checking if a user's age input is within a reasonable range.
 
-Q:: How can tier layers be segregated on the system and network layers?  
-A:: Tier layers can be segregated based on their exposure and protection needs to prevent insecure design.
+Q:: How do unit and integration tests prevent insecure design?  
+A:: By validating that critical flows resist identified threats and meet security requirements.  
+Example: Testing if the password reset function is vulnerable to enumeration attacks.
 
-Q:: Why is tenant segregation important in preventing insecure design?  
-A:: Tenant segregation ensures that tenants (e.g., different customers or users) are kept separate throughout all tiers of the application, preventing insecure design.
+Q:: What is tier segregation in system design?  
+A:: Separating application layers based on their exposure and protection needs.  
+Example: Isolating the database server from direct internet access.
 
-Q:: How can resource consumption be limited to prevent insecure design?  
-A:: Resource consumption can be limited by user or service to prevent excessive resource usage that could lead to insecure design.
+Q:: Why is tenant segregation important in multi-tenant applications?  
+A:: To prevent unauthorized access or data leakage between different customers or user groups.  
+Example: Ensuring Company A cannot access Company B's data in a cloud service.
+
+Q:: How can limiting resource consumption improve security?  
+A:: By preventing denial of service and ensuring fair usage across users or services.  
+Example: Setting a maximum number of API calls per user per minute.
 
 #### Chapter 3 - Example Attack Scenarios
 
@@ -450,76 +457,91 @@ A:: A04 Insecure Design
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Security Misconfiguration" category about?  
-A:: **A05:2021 - Security Misconfiguration**: This category has moved up from its previous ranking. It addresses issues related to misconfigurations in applications, which can lead to vulnerabilities. It now includes XML External Entities (XXE).
+Q:: What is "Security Misconfiguration" in OWASP Top 10 2021?  
+A:: Vulnerabilities resulting from improper configuration of application components.  
+Example: Using default credentials on a production database server.
 
-Q:: What makes an application vulnerable to security misconfigurations?  
-A:: An application is vulnerable to security misconfigurations if:
+Q:: Why is security hardening important across the application stack?  
+A:: To reduce vulnerabilities by properly configuring all components of the application.  
+Example: Disabling unnecessary services on a web server.
 
-- Appropriate security hardening is missing across any part of the application stack.
+Q:: How can cloud service misconfigurations lead to vulnerabilities?  
+A:: Improper permission settings can allow unauthorized access to resources.  
+Example: Accidentally making an S3 bucket publicly readable.
 
-- Permissions on cloud services are improperly configured.
+Q:: Why should unnecessary features be disabled?  
+A:: To reduce the attack surface and minimize potential vulnerabilities.  
+Example: Disabling unused modules in a content management system.
 
-- Unnecessary features are enabled or installed.
+Q:: What's the risk of keeping default accounts and passwords?  
+A:: They provide an easy entry point for attackers to gain unauthorized access.  
+Example: Not changing the default 'admin' password on a router.
 
-- Default accounts and their passwords remain enabled and unchanged.
+Q:: How can overly informative error messages be a security risk?  
+A:: They may reveal sensitive information that aids attackers in exploiting vulnerabilities.  
+Example: A database error exposing table names and query structure.
 
-- Error handling reveals overly informative error messages.
+Q:: Why is it crucial to enable the latest security features?  
+A:: To protect against newly discovered threats and vulnerabilities.  
+Example: Enabling HTTP Strict Transport Security (HSTS) on a web server.
 
-- Latest security features are disabled for upgraded systems.
+Q:: What components need secure configuration in an application?  
+A:: All components including servers, frameworks, libraries, and databases.  
+Example: Configuring proper access controls in a MySQL database.
 
-- Security settings in application servers, frameworks, libraries, databases, etc., are not configured securely.
+Q:: Why are security headers important in web applications?  
+A:: They provide browser-level protection against various attacks.  
+Example: Using Content Security Policy to prevent XSS attacks.
 
-- Security headers or directives are missing or not set to secure values.
+Q:: How does keeping software up-to-date improve security?  
+A:: It patches known vulnerabilities and adds new security features.  
+Example: Updating a WordPress installation to fix a known SQL injection flaw.
 
-- The software is out of date or vulnerable. (see [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)).
-
-Q:: What is the risk of missing security hardening across the application stack?  
-A:: Missing security hardening across the application stack can lead to vulnerabilities and exploitation by attackers.
-
-Q:: Why should unnecessary features not be enabled or installed?  
-A:: Enabling unnecessary features can increase the attack surface and provide opportunities for attackers to exploit vulnerabilities.
-
-Q:: What is the danger of keeping default accounts and passwords enabled and unchanged?  
-A:: Keeping default accounts and passwords unchanged can lead to unauthorized access to the system.
-
-Q:: What is the risk of revealing stack traces or overly informative error messages to users?  
-A:: Revealing stack traces or overly informative error messages can provide valuable information to attackers and aid in exploiting vulnerabilities.
-
-Q:: Why is it important to configure the latest security features securely for upgraded systems?  
-A:: Configuring the latest security features securely is crucial to ensure that upgraded systems remain protected against new threats.
-
-Q:: What components should have their security settings configured to secure values?  
-A:: Security settings in application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, and other components should be configured to secure values.
-
-Q:: Why should security headers or directives be set to secure values?  
-A:: Setting security headers or directives to secure values helps protect the application against various security threats.
-
-Q:: What should be considered in terms of software to avoid vulnerabilities?  
-A:: To avoid vulnerabilities, it is essential to ensure that the software is up-to-date and not vulnerable to known security issues, as highlighted in [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/).
-
-Q:: Why is a concerted, repeatable application security configuration process important?  
-A:: A concerted, repeatable application security configuration process is important because it reduces the risk of vulnerabilities by ensuring consistent and secure settings across the application and its components, helping to protect against potential threats.
+Q:: What is a repeatable security configuration process?  
+A:: A standardized approach to consistently apply secure settings across all systems.  
+Example: Using automated scripts to apply security patches across all servers.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What is the role of a repeatable hardening process in preventing security misconfigurations?  
-A:: A repeatable hardening process makes it fast and easy to deploy secure environments and ensures that development, QA, and production environments are configured identically.
+Q:: What is a repeatable hardening process?  
+A:: A standardized method to quickly deploy secure environments across development, QA, and production.  
+Example: Using automated scripts to apply security settings on all new servers.
 
-Q:: Why is it important to have a minimal platform without unnecessary features and components?  
-A:: A minimal platform reduces the attack surface by eliminating unused features and frameworks, preventing security misconfigurations.
+Q:: Why is a minimal platform important for security?  
+A:: It reduces the attack surface by eliminating unnecessary features and components.  
+Example: Disabling unused services like FTP on a web server.
 
-Q:: What is the purpose of reviewing and updating configurations as part of the patch management process?  
-A:: Reviewing and updating configurations as part of patch management ensures that security notes, updates, and patches are applied to maintain a secure environment.
+Q:: How does patch management relate to security configuration?  
+A:: It ensures that security updates and patches are regularly applied to maintain a secure environment.  
+Example: Promptly applying a security patch to fix a known vulnerability in a web framework.
 
-Q:: How can a segmented application architecture prevent security misconfigurations?  
-A:: A segmented application architecture provides secure separation between components or tenants using techniques like segmentation, containerization, or cloud security groups (ACLs).
+Q:: What is a segmented application architecture?  
+A:: A design that separates components or tenants to limit the impact of potential breaches.  
+Example: Using separate databases for different customer groups in a SaaS application.
 
-Q:: What is the significance of sending security directives to clients, such as Security Headers?  
-A:: Sending security directives to clients via headers helps ensure that client-side security settings align with the desired security posture.
+Q:: Why are security headers important in web applications?  
+A:: They instruct the client's browser to enable specific security controls.  
+Example: Using the X-Frame-Options header to prevent clickjacking attacks.
 
-Q:: How can the effectiveness of configurations and settings be verified in all environments?  
-A:: An automated process should be used to verify the effectiveness of configurations and settings in all environments to prevent security misconfigurations.
+Q:: How can configuration effectiveness be verified across environments?  
+A:: Through automated processes that check and validate security settings in all environments.  
+Example: Running automated security scans nightly to detect misconfigurations.
+
+Q:: What's the benefit of consistent configurations across environments?  
+A:: It reduces the risk of security issues when moving from development to production.  
+Example: Using the same firewall rules in development and production environments.
+
+Q:: How can containerization improve security?  
+A:: By isolating applications and their dependencies, reducing the impact of potential breaches.  
+Example: Running different microservices in separate Docker containers.
+
+Q:: Why is it important to review configurations regularly?  
+A:: To ensure they remain secure as the application and its environment evolve.  
+Example: Checking that database access permissions are still appropriate after a system upgrade.
+
+Q:: What role do cloud security groups play in preventing misconfigurations?  
+A:: They provide a way to control network access to cloud resources, enhancing security.  
+Example: Using AWS security groups to limit database access to specific application servers.
 
 #### Chapter 3 - Example Attack Scenarios
 
@@ -549,40 +571,51 @@ A:: A05 Security Misconfiguration
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Vulnerable and Outdated Components" category about?  
-A:: **A06:2021 - Vulnerable and Outdated Components**: This category, previously titled "Using Components with Known Vulnerabilities," has moved up in the ranking. It focuses on the risks associated with outdated and vulnerable software components.
+Q:: What are "Vulnerable and Outdated Components" in OWASP Top 10 2021?  
+A:: Software elements with known security flaws or lacking necessary updates.  
+Example: Using an old version of jQuery with a known XSS vulnerability.
 
-Q:: Why is it crucial to know the versions of all components you use in your software?  
-A:: It's crucial to know the versions of all components to avoid vulnerabilities and ensure software security.
+Q:: Why is it important to track component versions in your software?  
+A:: To identify and address potential vulnerabilities quickly.  
+Example: Maintaining a list of all npm packages and their versions used in a project.
 
-Q:: What can happen if your software is using vulnerable, unsupported, or outdated components?  
-A:: Using such components can lead to security risks and potential exploitation of vulnerabilities.
+Q:: What risks come with using unsupported or outdated components?  
+A:: Increased vulnerability to known exploits and security breaches.  
+Example: Running a website on an unsupported version of PHP.
 
-Q:: How can you proactively address vulnerabilities related to the components you use in your software?  
-A:: Regularly scanning for vulnerabilities and subscribing to security bulletins is a proactive approach.
+Q:: How can you stay informed about component vulnerabilities?  
+A:: By regularly scanning for vulnerabilities and subscribing to security bulletins.  
+Example: Using tools like OWASP Dependency-Check in your CI/CD pipeline.
 
-Q:: What are the consequences of not fixing or upgrading underlying platform, frameworks, and dependencies in a timely manner?  
-A:: Delaying these updates can expose your organization to unnecessary risks from known vulnerabilities.
+Q:: Why is timely updating of platforms and dependencies crucial?  
+A:: To protect against known vulnerabilities and reduce security risks.  
+Example: Promptly applying security patches to your web server software.
 
-Q:: How can software developers contribute to mitigating risks related to components in software?  
-A:: Software developers can contribute by testing the compatibility of updated, upgraded, or patched libraries.
+Q:: How can developers ensure component security when updating?  
+A:: By testing the compatibility and security of updated libraries.  
+Example: Running a full test suite after updating a critical framework.
 
-Q:: In addition to updating components, what else can help secure software components?  
-A:: Securing the components' configurations is also important to prevent security misconfigurations. (see [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)).
+Q:: Why is proper configuration important for component security?  
+A:: To prevent misconfigurations that could introduce vulnerabilities.  
+Example: Ensuring proper access controls are set on a database component.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What should be removed as part of the patch management process to prevent vulnerabilities?  
-A:: As part of the patch management process, remove unused dependencies, unnecessary features, components, files, and documentation to reduce the attack surface.
+Q:: What should be removed during patch management?  
+A:: Unused dependencies, features, components, files, and documentation.  
+Example: Removing unused modules from a content management system.
 
-Q:: How can the versions of client-side and server-side components be continuously inventoried?  
-A:: Continuously inventory component versions and dependencies using tools like versions, OWASP Dependency Check, retire.js, etc. Monitor sources like CVE and NVD for vulnerabilities and use software composition analysis tools for automation.
+Q:: How can component versions be continuously inventoried?  
+A:: By using automated tools to track both client-side and server-side components.  
+Example: Implementing a software composition analysis tool in your development process.
 
-Q:: What is the importance of obtaining components from official sources over secure links?  
-A:: Obtaining components from official sources over secure links reduces the risk of including modified, malicious components and enhances software and data integrity. (See [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)).
+Q:: Why obtain components from official sources over secure links?  
+A:: To reduce the risk of including modified or malicious components.  
+Example: Downloading Node.js packages from the official npm registry over HTTPS.
 
-Q:: How can libraries and components that are unmaintained or lack security patches be handled?  
-A:: Monitor for unmaintained libraries and components and consider deploying virtual patches to monitor, detect, or protect against discovered issues when patching is not possible.
+Q:: How to handle unmaintained components lacking security patches?  
+A:: By monitoring them closely and considering virtual patching when updates aren't possible.  
+Example: Using a Web Application Firewall to mitigate a vulnerability in a legacy library.
 
 #### Chapter 3 - Example Attack Scenarios
 
@@ -603,82 +636,95 @@ A:: A06 Vulnerable and Outdated Components
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Identification and Authentication Failures" category about?  
-A:: **A07:2021 - Identification and Authentication Failures**: This category, formerly known as "Broken Authentication," has slid down in ranking. It now includes CWEs related to identification failures and is influenced by the availability of standardized frameworks.
+Q:: What are "Identification and Authentication Failures" in OWASP Top 10 2021?  
+A:: Weaknesses in systems that verify user identity and manage user sessions.  
+Example: A website that doesn't lock accounts after multiple failed login attempts.
 
-Q:: Why is confirmation of the user's identity, authentication, and session management critical?  
-A:: Confirmation of the user's identity and proper authentication and session management are critical to protect against authentication-related attacks.
+Q:: Why is proper user authentication critical?  
+A:: To prevent unauthorized access and protect against identity-related attacks.  
+Example: Ensuring only authorized users can access sensitive financial data.
 
-Q:: What are some signs of authentication weaknesses in an application?  
-A:: Authentication weaknesses may be present if the application:
+Q:: What is credential stuffing?  
+A:: An attack using stolen username/password pairs to gain unauthorized access.  
+Example: Using leaked email/password combinations to try logging into various websites.
 
-- Permits automated attacks like credential stuffing.
+Q:: Why are weak passwords a security risk?  
+A:: They are easily guessable, making unauthorized access more likely.  
+Example: Using "password123" as an account password.
 
-- Allows brute force or other automated attacks.
+Q:: What's wrong with knowledge-based answers for password recovery?  
+A:: They can often be guessed or obtained through social engineering.  
+Example: Using "mother's maiden name" as a security question, which might be publicly available.
 
-- Permits the use of default, weak, or well-known passwords.
+Q:: Why is storing passwords in plain text dangerous?  
+A:: It allows anyone with database access to see users' passwords.  
+Example: Storing user passwords as clear text in a database file.
 
-- Uses ineffective credential recovery and forgot-password processes.
+Q:: What is multi-factor authentication (MFA)?  
+A:: A security system requiring two or more forms of identification to grant access.  
+Example: Requiring both a password and a fingerprint scan to log in.
 
-- Stores passwords in plain text, encrypted, or weakly hashed formats.
+Q:: Why shouldn't session IDs be exposed in URLs?  
+A:: It can lead to session hijacking and unauthorized access.  
+Example: Having a URL like "example.com/account?sessionid=1234", which can be easily copied.
 
-- Lacks or has ineffective multi-factor authentication.
+Q:: Why is session ID reuse after login risky?  
+A:: It can allow unauthorized users to take over authenticated sessions.  
+Example: Not generating a new session ID after a user logs in, potentially allowing old IDs to remain valid.
 
-- Exposes session identifiers in the URL.
+Q:: Why is proper session invalidation important?  
+A:: To prevent unauthorized access after a user logs out or is inactive.  
+Example: Ensuring a user can't access their account from an old browser tab after logging out on another device.
 
-- Reuses session identifiers after successful login.
-
-- Fails to correctly invalidate session IDs.
-
-Q:: What is credential stuffing, and why is it a concern?  
-A:: Credential stuffing is when an attacker uses a list of valid usernames and passwords obtained from breaches to gain unauthorized access. It's a concern because it exploits weak authentication systems.
-
-Q:: What is the risk associated with permitting brute force attacks?  
-A:: Permitting brute force attacks poses a risk because attackers can systematically try various combinations of usernames and passwords until they find the correct combination to gain unauthorized access.
-
-Q:: Why are default, weak, or well-known passwords a security risk?  
-A:: Default, weak, or well-known passwords pose a security risk because they are easily guessable and can be exploited by attackers.
-
-Q:: Why are "knowledge-based answers" for credential recovery not safe?  
-A:: "Knowledge-based answers" for credential recovery are not safe because they can often be guessed or obtained through social engineering.
-
-Q:: What are some issues with storing passwords in plain text, encrypted, or weakly hashed formats?  
-A:: Storing passwords in such formats can lead to security vulnerabilities, as attackers can easily obtain and crack the passwords.
-
-Q:: Why is multi-factor authentication important?  
-A:: Multi-factor authentication adds an extra layer of security by requiring users to provide two or more forms of authentication, making it more challenging for attackers to gain access.
-
-Q:: What are the risks associated with exposing session identifiers in the URL?  
-A:: Exposing session identifiers in the URL can lead to session hijacking and unauthorized access.
-
-Q:: How can reusing session identifiers after a successful login pose a security risk?  
-A:: Reusing session identifiers after a successful login is risky because it can allow unauthorized users to continue or take over authenticated sessions, potentially compromising security.
-
-Q:: Why is it essential to correctly invalidate session IDs?  
-A:: Correctly invalidating session IDs ensures that user sessions or authentication tokens are terminated during logout or periods of inactivity, preventing unauthorized access.
+Q:: What is a brute force attack?  
+A:: Systematically trying many passwords to gain unauthorized access.  
+Example: A program that tries every possible 4-digit PIN on a locked phone.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What is the role of multi-factor authentication in preventing identification and authentication failures?  
-A:: Multi-factor authentication should be implemented where possible to prevent automated credential stuffing, brute force, and stolen credential reuse attacks.
+Q:: How does multi-factor authentication (MFA) enhance security?  
+A:: By requiring multiple forms of verification, making unauthorized access more difficult.  
+Example: Using a password and a fingerprint scan to log into a banking app.
 
-Q:: What should be avoided when shipping or deploying an application to prevent identification and authentication failures?  
-A:: Do not ship or deploy with any default credentials, especially for admin users, to prevent unauthorized access.
+Q:: Why should default credentials be avoided in deployments?  
+A:: To prevent easy unauthorized access to newly deployed systems.  
+Example: Changing the default 'admin/admin' credentials on a new router before use.
 
-Q:: How can weak password checks be implemented to prevent identification and authentication failures?  
-A:: Implement weak password checks, such as testing new or changed passwords against the top 10,000 worst passwords list, to ensure stronger password choices.
+Q:: How can weak password checks improve security?  
+A:: By preventing users from choosing easily guessable passwords.  
+Example: Rejecting '123456' as a password during account creation.
 
-Q:: What guidelines can be followed for password length, complexity, and rotation policies?  
-A:: Align password length, complexity, and rotation policies with NIST 800-63b's guidelines in section 5.1.1 for Memorized Secrets or other modern, evidence-based password policies.
+Q:: What are modern password policy recommendations?  
+A:: Focusing on length over complexity and avoiding frequent mandatory changes.  
+Example: Encouraging passphrases like "correct-horse-battery-staple" instead of "P@ssw0rd!".
 
-Q:: How can account enumeration attacks be prevented during registration and credential recovery?  
-A:: Harden registration, credential recovery, and API pathways against account enumeration attacks by using the same messages for all outcomes.
+Q:: How can account enumeration attacks be prevented?  
+A:: By providing consistent responses regardless of whether an account exists.  
+Example: Showing "If an account exists, a reset email has been sent" for all reset attempts.
 
-Q:: Why is it important to limit or increasingly delay failed login attempts?  
-A:: Limit or increasingly delay failed login attempts to prevent credential stuffing, brute force, or other attacks. However, ensure this does not create a denial of service scenario.
+Q:: Why limit or delay failed login attempts?  
+A:: To prevent brute force attacks without causing denial of service.  
+Example: Implementing a 30-second delay after 5 failed login attempts.
 
-Q:: What are the characteristics of a secure session manager for preventing identification and authentication failures?  
-A:: Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. The session identifier should not be in the URL, be securely stored, and invalidated after logout, idle, and absolute timeouts.
+Q:: What makes a session manager secure?  
+A:: Generating random, high-entropy session IDs and properly managing their lifecycle.  
+Example: Creating a new session ID after login and invalidating it after 30 minutes of inactivity.
+
+Q:: Why shouldn't session IDs be included in URLs?  
+A:: To prevent session hijacking through URL sharing or logging.  
+Example: Using cookies instead of URLs to store session information.
+
+Q:: How can password strength be effectively measured?  
+A:: By comparing against lists of common passwords and using entropy calculations.  
+Example: Using a password strength meter that checks against a database of breached passwords.
+
+Q:: What's the importance of secure credential recovery?  
+A:: To prevent unauthorized access through weak password reset mechanisms.  
+Example: Sending a time-limited reset link to a pre-registered email address instead of asking security questions.
+
+Q:: How can API security be enhanced for authentication?  
+A:: By implementing rate limiting and consistent error responses.  
+Example: Limiting login API calls to 10 per minute per IP address.
 
 #### Chapter 3 - Example Attack Scenarios
 
@@ -703,46 +749,51 @@ A:: A07 Identification and Authentication Failures
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Software and Data Integrity Failures" category about?  
-A:: **A08:2021 - Software and Data Integrity Failures**: This is a new category highlighting issues related to assumptions about software updates, critical data, and CI/CD pipelines without proper verification. It includes Insecure Deserialization from the previous edition.
+Q:: What are "Software and Data Integrity Failures" in OWASP Top 10 2021?  
+A:: Issues related to code and data that can be tampered with due to insufficient verification.  
+Example: An application accepting software updates without verifying their source.
 
-Q:: How can relying on plugins, libraries, or modules from untrusted sources impact software integrity?  
-A:: Relying on plugins, libraries, or modules from untrusted sources can impact software integrity by introducing potential security vulnerabilities, malicious code, or system compromise into the application.
+Q:: How can untrusted libraries compromise software integrity?  
+A:: By introducing vulnerabilities or malicious code into the application.  
+Example: Using a compromised npm package that steals user data.
 
-Q:: What is the potential risk associated with an insecure CI/CD pipeline?  
-A:: An insecure CI/CD pipeline can introduce the potential for unauthorized access, the injection of malicious code, or compromise of the system during the software development and deployment process.
+Q:: What risks do insecure CI/CD pipelines pose?  
+A:: They can allow unauthorized code changes or malicious injections during deployment.  
+Example: An attacker accessing an unsecured Jenkins server to inject malware into builds.
 
-Q:: What security concern is raised by auto-update functionality in applications?  
-A:: Auto-update functionality in applications can be a security concern when updates are downloaded and applied without sufficient integrity verification. Attackers may exploit this to distribute and run their own malicious updates on all installations.
+Q:: Why is auto-update functionality a potential security risk?  
+A:: It may apply unverified updates, potentially distributing malware.  
+Example: A fake update server tricking applications into installing malicious code.
 
-Q:: What is the concept of insecure deserialization, and why is it a vulnerability?  
-A:: Insecure deserialization refers to the process of decoding or deserializing data from a serialized format. It becomes a vulnerability when an attacker can view and modify the serialized data, potentially leading to security issues.
-
-Q:: How can organizations protect against software and data integrity failures?  
-A:: Organizations can protect against software and data integrity failures by carefully vetting and verifying the sources of plugins, libraries, and modules, implementing secure CI/CD pipelines, conducting integrity verification for updates, and addressing insecure deserialization vulnerabilities.
-
-Q:: How can organizations assess and mitigate the risks associated with insecure deserialization?  
-A:: Organizations can assess and mitigate the risks of insecure deserialization by implementing input validation, using safe deserialization methods, and staying informed about potential vulnerabilities in the deserialization process.
+Q:: What is insecure deserialization?  
+A:: Converting serialized data to objects without proper security checks.  
+Example: A Java application deserializing user-supplied data without validation, allowing code execution.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: How can digital signatures or similar mechanisms be used to prevent software and data integrity failures?  
-A:: Digital signatures or similar mechanisms can be used to verify that the software or data is from the expected source and has not been altered, ensuring integrity.
+Q:: How can digital signatures prevent integrity failures?  
+A:: By verifying the authenticity and integrity of software or data.  
+Example: Verifying a downloaded software package's GPG signature before installation.
 
-Q:: Why is it important to ensure that libraries and dependencies are consuming trusted repositories?  
-A:: Ensuring that libraries and dependencies use trusted repositories reduces the risk of including compromised or malicious components in your software.
+Q:: Why use trusted repositories for dependencies?  
+A:: To reduce the risk of including compromised components in your software.  
+Example: Using official Maven repositories instead of third-party mirrors for Java dependencies.
 
-Q:: How can software supply chain security tools like OWASP Dependency Check or OWASP CycloneDX be used to prevent integrity failures?  
-A:: These tools can be used to verify that components do not contain known vulnerabilities, enhancing the integrity of your software.
+Q:: How do software supply chain security tools help?  
+A:: They check components for known vulnerabilities, enhancing software integrity.  
+Example: Using OWASP Dependency-Check to scan libraries for CVEs before deployment.
 
-Q:: What is the purpose of a review process for code and configuration changes in preventing integrity failures?  
-A:: A review process minimizes the chance that malicious code or configuration could be introduced into your software pipeline, ensuring its integrity.
+Q:: Why is code review important for preventing integrity failures?  
+A:: It helps catch malicious code or configuration changes before they're deployed.  
+Example: A team member spotting a suspicious API call during a pull request review.
 
-Q:: What role does proper segregation, configuration, and access control play in preventing integrity failures in CI/CD pipelines?  
-A:: Proper segregation, configuration, and access control in CI/CD pipelines ensure the integrity of the code flowing through the build and deploy processes, preventing unauthorized changes.
+Q:: How does proper CI/CD pipeline security prevent integrity failures?  
+A:: By ensuring only authorized changes are made during the build and deploy process.  
+Example: Using separate build and production environments with strict access controls.
 
-Q:: How can the transmission of unsigned or unencrypted serialized data to untrusted clients be made more secure?  
-A:: To enhance security, unsigned or unencrypted serialized data should not be sent to untrusted clients without some form of integrity check or digital signature to detect tampering or replay.
+Q:: How can serialized data transmission be made more secure?  
+A:: By adding integrity checks or digital signatures to detect tampering.  
+Example: Using HMAC to sign JSON Web Tokens before sending them to clients.
 
 #### Chapter 3 - Example Attack Scenarios
 
