@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Regularly scanning for vulnerabilities and subscribing to security bulletins is
-a proactive approach.
+Regularly scanning for vulnerabilities and subscribing to security bulletins is a proactive approach.
 
 ========== Id ==========  
 122

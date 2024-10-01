@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-A library of secure design patterns provides ready-to-use components that adhere
-to secure design principles, reducing the risk of insecure design choices.
+A library of secure design patterns provides ready-to-use components that adhere to secure design principles, reducing the risk of insecure design choices.
 
 ========== Id ==========  
 87

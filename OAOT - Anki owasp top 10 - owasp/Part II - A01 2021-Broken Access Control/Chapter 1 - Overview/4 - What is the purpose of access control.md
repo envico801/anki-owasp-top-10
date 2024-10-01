@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Access control enforces policy to prevent users from acting outside their
-intended permissions. Failures can lead to unauthorized information disclosure,
-modification, or destruction of data, or performing unauthorized business
-functions.
+Access control enforces policy to prevent users from acting outside their intended permissions. Failures can lead to unauthorized information disclosure, modification, or destruction of data, or performing unauthorized business functions.
 
 ========== Id ==========  
 4

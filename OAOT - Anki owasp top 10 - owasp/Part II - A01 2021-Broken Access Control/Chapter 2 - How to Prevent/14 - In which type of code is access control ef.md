@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Access control is only effective in trusted server-side code or server-less API,
-where attackers cannot modify access control checks or metadata.
+Access control is only effective in trusted server-side code or server-less API, where attackers cannot modify access control checks or metadata.
 
 ========== Id ==========  
 14

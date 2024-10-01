@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Storing passwords in such formats can lead to security vulnerabilities, as
-attackers can easily obtain and crack the passwords.
+Storing passwords in such formats can lead to security vulnerabilities, as attackers can easily obtain and crack the passwords.
 
 ========== Id ==========  
 138

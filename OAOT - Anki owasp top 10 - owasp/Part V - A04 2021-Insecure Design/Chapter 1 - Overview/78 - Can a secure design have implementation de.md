@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Yes, a secure design can still have implementation defects that may result in
-vulnerabilities. However, an insecure design, by definition, lacks the necessary
-security controls to defend against specific attacks and cannot be fixed by
-perfect implementation.
+Yes, a secure design can still have implementation defects that may result in vulnerabilities. However, an insecure design, by definition, lacks the necessary security controls to defend against specific attacks and cannot be fixed by perfect implementation.
 
 ========== Id ==========  
 78

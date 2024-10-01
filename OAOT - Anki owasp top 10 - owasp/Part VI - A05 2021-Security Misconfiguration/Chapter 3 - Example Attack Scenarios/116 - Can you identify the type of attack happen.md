@@ -2,10 +2,7 @@
 
 ### Can you identify the type of attack happening here?
 
-Directory listing is not disabled on the server. An attacker discovers they can
-simply list directories. The attacker finds and downloads the compiled Java
-classes, which they decompile and reverse engineer to view the code. The
-attacker then finds a severe access control flaw in the application.  
+Directory listing is not disabled on the server. An attacker discovers they can simply list directories. The attacker finds and downloads the compiled Java classes, which they decompile and reverse engineer to view the code. The attacker then finds a severe access control flaw in the application.  
 
 ========== Answer ==========  
 

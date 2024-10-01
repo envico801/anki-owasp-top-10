@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-The Open Worldwide Application Security Project (OWASP) is an online community
-that produces freely-available articles, methodologies, documentation, tools,
-and technologies in the field of web application security. The OWASP provides
-free and open resources. It is led by a non-profit called The OWASP Foundation.
+The Open Worldwide Application Security Project (OWASP) is an online community that produces freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security. The OWASP provides free and open resources. It is led by a non-profit called The OWASP Foundation.
 
 ========== Id ==========  
 1

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Exposing session identifiers in the URL can lead to session hijacking and
-unauthorized access.
+Exposing session identifiers in the URL can lead to session hijacking and unauthorized access.
 
 ========== Id ==========  
 140

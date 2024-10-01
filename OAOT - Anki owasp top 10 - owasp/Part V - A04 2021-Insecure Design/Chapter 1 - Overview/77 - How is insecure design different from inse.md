@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Insecure design and insecure implementation are different. Insecure design
-relates to weaknesses in control design, while insecure implementation refers to
-defects in the actual coding. They have different root causes and require
-different remediation approaches.
+Insecure design and insecure implementation are different. Insecure design relates to weaknesses in control design, while insecure implementation refers to defects in the actual coding. They have different root causes and require different remediation approaches.
 
 ========== Id ==========  
 77

@@ -4,12 +4,9 @@
 
 ========== Answer ==========  
 
-Special characters in residual dynamic queries should be escaped using the
-specific escape syntax for that interpreter.
+Special characters in residual dynamic queries should be escaped using the specific escape syntax for that interpreter.
 
-> **Note:** SQL structures such as table names, column names, and so on cannot
-> be escaped, and thus user-supplied structure names are dangerous. This is a
-> common issue in report-writing software.
+> **Note:** SQL structures such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software.
 
 ========== Id ==========  
 71

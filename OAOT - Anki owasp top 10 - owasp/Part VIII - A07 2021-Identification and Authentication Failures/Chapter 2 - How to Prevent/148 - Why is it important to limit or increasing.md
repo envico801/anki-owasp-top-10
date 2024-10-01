@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Limit or increasingly delay failed login attempts to prevent credential
-stuffing, brute force, or other attacks. However, ensure this does not create a
-denial of service scenario.
+Limit or increasingly delay failed login attempts to prevent credential stuffing, brute force, or other attacks. However, ensure this does not create a denial of service scenario.
 
 ========== Id ==========  
 148

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Setting security headers or directives to secure values helps protect the
-application against various security threats.
+Setting security headers or directives to secure values helps protect the application against various security threats.
 
 ========== Id ==========  
 106

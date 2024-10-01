@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-A review process minimizes the chance that malicious code or configuration could
-be introduced into your software pipeline, ensuring its integrity.
+A review process minimizes the chance that malicious code or configuration could be introduced into your software pipeline, ensuring its integrity.
 
 ========== Id ==========  
 163

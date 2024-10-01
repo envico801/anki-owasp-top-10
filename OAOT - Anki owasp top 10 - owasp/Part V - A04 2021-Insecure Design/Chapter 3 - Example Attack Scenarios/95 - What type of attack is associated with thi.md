@@ -2,11 +2,7 @@
 
 ### What type of attack is associated with this situation?
 
-A credential recovery workflow might include “questions and answers,” which is
-prohibited by NIST 800-63b, the OWASP ASVS, and the OWASP Top 10. Questions and
-answers cannot be trusted as evidence of identity as more than one person can
-know the answers, which is why they are prohibited. Such code should be removed
-and replaced with a more secure design.  
+A credential recovery workflow might include “questions and answers,” which is prohibited by NIST 800-63b, the OWASP ASVS, and the OWASP Top 10. Questions and answers cannot be trusted as evidence of identity as more than one person can know the answers, which is why they are prohibited. Such code should be removed and replaced with a more secure design.  
 
 ========== Answer ==========  
 

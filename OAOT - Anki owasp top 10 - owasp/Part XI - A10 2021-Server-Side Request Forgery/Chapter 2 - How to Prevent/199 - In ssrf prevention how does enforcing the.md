@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-It restricts the outbound HTTP traffic to trusted and known destinations,
-thereby reducing SSRF attack surface.
+It restricts the outbound HTTP traffic to trusted and known destinations, thereby reducing SSRF attack surface.
 
 ========== Id ==========  
 199

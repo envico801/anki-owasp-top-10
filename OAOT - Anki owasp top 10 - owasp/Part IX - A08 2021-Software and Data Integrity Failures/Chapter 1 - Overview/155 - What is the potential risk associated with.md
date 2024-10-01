@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-An insecure CI/CD pipeline can introduce the potential for unauthorized access,
-the injection of malicious code, or compromise of the system during the software
-development and deployment process.
+An insecure CI/CD pipeline can introduce the potential for unauthorized access, the injection of malicious code, or compromise of the system during the software development and deployment process.
 
 ========== Id ==========  
 155

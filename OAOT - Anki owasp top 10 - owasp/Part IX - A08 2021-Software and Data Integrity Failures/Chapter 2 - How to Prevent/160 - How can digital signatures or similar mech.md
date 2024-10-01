@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Digital signatures or similar mechanisms can be used to verify that the software
-or data is from the expected source and has not been altered, ensuring
-integrity.
+Digital signatures or similar mechanisms can be used to verify that the software or data is from the expected source and has not been altered, ensuring integrity.
 
 ========== Id ==========  
 160

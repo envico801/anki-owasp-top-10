@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Tenant segregation ensures that tenants (e.g., different customers or users) are
-kept separate throughout all tiers of the application, preventing insecure
-design.
+Tenant segregation ensures that tenants (e.g., different customers or users) are kept separate throughout all tiers of the application, preventing insecure design.
 
 ========== Id ==========  
 93

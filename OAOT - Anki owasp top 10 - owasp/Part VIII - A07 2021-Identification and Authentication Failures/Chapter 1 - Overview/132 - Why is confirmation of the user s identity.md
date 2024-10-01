@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Confirmation of the user's identity and proper authentication and session
-management are critical to protect against authentication-related attacks.
+Confirmation of the user's identity and proper authentication and session management are critical to protect against authentication-related attacks.
 
 ========== Id ==========  
 132

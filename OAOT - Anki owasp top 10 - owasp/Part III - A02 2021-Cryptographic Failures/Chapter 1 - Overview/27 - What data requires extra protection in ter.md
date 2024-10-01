@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Data such as passwords, credit card numbers, health records, personal
-information, and business secrets require extra protection through cryptography,
-especially if they fall under privacy laws or regulations.
+Data such as passwords, credit card numbers, health records, personal information, and business secrets require extra protection through cryptography, especially if they fall under privacy laws or regulations.
 
 ========== Id ==========  
 27

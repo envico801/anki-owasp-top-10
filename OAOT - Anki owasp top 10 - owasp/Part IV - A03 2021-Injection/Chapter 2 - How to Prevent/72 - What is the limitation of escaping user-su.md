@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-User-supplied structure names, such as table names or column names, cannot be
-escaped, making them dangerous if directly used in queries. This is a common
-issue in report-writing software.
+User-supplied structure names, such as table names or column names, cannot be escaped, making them dangerous if directly used in queries. This is a common issue in report-writing software.
 
 ========== Id ==========  
 72

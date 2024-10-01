@@ -2,10 +2,7 @@
 
 ### What kind of attack is described in this situation?
 
-Application session timeouts aren't set correctly. A user uses a public computer
-to access an application. Instead of selecting "logout," the user simply closes
-the browser tab and walks away. An attacker uses the same browser an hour later,
-and the user is still authenticated.  
+Application session timeouts aren't set correctly. A user uses a public computer to access an application. Instead of selecting "logout," the user simply closes the browser tab and walks away. An attacker uses the same browser an hour later, and the user is still authenticated.  
 
 ========== Answer ==========  
 

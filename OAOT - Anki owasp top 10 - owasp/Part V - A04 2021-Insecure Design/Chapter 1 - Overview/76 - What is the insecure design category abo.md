@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A04:2021 - Insecure Design**: This is a new category for 2021, emphasizing the
-importance of secure design patterns, threat modeling, and reference
-architectures. Insecure design flaws cannot be fixed by perfect implementation
-alone.
+**A04:2021 - Insecure Design**: This is a new category for 2021, emphasizing the importance of secure design patterns, threat modeling, and reference architectures. Insecure design flaws cannot be fixed by perfect implementation alone.
 
 ========== Id ==========  
 76

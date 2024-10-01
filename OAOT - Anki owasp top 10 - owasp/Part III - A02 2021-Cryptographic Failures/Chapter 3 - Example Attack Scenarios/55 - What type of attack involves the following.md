@@ -2,10 +2,7 @@
 
 ### What type of attack involves the following situation?
 
-An application encrypts credit card numbers in a database using automatic
-database encryption. However, this data is automatically decrypted when
-retrieved, allowing a SQL injection flaw to retrieve credit card numbers in
-clear text.  
+An application encrypts credit card numbers in a database using automatic database encryption. However, this data is automatically decrypted when retrieved, allowing a SQL injection flaw to retrieve credit card numbers in clear text.  
 
 ========== Answer ==========  
 

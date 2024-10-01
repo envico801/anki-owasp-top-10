@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A09:2021 - Security Logging and Monitoring Failures**: Previously known as
-"Insufficient Logging & Monitoring," this category has moved up in ranking and
-is expanded to include more types of failures related to security logging and
-monitoring.
+**A09:2021 - Security Logging and Monitoring Failures**: Previously known as "Insufficient Logging & Monitoring," this category has moved up in ranking and is expanded to include more types of failures related to security logging and monitoring.
 
 ========== Id ==========  
 169

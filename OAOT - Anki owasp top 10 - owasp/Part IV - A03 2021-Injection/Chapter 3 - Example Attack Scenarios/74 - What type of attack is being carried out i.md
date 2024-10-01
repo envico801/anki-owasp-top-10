@@ -2,8 +2,7 @@
 
 ### What type of attack is being carried out in this situation?
 
-An application uses untrusted data in the construction of the following
-vulnerable SQL call:
+An application uses untrusted data in the construction of the following vulnerable SQL call:
 
 ```java
 String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";

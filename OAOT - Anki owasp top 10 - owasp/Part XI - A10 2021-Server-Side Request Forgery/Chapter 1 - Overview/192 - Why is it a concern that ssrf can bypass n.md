@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-SSRF is a concern because it allows attackers to coerce the application into
-sending requests to unexpected destinations even when protected by firewalls,
-VPNs, or other network access control lists (ACLs).
+SSRF is a concern because it allows attackers to coerce the application into sending requests to unexpected destinations even when protected by firewalls, VPNs, or other network access control lists (ACLs).
 
 ========== Id ==========  
 192

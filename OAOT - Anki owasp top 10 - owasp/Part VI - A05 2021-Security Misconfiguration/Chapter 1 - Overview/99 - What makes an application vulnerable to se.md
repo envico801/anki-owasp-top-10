@@ -6,8 +6,7 @@
 
 An application is vulnerable to security misconfigurations if:
 
--   Appropriate security hardening is missing across any part of the application
-    stack.
+-   Appropriate security hardening is missing across any part of the application stack.
 
 -   Permissions on cloud services are improperly configured.
 
@@ -19,13 +18,11 @@ An application is vulnerable to security misconfigurations if:
 
 -   Latest security features are disabled for upgraded systems.
 
--   Security settings in application servers, frameworks, libraries, databases,
-    etc., are not configured securely.
+-   Security settings in application servers, frameworks, libraries, databases, etc., are not configured securely.
 
 -   Security headers or directives are missing or not set to secure values.
 
--   The software is out of date or vulnerable. (see
-    [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)).
+-   The software is out of date or vulnerable. (see [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)).
 
 ========== Id ==========  
 99

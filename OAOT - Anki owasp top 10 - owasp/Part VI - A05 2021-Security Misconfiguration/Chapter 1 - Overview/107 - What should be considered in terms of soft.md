@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-To avoid vulnerabilities, it is essential to ensure that the software is
-up-to-date and not vulnerable to known security issues, as highlighted in
-[A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/).
+To avoid vulnerabilities, it is essential to ensure that the software is up-to-date and not vulnerable to known security issues, as highlighted in [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/).
 
 ========== Id ==========  
 107

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Credential stuffing is when an attacker uses a list of valid usernames and
-passwords obtained from breaches to gain unauthorized access. It's a concern
-because it exploits weak authentication systems.
+Credential stuffing is when an attacker uses a list of valid usernames and passwords obtained from breaches to gain unauthorized access. It's a concern because it exploits weak authentication systems.
 
 ========== Id ==========  
 134

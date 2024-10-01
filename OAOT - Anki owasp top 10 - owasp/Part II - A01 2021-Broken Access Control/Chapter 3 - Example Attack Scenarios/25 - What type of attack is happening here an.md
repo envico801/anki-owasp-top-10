@@ -2,8 +2,7 @@
 
 ### What type of attack is happening here?
 
-An attacker simply forces browsing to target URLs. Admin rights are required for
-access to the admin page.
+An attacker simply forces browsing to target URLs. Admin rights are required for access to the admin page.
 
 ```plaintext
  https://example.com/app/getappInfo

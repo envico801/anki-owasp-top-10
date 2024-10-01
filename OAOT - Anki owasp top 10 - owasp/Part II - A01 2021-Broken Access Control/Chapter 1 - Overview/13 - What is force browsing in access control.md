@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Force browsing is the act of accessing authenticated pages as an unauthenticated
-user or accessing privileged pages as a standard user, which can result in
-unauthorized access.
+Force browsing is the act of accessing authenticated pages as an unauthenticated user or accessing privileged pages as a standard user, which can result in unauthorized access.
 
 ========== Id ==========  
 13

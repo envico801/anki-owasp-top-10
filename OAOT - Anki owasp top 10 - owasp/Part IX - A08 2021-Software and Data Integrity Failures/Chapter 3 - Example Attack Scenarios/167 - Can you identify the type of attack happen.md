@@ -2,13 +2,7 @@
 
 ### Can you identify the type of attack happening here?
 
-Nation-states have been known to attack update mechanisms, with a recent notable
-attack being the SolarWinds Orion attack. The company that develops the software
-had secure build and update integrity processes. Still, these were able to be
-subverted, and for several months, the firm distributed a highly targeted
-malicious update to more than 18,000 organizations, of which around 100 or so
-were affected. This is one of the most far-reaching and most significant
-breaches of this nature in history.  
+Nation-states have been known to attack update mechanisms, with a recent notable attack being the SolarWinds Orion attack. The company that develops the software had secure build and update integrity processes. Still, these were able to be subverted, and for several months, the firm distributed a highly targeted malicious update to more than 18,000 organizations, of which around 100 or so were affected. This is one of the most far-reaching and most significant breaches of this nature in history.  
 
 ========== Answer ==========  
 

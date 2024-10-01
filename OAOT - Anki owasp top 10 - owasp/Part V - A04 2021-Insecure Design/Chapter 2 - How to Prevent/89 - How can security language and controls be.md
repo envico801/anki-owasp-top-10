@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Integrating security language and controls into user stories ensures that
-security considerations are part of the development process from the beginning.
+Integrating security language and controls into user stories ensures that security considerations are part of the development process from the beginning.
 
 ========== Id ==========  
 89

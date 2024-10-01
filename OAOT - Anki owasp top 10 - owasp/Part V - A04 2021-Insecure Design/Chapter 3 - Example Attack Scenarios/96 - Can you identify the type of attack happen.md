@@ -2,10 +2,7 @@
 
 ### Can you identify the type of attack happening here?
 
-A cinema chain allows group booking discounts and has a maximum of fifteen
-attendees before requiring a deposit. Attackers could threat model this flow and
-test if they could book six hundred seats and all cinemas at once in a few
-requests, causing a massive loss of income.  
+A cinema chain allows group booking discounts and has a maximum of fifteen attendees before requiring a deposit. Attackers could threat model this flow and test if they could book six hundred seats and all cinemas at once in a few requests, causing a massive loss of income.  
 
 ========== Answer ==========  
 

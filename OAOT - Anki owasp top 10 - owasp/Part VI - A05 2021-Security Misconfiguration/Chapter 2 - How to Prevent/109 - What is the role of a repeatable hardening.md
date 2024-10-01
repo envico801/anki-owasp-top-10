@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-A repeatable hardening process makes it fast and easy to deploy secure
-environments and ensures that development, QA, and production environments are
-configured identically.
+A repeatable hardening process makes it fast and easy to deploy secure environments and ensures that development, QA, and production environments are configured identically.
 
 ========== Id ==========  
 109

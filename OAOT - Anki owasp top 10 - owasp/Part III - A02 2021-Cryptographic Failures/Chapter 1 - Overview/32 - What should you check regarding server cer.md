@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Verify that the received server certificate and the trust chain are properly
-validated to prevent man-in-the-middle attacks.
+Verify that the received server certificate and the trust chain are properly validated to prevent man-in-the-middle attacks.
 
 ========== Id ==========  
 32

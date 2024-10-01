@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A05:2021 - Security Misconfiguration**: This category has moved up from its
-previous ranking. It addresses issues related to misconfigurations in
-applications, which can lead to vulnerabilities. It now includes XML External
-Entities (XXE).
+**A05:2021 - Security Misconfiguration**: This category has moved up from its previous ranking. It addresses issues related to misconfigurations in applications, which can lead to vulnerabilities. It now includes XML External Entities (XXE).
 
 ========== Id ==========  
 98

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Metadata manipulation can involve replaying or tampering with tokens like JSON
-Web Tokens (JWTs), cookies, or hidden fields to elevate privileges or abuse
-token invalidation mechanisms.
+Metadata manipulation can involve replaying or tampering with tokens like JSON Web Tokens (JWTs), cookies, or hidden fields to elevate privileges or abuse token invalidation mechanisms.
 
 ========== Id ==========  
 11

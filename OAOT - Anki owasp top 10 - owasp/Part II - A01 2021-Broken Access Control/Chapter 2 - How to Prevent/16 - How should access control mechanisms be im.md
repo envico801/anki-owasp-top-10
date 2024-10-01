@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Implement access control mechanisms once and re-use them throughout the
-application, including minimizing Cross-Origin Resource Sharing (CORS) usage.
+Implement access control mechanisms once and re-use them throughout the application, including minimizing Cross-Origin Resource Sharing (CORS) usage.
 
 ========== Id ==========  
 16

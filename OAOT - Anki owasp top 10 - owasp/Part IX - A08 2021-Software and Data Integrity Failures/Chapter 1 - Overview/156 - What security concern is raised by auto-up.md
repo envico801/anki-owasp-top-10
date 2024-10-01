@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Auto-update functionality in applications can be a security concern when updates
-are downloaded and applied without sufficient integrity verification. Attackers
-may exploit this to distribute and run their own malicious updates on all
-installations.
+Auto-update functionality in applications can be a security concern when updates are downloaded and applied without sufficient integrity verification. Attackers may exploit this to distribute and run their own malicious updates on all installations.
 
 ========== Id ==========  
 156

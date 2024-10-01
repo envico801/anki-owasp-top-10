@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-"Knowledge-based answers" for credential recovery are not safe because they can
-often be guessed or obtained through social engineering.
+"Knowledge-based answers" for credential recovery are not safe because they can often be guessed or obtained through social engineering.
 
 ========== Id ==========  
 137

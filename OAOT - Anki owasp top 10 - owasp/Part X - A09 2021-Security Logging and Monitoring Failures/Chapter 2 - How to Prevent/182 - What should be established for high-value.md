@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-High-value transactions should have an audit trail with integrity controls to
-prevent tampering or deletion, such as append-only database tables or similar
-mechanisms.
+High-value transactions should have an audit trail with integrity controls to prevent tampering or deletion, such as append-only database tables or similar mechanisms.
 
 ========== Id ==========  
 182

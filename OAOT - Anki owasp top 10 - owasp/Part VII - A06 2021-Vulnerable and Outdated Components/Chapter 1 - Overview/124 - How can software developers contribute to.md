@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Software developers can contribute by testing the compatibility of updated,
-upgraded, or patched libraries.
+Software developers can contribute by testing the compatibility of updated, upgraded, or patched libraries.
 
 ========== Id ==========  
 124

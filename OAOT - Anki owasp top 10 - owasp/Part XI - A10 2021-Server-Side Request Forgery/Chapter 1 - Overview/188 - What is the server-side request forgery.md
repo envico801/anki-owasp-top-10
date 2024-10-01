@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**\*A10:2021 - Server-Side Request Forgery**: Added from the Top 10 community
-survey, this category represents scenarios where security community members have
-identified the importance, even though it may not be widely illustrated in the
-data. It deals with the risk of server-side request forgery attacks.
+**\*A10:2021 - Server-Side Request Forgery**: Added from the Top 10 community survey, this category represents scenarios where security community members have identified the importance, even though it may not be widely illustrated in the data. It deals with the risk of server-side request forgery attacks.
 
 ========== Id ==========  
 188

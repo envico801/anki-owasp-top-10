@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-A minimal platform reduces the attack surface by eliminating unused features and
-frameworks, preventing security misconfigurations.
+A minimal platform reduces the attack surface by eliminating unused features and frameworks, preventing security misconfigurations.
 
 ========== Id ==========  
 110

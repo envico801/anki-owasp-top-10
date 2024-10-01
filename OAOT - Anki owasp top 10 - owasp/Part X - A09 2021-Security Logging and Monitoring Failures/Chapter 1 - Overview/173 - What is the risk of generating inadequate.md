@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Inadequate or unclear log messages can hinder the ability to understand and
-respond to potential issues or attacks.
+Inadequate or unclear log messages can hinder the ability to understand and respond to potential issues or attacks.
 
 ========== Id ==========  
 173

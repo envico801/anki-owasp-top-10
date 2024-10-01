@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Ensure log data is encoded correctly to prevent injections or attacks on the
-logging or monitoring systems, enhancing data integrity.
+Ensure log data is encoded correctly to prevent injections or attacks on the logging or monitoring systems, enhancing data integrity.
 
 ========== Id ==========  
 181

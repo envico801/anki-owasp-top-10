@@ -2,10 +2,7 @@
 
 ### What kind of attack is described in this situation?
 
-A major European airline suffered a GDPR reportable breach. The breach was
-reportedly caused by payment application security vulnerabilities exploited by
-attackers, who harvested more than 400,000 customer payment records. The airline
-was fined 20 million pounds as a result by the privacy regulator.  
+A major European airline suffered a GDPR reportable breach. The breach was reportedly caused by payment application security vulnerabilities exploited by attackers, who harvested more than 400,000 customer payment records. The airline was fined 20 million pounds as a result by the privacy regulator.  
 
 ========== Answer ==========  
 

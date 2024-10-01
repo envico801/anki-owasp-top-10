@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A06:2021 - Vulnerable and Outdated Components**: This category, previously
-titled "Using Components with Known Vulnerabilities," has moved up in the
-ranking. It focuses on the risks associated with outdated and vulnerable
-software components.
+**A06:2021 - Vulnerable and Outdated Components**: This category, previously titled "Using Components with Known Vulnerabilities," has moved up in the ranking. It focuses on the risks associated with outdated and vulnerable software components.
 
 ========== Id ==========  
 119

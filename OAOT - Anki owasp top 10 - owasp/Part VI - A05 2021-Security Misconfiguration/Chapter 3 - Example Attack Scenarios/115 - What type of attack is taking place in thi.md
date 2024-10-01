@@ -2,11 +2,7 @@
 
 ### What type of attack is taking place in this situation?
 
-The application server comes with sample applications not removed from the
-production server. These sample applications have known security flaws attackers
-use to compromise the server. Suppose one of these applications is the admin
-console, and default accounts weren't changed. In that case, the attacker logs
-in with default passwords and takes over.  
+The application server comes with sample applications not removed from the production server. These sample applications have known security flaws attackers use to compromise the server. Suppose one of these applications is the admin console, and default accounts weren't changed. In that case, the attacker logs in with default passwords and takes over.  
 
 ========== Answer ==========  
 

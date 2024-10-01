@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Proper segregation, configuration, and access control in CI/CD pipelines ensure
-the integrity of the code flowing through the build and deploy processes,
-preventing unauthorized changes.
+Proper segregation, configuration, and access control in CI/CD pipelines ensure the integrity of the code flowing through the build and deploy processes, preventing unauthorized changes.
 
 ========== Id ==========  
 164

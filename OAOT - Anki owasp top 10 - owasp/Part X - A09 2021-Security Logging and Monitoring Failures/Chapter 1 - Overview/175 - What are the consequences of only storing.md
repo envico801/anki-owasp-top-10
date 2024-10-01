@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Storing logs only locally can be a security risk because it may result in the
-loss of critical log data in the event of a breach or system failure, making it
-difficult to investigate incidents.
+Storing logs only locally can be a security risk because it may result in the loss of critical log data in the event of a breach or system failure, making it difficult to investigate incidents.
 
 ========== Id ==========  
 175

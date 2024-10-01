@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-It prevents the exposure of potentially sensitive information obtained from the
-attack to the client.
+It prevents the exposure of potentially sensitive information obtained from the attack to the client.
 
 ========== Id ==========  
 200

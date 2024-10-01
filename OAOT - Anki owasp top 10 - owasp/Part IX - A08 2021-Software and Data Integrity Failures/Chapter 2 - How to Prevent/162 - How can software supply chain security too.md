@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-These tools can be used to verify that components do not contain known
-vulnerabilities, enhancing the integrity of your software.
+These tools can be used to verify that components do not contain known vulnerabilities, enhancing the integrity of your software.
 
 ========== Id ==========  
 162

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Storing sensitive data unnecessarily increases the risk of data breaches. It
-should be discarded as soon as possible or tokenized to protect it.
+Storing sensitive data unnecessarily increases the risk of data breaches. It should be discarded as soon as possible or tokenized to protect it.
 
 ========== Id ==========  
 41

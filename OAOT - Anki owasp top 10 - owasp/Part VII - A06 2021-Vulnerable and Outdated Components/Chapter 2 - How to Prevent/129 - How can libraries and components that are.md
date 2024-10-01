@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Monitor for unmaintained libraries and components and consider deploying virtual
-patches to monitor, detect, or protect against discovered issues when patching
-is not possible.
+Monitor for unmaintained libraries and components and consider deploying virtual patches to monitor, detect, or protect against discovered issues when patching is not possible.
 
 ========== Id ==========  
 129

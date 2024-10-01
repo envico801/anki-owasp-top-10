@@ -2,9 +2,7 @@
 
 ### What type of attack is being demonstrated here?
 
-A cloud service provider (CSP) has default sharing permissions open to the
-Internet by other CSP users. This allows sensitive data stored within cloud
-storage to be accessed.  
+A cloud service provider (CSP) has default sharing permissions open to the Internet by other CSP users. This allows sensitive data stored within cloud storage to be accessed.  
 
 ========== Answer ==========  
 

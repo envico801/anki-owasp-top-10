@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-SSRF attacks can be particularly severe due to the growing adoption of cloud
-services and the increasing complexity of application architectures. These
-factors raise the potential impact of SSRF vulnerabilities.
+SSRF attacks can be particularly severe due to the growing adoption of cloud services and the increasing complexity of application architectures. These factors raise the potential impact of SSRF vulnerabilities.
 
 ========== Id ==========  
 190

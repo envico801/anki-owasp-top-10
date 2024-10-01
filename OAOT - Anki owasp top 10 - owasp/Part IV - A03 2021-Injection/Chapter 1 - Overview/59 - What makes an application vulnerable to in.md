@@ -8,13 +8,11 @@ An application is vulnerable to injection attacks when:
 
 -   User-supplied data is not properly validated, filtered, or sanitized.
 
--   Dynamic queries or non-parameterized calls are used without context-aware
-    escaping.
+-   Dynamic queries or non-parameterized calls are used without context-aware escaping.
 
 -   Hostile data is used in ORM search parameters.
 
--   Hostile data is directly used or concatenated in SQL queries, commands, or
-    stored procedures.
+-   Hostile data is directly used or concatenated in SQL queries, commands, or stored procedures.
 
 ========== Id ==========  
 59

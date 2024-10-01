@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-DevSecOps teams should establish effective monitoring and alerting systems to
-quickly detect and respond to suspicious activities, enhancing security.
+DevSecOps teams should establish effective monitoring and alerting systems to quickly detect and respond to suspicious activities, enhancing security.
 
 ========== Id ==========  
 183

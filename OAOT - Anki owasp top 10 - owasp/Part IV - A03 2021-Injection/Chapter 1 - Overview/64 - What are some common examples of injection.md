@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Common examples of injection attacks include SQL, NoSQL, OS command, Object
-Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph
-Navigation Library (OGNL) injection
+Common examples of injection attacks include SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection
 
 ========== Id ==========  
 64

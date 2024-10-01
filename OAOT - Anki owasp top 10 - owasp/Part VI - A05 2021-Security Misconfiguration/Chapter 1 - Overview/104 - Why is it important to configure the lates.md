@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Configuring the latest security features securely is crucial to ensure that
-upgraded systems remain protected against new threats.
+Configuring the latest security features securely is crucial to ensure that upgraded systems remain protected against new threats.
 
 ========== Id ==========  
 104

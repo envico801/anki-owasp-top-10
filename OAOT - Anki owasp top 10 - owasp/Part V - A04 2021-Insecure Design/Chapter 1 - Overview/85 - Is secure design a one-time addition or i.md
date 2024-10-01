@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Secure design is not a one-time addition but a culture and methodology that
-should be integrated into the entire software development lifecycle. It involves
-continuous evaluation of threats and proactive security measures.
+Secure design is not a one-time addition but a culture and methodology that should be integrated into the entire software development lifecycle. It involves continuous evaluation of threats and proactive security measures.
 
 ========== Id ==========  
 85

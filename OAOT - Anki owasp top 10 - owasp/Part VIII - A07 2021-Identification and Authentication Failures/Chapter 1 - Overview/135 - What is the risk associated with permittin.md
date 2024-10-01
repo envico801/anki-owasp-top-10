@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Permitting brute force attacks poses a risk because attackers can systematically
-try various combinations of usernames and passwords until they find the correct
-combination to gain unauthorized access.
+Permitting brute force attacks poses a risk because attackers can systematically try various combinations of usernames and passwords until they find the correct combination to gain unauthorized access.
 
 ========== Id ==========  
 135

@@ -2,13 +2,7 @@
 
 ### What type of attack is illustrated in this scenario?
 
-A children's health plan provider's website operator couldn't detect a breach
-due to a lack of monitoring and logging. An external party informed the health
-plan provider that an attacker had accessed and modified thousands of sensitive
-health records of more than 3.5 million children. A post-incident review found
-that the website developers had not addressed significant vulnerabilities. As
-there was no logging or monitoring of the system, the data breach could have
-been in progress since 2013, a period of more than seven years.  
+A children's health plan provider's website operator couldn't detect a breach due to a lack of monitoring and logging. An external party informed the health plan provider that an attacker had accessed and modified thousands of sensitive health records of more than 3.5 million children. A post-incident review found that the website developers had not addressed significant vulnerabilities. As there was no logging or monitoring of the system, the data breach could have been in progress since 2013, a period of more than seven years.  
 
 ========== Answer ==========  
 

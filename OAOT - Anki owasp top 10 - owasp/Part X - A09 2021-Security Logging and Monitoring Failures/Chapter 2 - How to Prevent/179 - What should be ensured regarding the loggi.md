@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Ensure that all login, access control, and server-side input validation failures
-can be logged with sufficient user context to identify suspicious or malicious
-accounts and held for enough time for forensic analysis.
+Ensure that all login, access control, and server-side input validation failures can be logged with sufficient user context to identify suspicious or malicious accounts and held for enough time for forensic analysis.
 
 ========== Id ==========  
 179

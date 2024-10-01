@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Continuously inventory component versions and dependencies using tools like
-versions, OWASP Dependency Check, retire.js, etc. Monitor sources like CVE and
-NVD for vulnerabilities and use software composition analysis tools for
-automation.
+Continuously inventory component versions and dependencies using tools like versions, OWASP Dependency Check, retire.js, etc. Monitor sources like CVE and NVD for vulnerabilities and use software composition analysis tools for automation.
 
 ========== Id ==========  
 127

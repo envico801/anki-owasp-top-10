@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Align password length, complexity, and rotation policies with NIST 800-63b's
-guidelines in section 5.1.1 for Memorized Secrets or other modern,
-evidence-based password policies.
+Align password length, complexity, and rotation policies with NIST 800-63b's guidelines in section 5.1.1 for Memorized Secrets or other modern, evidence-based password policies.
 
 ========== Id ==========  
 146

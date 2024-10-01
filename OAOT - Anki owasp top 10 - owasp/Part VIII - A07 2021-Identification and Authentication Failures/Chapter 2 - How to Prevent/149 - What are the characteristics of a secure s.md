@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Use a server-side, secure, built-in session manager that generates a new random
-session ID with high entropy after login. The session identifier should not be
-in the URL, be securely stored, and invalidated after logout, idle, and absolute
-timeouts.
+Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. The session identifier should not be in the URL, be securely stored, and invalidated after logout, idle, and absolute timeouts.
 
 ========== Id ==========  
 149

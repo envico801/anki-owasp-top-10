@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Verifying independently the effectiveness of configuration and settings is
-crucial to ensure that cryptographic implementations and security measures are
-functioning correctly and providing the intended level of protection.
+Verifying independently the effectiveness of configuration and settings is crucial to ensure that cryptographic implementations and security measures are functioning correctly and providing the intended level of protection.
 
 ========== Id ==========  
 54

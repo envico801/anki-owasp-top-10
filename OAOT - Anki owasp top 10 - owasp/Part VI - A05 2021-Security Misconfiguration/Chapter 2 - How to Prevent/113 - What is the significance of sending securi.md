@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Sending security directives to clients via headers helps ensure that client-side
-security settings align with the desired security posture.
+Sending security directives to clients via headers helps ensure that client-side security settings align with the desired security posture.
 
 ========== Id ==========  
 113

@@ -2,10 +2,7 @@
 
 ### What type of attack is happening in this scenario?
 
-Credential stuffing, the use of lists of known passwords, is a common attack.
-Suppose an application does not implement automated threat or credential
-stuffing protection. In that case, the application can be used as a password
-oracle to determine if the credentials are valid.  
+Credential stuffing, the use of lists of known passwords, is a common attack. Suppose an application does not implement automated threat or credential stuffing protection. In that case, the application can be used as a password oracle to determine if the credentials are valid.  
 
 ========== Answer ==========  
 

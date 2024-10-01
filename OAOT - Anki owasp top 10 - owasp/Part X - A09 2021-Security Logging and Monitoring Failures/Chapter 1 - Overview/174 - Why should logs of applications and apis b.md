@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Monitoring logs for suspicious activity is crucial for early detection of
-security threats and breaches.
+Monitoring logs for suspicious activity is crucial for early detection of security threats and breaches.
 
 ========== Id ==========  
 174

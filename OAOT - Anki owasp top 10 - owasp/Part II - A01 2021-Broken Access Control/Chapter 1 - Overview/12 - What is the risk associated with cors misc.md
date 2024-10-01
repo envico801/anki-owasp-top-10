@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-CORS misconfiguration can allow unauthorized/untrusted origins to access an API,
-potentially leading to security breaches.
+CORS misconfiguration can allow unauthorized/untrusted origins to access an API, potentially leading to security breaches.
 
 ========== Id ==========  
 12

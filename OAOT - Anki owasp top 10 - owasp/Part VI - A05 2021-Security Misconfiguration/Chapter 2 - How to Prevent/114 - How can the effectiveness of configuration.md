@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-An automated process should be used to verify the effectiveness of
-configurations and settings in all environments to prevent security
-misconfigurations.
+An automated process should be used to verify the effectiveness of configurations and settings in all environments to prevent security misconfigurations.
 
 ========== Id ==========  
 114

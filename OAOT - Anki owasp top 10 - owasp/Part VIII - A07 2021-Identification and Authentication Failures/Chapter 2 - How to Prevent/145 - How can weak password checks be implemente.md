@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Implement weak password checks, such as testing new or changed passwords against
-the top 10,000 worst passwords list, to ensure stronger password choices.
+Implement weak password checks, such as testing new or changed passwords against the top 10,000 worst passwords list, to ensure stronger password choices.
 
 ========== Id ==========  
 145

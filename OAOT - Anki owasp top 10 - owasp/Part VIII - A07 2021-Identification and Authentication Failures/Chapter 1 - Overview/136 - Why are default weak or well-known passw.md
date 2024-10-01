@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Default, weak, or well-known passwords pose a security risk because they are
-easily guessable and can be exploited by attackers.
+Default, weak, or well-known passwords pose a security risk because they are easily guessable and can be exploited by attackers.
 
 ========== Id ==========  
 136

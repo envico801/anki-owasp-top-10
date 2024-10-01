@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-The OWASP SAMM is a model that helps structure secure software development
-efforts. It can be leveraged to guide and improve the security practices and
-maturity of a software development organization.
+The OWASP SAMM is a model that helps structure secure software development efforts. It can be leveraged to guide and improve the security practices and maturity of a software development organization.
 
 ========== Id ==========  
 84

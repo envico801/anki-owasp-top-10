@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Correctly invalidating session IDs ensures that user sessions or authentication
-tokens are terminated during logout or periods of inactivity, preventing
-unauthorized access.
+Correctly invalidating session IDs ensures that user sessions or authentication tokens are terminated during logout or periods of inactivity, preventing unauthorized access.
 
 ========== Id ==========  
 142

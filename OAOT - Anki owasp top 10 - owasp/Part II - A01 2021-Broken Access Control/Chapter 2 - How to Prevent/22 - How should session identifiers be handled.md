@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Stateful session identifiers should be invalidated on the server after logout.
-Stateless JWT tokens should be short-lived, and for longer-lived JWTs, it's
-recommended to follow OAuth standards for revoking access.
+Stateful session identifiers should be invalidated on the server after logout. Stateless JWT tokens should be short-lived, and for longer-lived JWTs, it's recommended to follow OAuth standards for revoking access.
 
 ========== Id ==========  
 22

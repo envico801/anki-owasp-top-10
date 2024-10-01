@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Except for public resources, the recommended default access control policy is to
-deny access by default.
+Except for public resources, the recommended default access control policy is to deny access by default.
 
 ========== Id ==========  
 15

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Tier layers can be segregated based on their exposure and protection needs to
-prevent insecure design.
+Tier layers can be segregated based on their exposure and protection needs to prevent insecure design.
 
 ========== Id ==========  
 92

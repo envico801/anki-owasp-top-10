@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-It's crucial to know the versions of all components to avoid vulnerabilities and
-ensure software security.
+It's crucial to know the versions of all components to avoid vulnerabilities and ensure software security.
 
 ========== Id ==========  
 120

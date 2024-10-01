@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Data transmitted in clear text, especially over external internet traffic, is
-vulnerable to interception. It's important to verify the security of all
-internal traffic as well, not just external communication.
+Data transmitted in clear text, especially over external internet traffic, is vulnerable to interception. It's important to verify the security of all internal traffic as well, not just external communication.
 
 ========== Id ==========  
 28

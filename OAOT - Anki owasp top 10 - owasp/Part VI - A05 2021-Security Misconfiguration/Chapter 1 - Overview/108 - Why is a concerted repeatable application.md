@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-A concerted, repeatable application security configuration process is important
-because it reduces the risk of vulnerabilities by ensuring consistent and secure
-settings across the application and its components, helping to protect against
-potential threats.
+A concerted, repeatable application security configuration process is important because it reduces the risk of vulnerabilities by ensuring consistent and secure settings across the application and its components, helping to protect against potential threats.
 
 ========== Id ==========  
 108

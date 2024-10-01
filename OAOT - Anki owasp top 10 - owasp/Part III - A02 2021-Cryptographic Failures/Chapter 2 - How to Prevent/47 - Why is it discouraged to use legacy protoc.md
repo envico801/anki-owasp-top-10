@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Using legacy protocols like FTP and SMTP for transporting sensitive data is
-discouraged because they lack the security features and encryption needed to
-protect sensitive information from interception and unauthorized access.
+Using legacy protocols like FTP and SMTP for transporting sensitive data is discouraged because they lack the security features and encryption needed to protect sensitive information from interception and unauthorized access.
 
 ========== Id ==========  
 47

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Logging auditable events is important for tracking and auditing user actions,
-which can help in detecting unauthorized or malicious activity.
+Logging auditable events is important for tracking and auditing user actions, which can help in detecting unauthorized or malicious activity.
 
 ========== Id ==========  
 172

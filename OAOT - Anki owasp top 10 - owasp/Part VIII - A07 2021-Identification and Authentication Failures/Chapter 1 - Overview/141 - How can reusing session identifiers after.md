@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Reusing session identifiers after a successful login is risky because it can
-allow unauthorized users to continue or take over authenticated sessions,
-potentially compromising security.
+Reusing session identifiers after a successful login is risky because it can allow unauthorized users to continue or take over authenticated sessions, potentially compromising security.
 
 ========== Id ==========  
 141

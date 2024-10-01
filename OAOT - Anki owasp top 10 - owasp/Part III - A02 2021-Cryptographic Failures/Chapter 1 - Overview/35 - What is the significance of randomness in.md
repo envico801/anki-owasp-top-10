@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Randomness used for cryptographic purposes must meet cryptographic requirements
-and should not be overwritten with insufficiently unpredictable seeds by
-developers.
+Randomness used for cryptographic purposes must meet cryptographic requirements and should not be overwritten with insufficiently unpredictable seeds by developers.
 
 ========== Id ==========  
 35

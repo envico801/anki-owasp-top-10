@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-You can control local traffic on front systems by ensuring that requests to
-security-relevant services are restricted to the local system, for example, by
-using "localhost" as the destination address.
+You can control local traffic on front systems by ensuring that requests to security-relevant services are restricted to the local system, for example, by using "localhost" as the destination address.
 
 ========== Id ==========  
 205

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-The types of data inputs that should be subject to automated testing to identify
-injection flaws include, parameters, headers, URL, cookies, JSON, SOAP, and XML
-data inputs.
+The types of data inputs that should be subject to automated testing to identify injection flaws include, parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs.
 
 ========== Id ==========  
 67

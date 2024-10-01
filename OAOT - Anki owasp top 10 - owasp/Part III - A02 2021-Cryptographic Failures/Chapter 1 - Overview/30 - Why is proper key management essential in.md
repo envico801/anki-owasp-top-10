@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Proper key management is essential to ensure that default crypto keys are not in
-use, weak crypto keys are not generated or reused, and keys are not accidentally
-checked into source code repositories.
+Proper key management is essential to ensure that default crypto keys are not in use, weak crypto keys are not generated or reused, and keys are not accidentally checked into source code repositories.
 
 ========== Id ==========  
 30

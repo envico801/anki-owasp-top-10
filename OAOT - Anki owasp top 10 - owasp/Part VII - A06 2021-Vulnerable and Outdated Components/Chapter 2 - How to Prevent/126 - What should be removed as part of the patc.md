@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-As part of the patch management process, remove unused dependencies, unnecessary
-features, components, files, and documentation to reduce the attack surface.
+As part of the patch management process, remove unused dependencies, unnecessary features, components, files, and documentation to reduce the attack surface.
 
 ========== Id ==========  
 126

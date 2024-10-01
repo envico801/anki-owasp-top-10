@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-AppSec professionals can help evaluate and design security and privacy-related
-controls as part of a secure development lifecycle.
+AppSec professionals can help evaluate and design security and privacy-related controls as part of a secure development lifecycle.
 
 ========== Id ==========  
 86

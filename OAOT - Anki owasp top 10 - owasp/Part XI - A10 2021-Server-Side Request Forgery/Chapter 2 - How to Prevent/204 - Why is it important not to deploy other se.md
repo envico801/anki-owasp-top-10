@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-It's important not to deploy other security-relevant services on front systems
-to minimize the attack surface. By keeping front systems dedicated to their
-primary purpose, you reduce the risk of exposing additional attack vectors.
+It's important not to deploy other security-relevant services on front systems to minimize the attack surface. By keeping front systems dedicated to their primary purpose, you reduce the risk of exposing additional attack vectors.
 
 ========== Id ==========  
 204

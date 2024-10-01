@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Logs should be generated in a format that log management solutions can easily
-consume to facilitate efficient analysis and monitoring.
+Logs should be generated in a format that log management solutions can easily consume to facilitate efficient analysis and monitoring.
 
 ========== Id ==========  
 180

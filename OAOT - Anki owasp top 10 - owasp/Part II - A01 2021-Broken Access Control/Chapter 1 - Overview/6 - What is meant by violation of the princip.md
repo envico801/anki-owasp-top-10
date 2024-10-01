@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-It means that access is granted to capabilities, roles, or users beyond what is
-necessary. Access should only be given for specific needs, but in this case,
-it's available to anyone.
+It means that access is granted to capabilities, roles, or users beyond what is necessary. Access should only be given for specific needs, but in this case, it's available to anyone.
 
 ========== Id ==========  
 6

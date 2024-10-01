@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-SSRF can be reduced by segmenting remote resource access functionality in
-separate networks.
+SSRF can be reduced by segmenting remote resource access functionality in separate networks.
 
 ========== Id ==========  
 193

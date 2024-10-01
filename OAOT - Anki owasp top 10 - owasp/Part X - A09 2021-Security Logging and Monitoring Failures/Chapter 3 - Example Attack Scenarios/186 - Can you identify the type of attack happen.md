@@ -2,10 +2,7 @@
 
 ### Can you identify the type of attack happening here?
 
-A major Indian airline had a data breach involving more than ten years' worth of
-personal data of millions of passengers, including passport and credit card
-data. The data breach occurred at a third-party cloud hosting provider, who
-notified the airline of the breach after some time.  
+A major Indian airline had a data breach involving more than ten years' worth of personal data of millions of passengers, including passport and credit card data. The data breach occurred at a third-party cloud hosting provider, who notified the airline of the breach after some time.  
 
 ========== Answer ==========  
 

@@ -2,10 +2,7 @@
 
 ### What kind of attack is described in this situation?
 
-The application server's configuration allows detailed error messages, e.g.,
-stack traces, to be returned to users. This potentially exposes sensitive
-information or underlying flaws such as component versions that are known to be
-vulnerable.  
+The application server's configuration allows detailed error messages, e.g., stack traces, to be returned to users. This potentially exposes sensitive information or underlying flaws such as component versions that are known to be vulnerable.  
 
 ========== Answer ==========  
 

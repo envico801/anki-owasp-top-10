@@ -14,13 +14,11 @@ Insufficient logging and monitoring occur when:
 
 -   Logs are only stored locally.
 
--   Alerting thresholds and response escalation processes are absent or
-    ineffective.
+-   Alerting thresholds and response escalation processes are absent or ineffective.
 
 -   Penetration testing and DAST tool scans do not trigger alerts.
 
--   The application cannot detect, escalate, or alert for active attacks in
-    real-time or near real-time.
+-   The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.
 
 ========== Id ==========  
 171

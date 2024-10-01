@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Unique application business limit requirements should be enforced by domain
-models.
+Unique application business limit requirements should be enforced by domain models.
 
 ========== Id ==========  
 18

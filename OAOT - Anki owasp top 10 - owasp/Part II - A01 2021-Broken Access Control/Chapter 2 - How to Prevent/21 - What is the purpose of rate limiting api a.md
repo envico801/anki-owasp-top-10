@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Rate limiting API and controller access helps minimize the harm from automated
-attack tooling, preventing abuse of the application.
+Rate limiting API and controller access helps minimize the harm from automated attack tooling, preventing abuse of the application.
 
 ========== Id ==========  
 21

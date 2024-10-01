@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Cryptographic error messages or side channel information can be exploited, for
-example, in padding oracle attacks. They should be carefully managed to prevent
-security vulnerabilities.
+Cryptographic error messages or side channel information can be exploited, for example, in padding oracle attacks. They should be carefully managed to prevent security vulnerabilities.
 
 ========== Id ==========  
 38

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Insecure deserialization refers to the process of decoding or deserializing data
-from a serialized format. It becomes a vulnerability when an attacker can view
-and modify the serialized data, potentially leading to security issues.
+Insecure deserialization refers to the process of decoding or deserializing data from a serialized format. It becomes a vulnerability when an attacker can view and modify the serialized data, potentially leading to security issues.
 
 ========== Id ==========  
 157

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-An ownership and a lifecycle should be established for firewall rules based on
-applications.
+An ownership and a lifecycle should be established for firewall rules based on applications.
 
 ========== Id ==========  
 195

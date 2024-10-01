@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A01:2021 - Broken Access Control**: This category is now the most serious web
-application security risk. It focuses on issues related to access control, where
-users can access resources or perform actions they shouldn't. It includes
-numerous Common Weakness Enumerations (CWEs) and is a prevalent risk.
+**A01:2021 - Broken Access Control**: This category is now the most serious web application security risk. It focuses on issues related to access control, where users can access resources or perform actions they shouldn't. It includes numerous Common Weakness Enumerations (CWEs) and is a prevalent risk.
 
 ========== Id ==========  
 3

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Initialization vectors should not be ignored, reused, or generated in an
-insecure manner. The cryptographic mode of operation should be appropriate, and
-insecure modes like ECB should be avoided.
+Initialization vectors should not be ignored, reused, or generated in an insecure manner. The cryptographic mode of operation should be appropriate, and insecure modes like ECB should be avoided.
 
 ========== Id ==========  
 33

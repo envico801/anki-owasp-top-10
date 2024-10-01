@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Missing security hardening across the application stack can lead to
-vulnerabilities and exploitation by attackers.
+Missing security hardening across the application stack can lead to vulnerabilities and exploitation by attackers.
 
 ========== Id ==========  
 100

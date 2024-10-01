@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Functional access control unit and integration tests are essential for ensuring
-that access control mechanisms are implemented correctly and that unauthorized
-access attempts are detected and prevented during the development and testing
-phases.
+Functional access control unit and integration tests are essential for ensuring that access control mechanisms are implemented correctly and that unauthorized access attempts are detected and prevented during the development and testing phases.
 
 ========== Id ==========  
 23

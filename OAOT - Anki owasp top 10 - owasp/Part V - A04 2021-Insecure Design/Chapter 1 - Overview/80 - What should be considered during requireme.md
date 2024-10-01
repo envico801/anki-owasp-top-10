@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-During requirements and resource management, collect and negotiate business
-requirements, protection requirements (confidentiality, integrity, availability,
-authenticity), and technical requirements. Plan and budget for all design,
-build, testing, and operation activities, including security.
+During requirements and resource management, collect and negotiate business requirements, protection requirements (confidentiality, integrity, availability, authenticity), and technical requirements. Plan and budget for all design, build, testing, and operation activities, including security.
 
 ========== Id ==========  
 80

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Multi-factor authentication adds an extra layer of security by requiring users
-to provide two or more forms of authentication, making it more challenging for
-attackers to gain access.
+Multi-factor authentication adds an extra layer of security by requiring users to provide two or more forms of authentication, making it more challenging for attackers to gain access.
 
 ========== Id ==========  
 139

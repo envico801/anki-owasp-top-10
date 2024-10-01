@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Ensuring that libraries and dependencies use trusted repositories reduces the
-risk of including compromised or malicious components in your software.
+Ensuring that libraries and dependencies use trusted repositories reduces the risk of including compromised or malicious components in your software.
 
 ========== Id ==========  
 161

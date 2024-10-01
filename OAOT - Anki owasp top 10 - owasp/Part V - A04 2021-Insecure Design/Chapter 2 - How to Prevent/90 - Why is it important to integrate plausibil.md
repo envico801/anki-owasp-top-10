@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Integrating plausibility checks at each tier ensures that inputs and processes
-are checked for validity and correctness, reducing the risk of insecure design.
+Integrating plausibility checks at each tier ensures that inputs and processes are checked for validity and correctness, reducing the risk of insecure design.
 
 ========== Id ==========  
 90

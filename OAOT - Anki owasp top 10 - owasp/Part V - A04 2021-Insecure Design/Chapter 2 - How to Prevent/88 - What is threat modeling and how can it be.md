@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Threat modeling involves identifying and evaluating potential threats to
-critical aspects of the application, including authentication, access control,
-business logic, and key flows, helping prevent insecure design decisions.
+Threat modeling involves identifying and evaluating potential threats to critical aspects of the application, including authentication, access control, business logic, and key flows, helping prevent insecure design decisions.
 
 ========== Id ==========  
 88

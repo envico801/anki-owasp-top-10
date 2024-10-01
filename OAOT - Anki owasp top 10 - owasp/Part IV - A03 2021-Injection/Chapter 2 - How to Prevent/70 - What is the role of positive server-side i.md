@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Positive server-side input validation helps prevent injection by ensuring that
-input adheres to expected patterns and formats. However, it's not a complete
-defense in cases where special characters are required.
+Positive server-side input validation helps prevent injection by ensuring that input adheres to expected patterns and formats. However, it's not a complete defense in cases where special characters are required.
 
 ========== Id ==========  
 70

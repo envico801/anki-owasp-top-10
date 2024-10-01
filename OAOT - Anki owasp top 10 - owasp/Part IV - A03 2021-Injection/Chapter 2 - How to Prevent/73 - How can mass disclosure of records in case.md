@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-To prevent mass disclosure of records in case of SQL injection, use controls
-like LIMIT and other SQL controls within queries.
+To prevent mass disclosure of records in case of SQL injection, use controls like LIMIT and other SQL controls within queries.
 
 ========== Id ==========  
 73

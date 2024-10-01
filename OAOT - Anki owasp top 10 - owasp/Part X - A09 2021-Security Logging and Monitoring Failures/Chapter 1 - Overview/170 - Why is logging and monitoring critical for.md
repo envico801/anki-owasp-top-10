@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Logging and monitoring are critical for security because they help detect,
-escalate, and respond to active breaches. Without them, breaches cannot be
-detected.
+Logging and monitoring are critical for security because they help detect, escalate, and respond to active breaches. Without them, breaches cannot be detected.
 
 ========== Id ==========  
 170

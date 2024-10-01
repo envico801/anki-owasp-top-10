@@ -2,9 +2,7 @@
 
 ### What type of attack is being demonstrated here?
 
-Compromise internal services – The attacker can abuse internal services to
-conduct further attacks such as Remote Code Execution (RCE) or Denial of Service
-(DoS).  
+Compromise internal services – The attacker can abuse internal services to conduct further attacks such as Remote Code Execution (RCE) or Denial of Service (DoS).  
 
 ========== Answer ==========  
 

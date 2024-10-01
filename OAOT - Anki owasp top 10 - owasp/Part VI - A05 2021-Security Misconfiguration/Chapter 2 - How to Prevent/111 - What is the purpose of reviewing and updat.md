@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Reviewing and updating configurations as part of patch management ensures that
-security notes, updates, and patches are applied to maintain a secure
-environment.
+Reviewing and updating configurations as part of patch management ensures that security notes, updates, and patches are applied to maintain a secure environment.
 
 ========== Id ==========  
 111

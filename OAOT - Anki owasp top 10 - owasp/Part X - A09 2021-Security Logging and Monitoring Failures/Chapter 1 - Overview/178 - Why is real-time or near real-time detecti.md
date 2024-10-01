@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Real-time or near real-time detection of active attacks allows for immediate
-response, reducing the potential impact of security incidents.
+Real-time or near real-time detection of active attacks allows for immediate response, reducing the potential impact of security incidents.
 
 ========== Id ==========  
 178

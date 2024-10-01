@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Deprecated hash functions like MD5 or SHA1 should be avoided, and cryptographic
-hash functions should be used when needed.
+Deprecated hash functions like MD5 or SHA1 should be avoided, and cryptographic hash functions should be used when needed.
 
 ========== Id ==========  
 36

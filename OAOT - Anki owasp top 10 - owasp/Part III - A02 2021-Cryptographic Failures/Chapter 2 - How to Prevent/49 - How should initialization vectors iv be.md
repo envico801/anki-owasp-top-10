@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Initialization vectors should be chosen appropriately for the mode of operation
-and never used twice for a fixed key.
+Initialization vectors should be chosen appropriately for the mode of operation and never used twice for a fixed key.
 
 ========== Id ==========  
 49

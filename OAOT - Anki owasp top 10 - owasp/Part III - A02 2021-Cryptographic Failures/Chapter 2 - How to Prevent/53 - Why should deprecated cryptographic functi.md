@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Deprecated cryptographic functions and padding schemes like MD5, SHA1, and PKCS
-#1 v1.5 are known to have vulnerabilities and should be avoided.
+Deprecated cryptographic functions and padding schemes like MD5, SHA1, and PKCS #1 v1.5 are known to have vulnerabilities and should be avoided.
 
 ========== Id ==========  
 53

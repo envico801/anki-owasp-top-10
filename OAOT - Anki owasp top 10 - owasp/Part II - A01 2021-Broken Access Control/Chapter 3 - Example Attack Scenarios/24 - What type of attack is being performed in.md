@@ -2,17 +2,14 @@
 
 ### What type of attack is being performed in this situation?
 
-The application uses unverified data in a SQL call that is accessing account
-information:
+The application uses unverified data in a SQL call that is accessing account information:
 
 ```java
  pstmt.setString(1, request.getParameter("acct"));
  ResultSet results = pstmt.executeQuery( );
 ```
 
-An attacker simply modifies the browser's 'acct' parameter to send whatever
-account number they want. If not correctly verified, the attacker can access any
-user's account.
+An attacker simply modifies the browser's 'acct' parameter to send whatever account number they want. If not correctly verified, the attacker can access any user's account.
 
 ```plaintext
  https://example.com/app/accountInfo?acct=notmyacct

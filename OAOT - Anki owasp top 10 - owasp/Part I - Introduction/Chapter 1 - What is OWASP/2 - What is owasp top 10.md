@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-OWASP Top 10 is a list of the top 10 most critical web application security
-risks, compiled by the Open Web Application Security Project.
+OWASP Top 10 is a list of the top 10 most critical web application security risks, compiled by the Open Web Application Security Project.
 
 ========== Id ==========  
 2

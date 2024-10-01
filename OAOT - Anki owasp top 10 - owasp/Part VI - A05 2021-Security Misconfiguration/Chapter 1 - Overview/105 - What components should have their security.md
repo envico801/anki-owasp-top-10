@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Security settings in application servers, application frameworks (e.g., Struts,
-Spring, ASP.NET), libraries, databases, and other components should be
-configured to secure values.
+Security settings in application servers, application frameworks (e.g., Struts, Spring, ASP.NET), libraries, databases, and other components should be configured to secure values.
 
 ========== Id ==========  
 105

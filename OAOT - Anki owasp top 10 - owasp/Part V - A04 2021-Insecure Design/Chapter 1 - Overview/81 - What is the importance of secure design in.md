@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Secure design constantly evaluates threats and ensures that code is robustly
-designed and tested to prevent known attack methods. It is a proactive approach
-to security.
+Secure design constantly evaluates threats and ensures that code is robustly designed and tested to prevent known attack methods. It is a proactive approach to security.
 
 ========== Id ==========  
 81

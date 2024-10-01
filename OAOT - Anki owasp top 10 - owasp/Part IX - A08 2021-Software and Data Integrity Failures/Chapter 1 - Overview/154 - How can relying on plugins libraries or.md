@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Relying on plugins, libraries, or modules from untrusted sources can impact
-software integrity by introducing potential security vulnerabilities, malicious
-code, or system compromise into the application.
+Relying on plugins, libraries, or modules from untrusted sources can impact software integrity by introducing potential security vulnerabilities, malicious code, or system compromise into the application.
 
 ========== Id ==========  
 154

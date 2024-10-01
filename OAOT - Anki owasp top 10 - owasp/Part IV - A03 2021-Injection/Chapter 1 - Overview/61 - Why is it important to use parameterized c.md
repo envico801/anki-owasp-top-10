@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Parameterized calls and context-aware escaping help prevent injection
-vulnerabilities by ensuring that input data is treated as data, not code.
+Parameterized calls and context-aware escaping help prevent injection vulnerabilities by ensuring that input data is treated as data, not code.
 
 ========== Id ==========  
 61

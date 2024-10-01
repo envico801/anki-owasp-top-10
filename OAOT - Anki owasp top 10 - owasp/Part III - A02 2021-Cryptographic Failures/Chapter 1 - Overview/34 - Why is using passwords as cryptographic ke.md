@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Using passwords as cryptographic keys without a proper key derivation function
-can lead to security vulnerabilities.
+Using passwords as cryptographic keys without a proper key derivation function can lead to security vulnerabilities.
 
 ========== Id ==========  
 34

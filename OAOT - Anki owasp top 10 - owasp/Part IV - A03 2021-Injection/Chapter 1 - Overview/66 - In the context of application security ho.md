@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Organizations can incorporate automated testing by including static (SAST),
-dynamic (DAST), and interactive (IAST) application security testing tools into
-the CI/CD pipeline.
+Organizations can incorporate automated testing by including static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline.
 
 ========== Id ==========  
 66

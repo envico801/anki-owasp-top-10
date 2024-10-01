@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Disabling caching prevents sensitive data from being stored in caches, reducing
-the risk of exposure.
+Disabling caching prevents sensitive data from being stored in caches, reducing the risk of exposure.
 
 ========== Id ==========  
 45

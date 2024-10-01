@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-All data in transit should be encrypted with secure protocols like TLS, using
-forward secrecy (FS) ciphers and cipher prioritization. Enforcement can be done
-using directives like HTTP Strict Transport Security (HSTS).
+All data in transit should be encrypted with secure protocols like TLS, using forward secrecy (FS) ciphers and cipher prioritization. Enforcement can be done using directives like HTTP Strict Transport Security (HSTS).
 
 ========== Id ==========  
 44

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Access control failures should be logged, and appropriate alerts, such as
-notifying administrators, should be triggered (e.g., repeated failures).
+Access control failures should be logged, and appropriate alerts, such as notifying administrators, should be triggered (e.g., repeated failures).
 
 ========== Id ==========  
 20

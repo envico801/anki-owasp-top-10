@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Strong adaptive and salted hashing functions make it difficult for attackers to
-recover plaintext passwords from stored hashes.
+Strong adaptive and salted hashing functions make it difficult for attackers to recover plaintext passwords from stored hashes.
 
 ========== Id ==========  
 48

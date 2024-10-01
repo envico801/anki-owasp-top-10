@@ -2,9 +2,7 @@
 
 ### What kind of attack is described in this situation?
 
-Access metadata storage of cloud services – Most cloud providers have metadata
-storage such as `http://169.254.169.254/`. An attacker can read the metadata to
-gain sensitive information.  
+Access metadata storage of cloud services – Most cloud providers have metadata storage such as `http://169.254.169.254/`. An attacker can read the metadata to gain sensitive information.  
 
 ========== Answer ==========  
 

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-A segmented application architecture provides secure separation between
-components or tenants using techniques like segmentation, containerization, or
-cloud security groups (ACLs).
+A segmented application architecture provides secure separation between components or tenants using techniques like segmentation, containerization, or cloud security groups (ACLs).
 
 ========== Id ==========  
 112

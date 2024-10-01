@@ -2,11 +2,7 @@
 
 ### What type of attack is demonstrated in this scenario?
 
-Many home routers, set-top boxes, device firmware, and others do not verify
-updates via signed firmware. Unsigned firmware is a growing target for attackers
-and is expected to only get worse. This is a major concern as many times there
-is no mechanism to remediate other than to fix in a future version and wait for
-previous versions to age out.  
+Many home routers, set-top boxes, device firmware, and others do not verify updates via signed firmware. Unsigned firmware is a growing target for attackers and is expected to only get worse. This is a major concern as many times there is no mechanism to remediate other than to fix in a future version and wait for previous versions to age out.  
 
 ========== Answer ==========  
 

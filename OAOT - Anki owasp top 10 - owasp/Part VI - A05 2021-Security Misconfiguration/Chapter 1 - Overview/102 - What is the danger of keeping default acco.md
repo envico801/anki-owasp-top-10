@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Keeping default accounts and passwords unchanged can lead to unauthorized access
-to the system.
+Keeping default accounts and passwords unchanged can lead to unauthorized access to the system.
 
 ========== Id ==========  
 102

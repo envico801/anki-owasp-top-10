@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-**A03:2021 - Injection**: Injection vulnerabilities have moved down to the third
-position. It includes various forms of injection attacks, such as SQL injection,
-and now also includes Cross-Site Scripting (XSS).
+**A03:2021 - Injection**: Injection vulnerabilities have moved down to the third position. It includes various forms of injection attacks, such as SQL injection, and now also includes Cross-Site Scripting (XSS).
 
 ========== Id ==========  
 58

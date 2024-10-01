@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-Obtaining components from official sources over secure links reduces the risk of
-including modified, malicious components and enhances software and data
-integrity. (See
-[A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)).
+Obtaining components from official sources over secure links reduces the risk of including modified, malicious components and enhances software and data integrity. (See [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)).
 
 ========== Id ==========  
 128

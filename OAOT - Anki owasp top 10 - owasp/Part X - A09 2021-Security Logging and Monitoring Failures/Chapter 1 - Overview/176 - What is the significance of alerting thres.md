@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Alerting thresholds and response escalation processes help ensure that security
-incidents are promptly detected, reported, and escalated for action.
+Alerting thresholds and response escalation processes help ensure that security incidents are promptly detected, reported, and escalated for action.
 
 ========== Id ==========  
 176

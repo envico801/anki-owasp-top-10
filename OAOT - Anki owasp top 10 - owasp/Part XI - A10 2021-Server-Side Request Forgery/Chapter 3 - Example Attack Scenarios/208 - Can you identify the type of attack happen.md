@@ -2,9 +2,7 @@
 
 ### Can you identify the type of attack happening here?
 
-Sensitive data exposure – Attackers can access local files or internal services
-to gain sensitive information such as `file:///etc/passwd` and
-`http://localhost:28017/`.  
+Sensitive data exposure – Attackers can access local files or internal services to gain sensitive information such as `file:///etc/passwd` and `http://localhost:28017/`.  
 
 ========== Answer ==========  
 

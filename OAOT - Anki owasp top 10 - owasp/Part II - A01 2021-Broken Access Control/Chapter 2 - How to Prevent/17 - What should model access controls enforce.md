@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Model access controls should enforce record ownership rather than assuming that
-users can create, read, update, or delete any record.
+Model access controls should enforce record ownership rather than assuming that users can create, read, update, or delete any record.
 
 ========== Id ==========  
 17

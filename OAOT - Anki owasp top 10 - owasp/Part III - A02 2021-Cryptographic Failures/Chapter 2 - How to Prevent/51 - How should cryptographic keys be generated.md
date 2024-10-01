@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Keys should be generated cryptographically randomly and stored in memory as byte
-arrays. Passwords should be converted to keys using appropriate key derivation
-functions.
+Keys should be generated cryptographically randomly and stored in memory as byte arrays. Passwords should be converted to keys using appropriate key derivation functions.
 
 ========== Id ==========  
 51

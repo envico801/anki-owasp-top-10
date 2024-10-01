@@ -2,10 +2,7 @@
 
 ### What type of attack is demonstrated in this scenario?
 
-Port scan internal servers – If the network architecture is unsegmented,
-attackers can map out internal networks and determine if ports are open or
-closed on internal servers from connection results or elapsed time to connect or
-reject SSRF payload connections.  
+Port scan internal servers – If the network architecture is unsegmented, attackers can map out internal networks and determine if ports are open or closed on internal servers from connection results or elapsed time to connect or reject SSRF payload connections.  
 
 ========== Answer ==========  
 

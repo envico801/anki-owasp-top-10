@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-SSRF vulnerabilities are increasingly common in modern web applications because
-fetching URLs has become a standard scenario. This convenience feature can
-inadvertently expose applications to SSRF risks.
+SSRF vulnerabilities are increasingly common in modern web applications because fetching URLs has become a standard scenario. This convenience feature can inadvertently expose applications to SSRF risks.
 
 ========== Id ==========  
 191

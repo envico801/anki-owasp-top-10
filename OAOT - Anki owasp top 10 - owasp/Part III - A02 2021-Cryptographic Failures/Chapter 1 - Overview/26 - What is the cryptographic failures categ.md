@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A02:2021 - Cryptographic Failures**: This category, previously known as
-Sensitive Data Exposure (A3:2017), has been renamed to emphasize issues related
-to cryptographic failures. It often leads to sensitive data exposure or system
-compromise.
+**A02:2021 - Cryptographic Failures**: This category, previously known as Sensitive Data Exposure (A3:2017), has been renamed to emphasize issues related to cryptographic failures. It often leads to sensitive data exposure or system compromise.
 
 ========== Id ==========  
 26

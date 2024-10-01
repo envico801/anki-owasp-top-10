@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A07:2021 - Identification and Authentication Failures**: This category,
-formerly known as "Broken Authentication," has slid down in ranking. It now
-includes CWEs related to identification failures and is influenced by the
-availability of standardized frameworks.
+**A07:2021 - Identification and Authentication Failures**: This category, formerly known as "Broken Authentication," has slid down in ranking. It now includes CWEs related to identification failures and is influenced by the availability of standardized frameworks.
 
 ========== Id ==========  
 131

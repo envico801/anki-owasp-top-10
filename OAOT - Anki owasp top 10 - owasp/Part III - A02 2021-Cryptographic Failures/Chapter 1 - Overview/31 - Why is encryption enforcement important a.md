@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Encryption enforcement is important to protect data. Ensure that encryption is
-enforced not just in external communication but also within internal systems,
-including between load balancers, web servers, or back-end systems.
+Encryption enforcement is important to protect data. Ensure that encryption is enforced not just in external communication but also within internal systems, including between load balancers, web servers, or back-end systems.
 
 ========== Id ==========  
 31

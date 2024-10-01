@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Securing the components' configurations is also important to prevent security
-misconfigurations. (see
-[A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)).
+Securing the components' configurations is also important to prevent security misconfigurations. (see [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)).
 
 ========== Id ==========  
 125

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Delaying these updates can expose your organization to unnecessary risks from
-known vulnerabilities.
+Delaying these updates can expose your organization to unnecessary risks from known vulnerabilities.
 
 ========== Id ==========  
 123

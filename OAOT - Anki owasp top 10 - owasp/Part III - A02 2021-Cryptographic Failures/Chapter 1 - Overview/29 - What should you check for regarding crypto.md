@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Check for the use of old or weak cryptographic algorithms or protocols,
-especially in older code.
+Check for the use of old or weak cryptographic algorithms or protocols, especially in older code.
 
 ========== Id ==========  
 29

@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-**A08:2021 - Software and Data Integrity Failures**: This is a new category
-highlighting issues related to assumptions about software updates, critical
-data, and CI/CD pipelines without proper verification. It includes Insecure
-Deserialization from the previous edition.
+**A08:2021 - Software and Data Integrity Failures**: This is a new category highlighting issues related to assumptions about software updates, critical data, and CI/CD pipelines without proper verification. It includes Insecure Deserialization from the previous edition.
 
 ========== Id ==========  
 153

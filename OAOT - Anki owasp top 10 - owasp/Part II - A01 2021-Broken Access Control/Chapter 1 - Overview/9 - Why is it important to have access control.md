@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Without access controls for these requests, attackers can perform actions such
-as modifying or deleting data without proper authorization.
+Without access controls for these requests, attackers can perform actions such as modifying or deleting data without proper authorization.
 
 ========== Id ==========  
 9

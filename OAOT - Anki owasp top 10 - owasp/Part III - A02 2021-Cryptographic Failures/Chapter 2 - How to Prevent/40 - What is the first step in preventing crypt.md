@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-The first step is to classify data processed, stored, or transmitted by an
-application and identify which data is sensitive according to privacy laws,
-regulatory requirements, or business needs.
+The first step is to classify data processed, stored, or transmitted by an application and identify which data is sensitive according to privacy laws, regulatory requirements, or business needs.
 
 ========== Id ==========  
 40

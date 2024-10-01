@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Encrypting sensitive data at rest ensures that even if the data is physically
-stolen, it remains protected.
+Encrypting sensitive data at rest ensures that even if the data is physically stolen, it remains protected.
 
 ========== Id ==========  
 42

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Elevation of privilege refers to the ability to act as a user without being
-logged in or to act as an admin when logged in as a regular user. It's a serious
-security issue.
+Elevation of privilege refers to the ability to act as a user without being logged in or to act as an admin when logged in as a regular user. It's a serious security issue.
 
 ========== Id ==========  
 10

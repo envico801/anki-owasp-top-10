@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Applying required security controls based on data classification ensures that
-the appropriate level of protection is applied to data, aligning with its
-sensitivity and importance.
+Applying required security controls based on data classification ensures that the appropriate level of protection is applied to data, aligning with its sensitivity and importance.
 
 ========== Id ==========  
 46

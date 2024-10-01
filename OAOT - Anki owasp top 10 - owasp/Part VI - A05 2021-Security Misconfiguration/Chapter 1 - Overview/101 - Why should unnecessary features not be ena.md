@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Enabling unnecessary features can increase the attack surface and provide
-opportunities for attackers to exploit vulnerabilities.
+Enabling unnecessary features can increase the attack surface and provide opportunities for attackers to exploit vulnerabilities.
 
 ========== Id ==========  
 101

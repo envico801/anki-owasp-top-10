@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-One factor contributing to insecure design is the lack of business risk
-profiling in the software or system being developed, leading to a failure to
-determine the required level of security design.
+One factor contributing to insecure design is the lack of business risk profiling in the software or system being developed, leading to a failure to determine the required level of security design.
 
 ========== Id ==========  
 79

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Harden registration, credential recovery, and API pathways against account
-enumeration attacks by using the same messages for all outcomes.
+Harden registration, credential recovery, and API pathways against account enumeration attacks by using the same messages for all outcomes.
 
 ========== Id ==========  
 147

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Revealing stack traces or overly informative error messages can provide valuable
-information to attackers and aid in exploiting vulnerabilities.
+Revealing stack traces or overly informative error messages can provide valuable information to attackers and aid in exploiting vulnerabilities.
 
 ========== Id ==========  
 103

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Check for the use of deprecated cryptographic padding methods like PKCS #1 v1.5
-and avoid their usage.
+Check for the use of deprecated cryptographic padding methods like PKCS #1 v1.5 and avoid their usage.
 
 ========== Id ==========  
 37

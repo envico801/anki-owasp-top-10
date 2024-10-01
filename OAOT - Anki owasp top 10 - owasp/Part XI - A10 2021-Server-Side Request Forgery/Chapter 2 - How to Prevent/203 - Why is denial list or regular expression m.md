@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Because attackers have payload lists, tools, and masking techniques to bypass
-these security measures.
+Because attackers have payload lists, tools, and masking techniques to bypass these security measures.
 
 ========== Id ==========  
 203

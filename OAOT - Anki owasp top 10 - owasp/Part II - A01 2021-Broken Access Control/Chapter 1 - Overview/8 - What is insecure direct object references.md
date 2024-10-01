@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Insecure direct object references occur when an attacker can view or edit
-someone else's account by providing its unique identifier.
+Insecure direct object references occur when an attacker can view or edit someone else's account by providing its unique identifier.
 
 ========== Id ==========  
 8

@@ -2,13 +2,7 @@
 
 ### Can you identify the type of attack happening here?
 
-A site doesn't use or enforce TLS for all pages or supports weak encryption. An
-attacker monitors network traffic (e.g., at an insecure wireless network),
-downgrades connections from HTTPS to HTTP, intercepts requests, and steals the
-user's session cookie. The attacker then replays this cookie and hijacks the
-user's (authenticated) session, accessing or modifying the user's private data.
-Instead of the above they could alter all transported data, e.g., the recipient
-of a money transfer.  
+A site doesn't use or enforce TLS for all pages or supports weak encryption. An attacker monitors network traffic (e.g., at an insecure wireless network), downgrades connections from HTTPS to HTTP, intercepts requests, and steals the user's session cookie. The attacker then replays this cookie and hijacks the user's (authenticated) session, accessing or modifying the user's private data. Instead of the above they could alter all transported data, e.g., the recipient of a money transfer.  
 
 ========== Answer ==========  
 

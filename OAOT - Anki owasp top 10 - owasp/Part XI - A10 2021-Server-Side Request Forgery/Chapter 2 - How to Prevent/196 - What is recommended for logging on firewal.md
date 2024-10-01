@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-It is recommended to log all accepted and blocked network flows on firewalls to
-prevent SSRF.
+It is recommended to log all accepted and blocked network flows on firewalls to prevent SSRF.
 
 ========== Id ==========  
 196

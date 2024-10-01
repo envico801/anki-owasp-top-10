@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Cryptographic randomness should not be seeded in a predictable way or with low
-entropy.
+Cryptographic randomness should not be seeded in a predictable way or with low entropy.
 
 ========== Id ==========  
 52

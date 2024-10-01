@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Access control checks can be bypassed by modifying the URL (parameter tampering
-or force browsing), internal application state, or the HTML page. Attack tools
-can also be used to modify API requests.
+Access control checks can be bypassed by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page. Attack tools can also be used to modify API requests.
 
 ========== Id ==========  
 7

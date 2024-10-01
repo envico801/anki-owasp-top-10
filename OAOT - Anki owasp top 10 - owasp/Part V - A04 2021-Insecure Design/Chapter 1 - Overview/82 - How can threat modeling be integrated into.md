@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Threat modeling can be integrated into refinement sessions or similar activities
-during user story development. It involves analyzing data flows, access control,
-security controls, and assumptions related to expected and failure flows.
+Threat modeling can be integrated into refinement sessions or similar activities during user story development. It involves analyzing data flows, access control, security controls, and assumptions related to expected and failure flows.
 
 ========== Id ==========  
 82

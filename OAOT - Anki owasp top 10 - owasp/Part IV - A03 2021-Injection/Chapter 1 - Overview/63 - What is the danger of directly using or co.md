@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Directly using or concatenating hostile data in dynamic queries, commands, or
-stored procedures can lead to injection attacks, where malicious code is
-injected and executed.
+Directly using or concatenating hostile data in dynamic queries, commands, or stored procedures can lead to injection attacks, where malicious code is injected and executed.
 
 ========== Id ==========  
 63

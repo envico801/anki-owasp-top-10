@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Using such components can lead to security risks and potential exploitation of
-vulnerabilities.
+Using such components can lead to security risks and potential exploitation of vulnerabilities.
 
 ========== Id ==========  
 121

@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Involving security specialists from the beginning of a software project and
-throughout its lifecycle is crucial to ensure secure development. It helps
-identify and address security concerns early.
+Involving security specialists from the beginning of a software project and throughout its lifecycle is crucial to ensure secure development. It helps identify and address security concerns early.
 
 ========== Id ==========  
 83

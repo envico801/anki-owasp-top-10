@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Establish or adopt an incident response and recovery plan, such as NIST 800-61r2
-or later, to effectively address security incidents.
+Establish or adopt an incident response and recovery plan, such as NIST 800-61r2 or later, to effectively address security incidents.
 
 ========== Id ==========  
 184

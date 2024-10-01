@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Do not ship or deploy with any default credentials, especially for admin users,
-to prevent unauthorized access.
+Do not ship or deploy with any default credentials, especially for admin users, to prevent unauthorized access.
 
 ========== Id ==========  
 144

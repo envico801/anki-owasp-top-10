@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Yes, even when parameterized, stored procedures can introduce SQL injection if
-PL/SQL or T-SQL concatenates queries and data or executes hostile data with
-EXECUTE IMMEDIATE or exec().
+Yes, even when parameterized, stored procedures can introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().
 
 ========== Id ==========  
 69

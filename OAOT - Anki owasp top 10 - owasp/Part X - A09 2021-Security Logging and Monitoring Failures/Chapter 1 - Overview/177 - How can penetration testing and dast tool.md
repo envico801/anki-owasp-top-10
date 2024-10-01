@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Penetration testing and DAST tool scans should trigger alerts when potential
-vulnerabilities or attacks are detected.
+Penetration testing and DAST tool scans should trigger alerts when potential vulnerabilities or attacks are detected.
 
 ========== Id ==========  
 177

@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Not validating user-supplied data can lead to injection vulnerabilities, where
-attackers can manipulate input to execute malicious code.
+Not validating user-supplied data can lead to injection vulnerabilities, where attackers can manipulate input to execute malicious code.
 
 ========== Id ==========  
 60

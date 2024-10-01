@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-Unit and integration tests validate that all critical flows in the application
-are resistant to the threat model, ensuring that insecure design choices are not
-present.
+Unit and integration tests validate that all critical flows in the application are resistant to the threat model, ensuring that insecure design choices are not present.
 
 ========== Id ==========  
 91

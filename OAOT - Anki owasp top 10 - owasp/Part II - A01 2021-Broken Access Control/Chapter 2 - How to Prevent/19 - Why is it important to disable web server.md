@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Disabling web server directory listing helps prevent exposure of sensitive
-information and files and ensure file metadata (e.g., .git)
+Disabling web server directory listing helps prevent exposure of sensitive information and files and ensure file metadata (e.g., .git)
 
 ========== Id ==========  
 19

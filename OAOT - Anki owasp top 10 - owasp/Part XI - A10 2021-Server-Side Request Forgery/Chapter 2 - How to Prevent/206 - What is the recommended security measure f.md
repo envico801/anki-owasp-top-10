@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-For frontends with dedicated and manageable user groups, it is recommended to
-use network encryption, such as VPNs, on independent systems. This is advised
-for scenarios where very high protection needs exist.
+For frontends with dedicated and manageable user groups, it is recommended to use network encryption, such as VPNs, on independent systems. This is advised for scenarios where very high protection needs exist.
 
 ========== Id ==========  
 206

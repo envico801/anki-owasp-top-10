@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Up-to-date and strong standard algorithms, protocols, and keys should be used,
-and proper key management should be in place.
+Up-to-date and strong standard algorithms, protocols, and keys should be used, and proper key management should be in place.
 
 ========== Id ==========  
 43

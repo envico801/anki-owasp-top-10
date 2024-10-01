@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Multi-factor authentication should be implemented where possible to prevent
-automated credential stuffing, brute force, and stolen credential reuse attacks.
+Multi-factor authentication should be implemented where possible to prevent automated credential stuffing, brute force, and stolen credential reuse attacks.
 
 ========== Id ==========  
 143

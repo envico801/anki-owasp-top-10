@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Refer to ASVS Crypto (V7), Data Protection (V9), and SSL/TLS (V10) for guidance
-on cryptographic issues.
+Refer to ASVS Crypto (V7), Data Protection (V9), and SSL/TLS (V10) for guidance on cryptographic issues.
 
 ========== Id ==========  
 39

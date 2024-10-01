@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-"Deny by default" firewall policies or network access control rules can be
-enforced to block all but essential intranet traffic.
+"Deny by default" firewall policies or network access control rules can be enforced to block all but essential intranet traffic.
 
 ========== Id ==========  
 194

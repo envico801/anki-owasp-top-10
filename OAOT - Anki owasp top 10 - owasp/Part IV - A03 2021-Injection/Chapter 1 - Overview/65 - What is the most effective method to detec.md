@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-The best method for detecting injection vulnerabilities in software applications
-is source code review.
+The best method for detecting injection vulnerabilities in software applications is source code review.
 
 ========== Id ==========  
 65

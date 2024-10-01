@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-To stop the application from being tricked into accessing untrusted or
-manipulated sites.
+To stop the application from being tricked into accessing untrusted or manipulated sites.
 
 ========== Id ==========  
 201

@@ -4,10 +4,7 @@
 
 ========== Answer ==========  
 
-SSRF stands for Server-Side Request Forgery, and it occurs in web applications
-when they fetch a remote resource without properly validating the user-supplied
-URL. It allows attackers to manipulate the application into sending crafted
-requests to unexpected destinations.
+SSRF stands for Server-Side Request Forgery, and it occurs in web applications when they fetch a remote resource without properly validating the user-supplied URL. It allows attackers to manipulate the application into sending crafted requests to unexpected destinations.
 
 ========== Id ==========  
 189

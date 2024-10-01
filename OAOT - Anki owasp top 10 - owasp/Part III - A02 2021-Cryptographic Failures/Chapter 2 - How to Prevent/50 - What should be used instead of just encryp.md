@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Authenticated encryption should be used to ensure both data confidentiality and
-integrity.
+Authenticated encryption should be used to ensure both data confidentiality and integrity.
 
 ========== Id ==========  
 50

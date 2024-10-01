@@ -4,9 +4,7 @@
 
 ========== Answer ==========  
 
-To enhance security, unsigned or unencrypted serialized data should not be sent
-to untrusted clients without some form of integrity check or digital signature
-to detect tampering or replay.
+To enhance security, unsigned or unencrypted serialized data should not be sent to untrusted clients without some form of integrity check or digital signature to detect tampering or replay.
 
 ========== Id ==========  
 165

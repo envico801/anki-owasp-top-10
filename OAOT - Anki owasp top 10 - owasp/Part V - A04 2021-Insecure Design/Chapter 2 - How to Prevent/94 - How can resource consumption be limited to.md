@@ -4,8 +4,7 @@
 
 ========== Answer ==========  
 
-Resource consumption can be limited by user or service to prevent excessive
-resource usage that could lead to insecure design.
+Resource consumption can be limited by user or service to prevent excessive resource usage that could lead to insecure design.
 
 ========== Id ==========  
 94
