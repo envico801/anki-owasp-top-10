@@ -818,69 +818,95 @@ A:: A08 Software and Data Integrity Failures
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Security Logging and Monitoring Failures" category about?  
-A:: **A09:2021 - Security Logging and Monitoring Failures**: Previously known as "Insufficient Logging & Monitoring," this category has moved up in ranking and is expanded to include more types of failures related to security logging and monitoring.
+Q:: What are "Security Logging and Monitoring Failures" in OWASP Top 10 2021?  
+A:: Inadequacies in tracking and responding to security events and incidents.  
+Example: A system that doesn't log failed login attempts, making it hard to detect brute force attacks.
 
-Q:: Why is logging and monitoring critical for security?  
-A:: Logging and monitoring are critical for security because they help detect, escalate, and respond to active breaches. Without them, breaches cannot be detected.
+Q:: Why is security logging and monitoring crucial?  
+A:: To detect, escalate, and respond to active breaches quickly.  
+Example: Using log analysis to identify a data exfiltration attempt in real-time.
 
-Q:: What are some indicators of insufficient logging and monitoring?  
-A:: Insufficient logging and monitoring occur when:
+Q:: What events should always be logged?  
+A:: High-value transactions and security-relevant events like user authentication.  
+Example: Logging each time an admin accesses sensitive customer data.
 
-- Auditable events like logins and high-value transactions are not logged.
+Q:: Why are clear and adequate log messages important?  
+A:: To quickly understand and respond to potential security issues.  
+Example: A log message stating "User 'john_doe' failed login 5 times in 2 minutes" instead of just "Login error".
 
-- Warnings and errors generate no, inadequate, or unclear log messages.
+Q:: Why monitor application and API logs?  
+A:: To detect suspicious activities that might indicate a security threat.  
+Example: Noticing an unusual spike in API calls from a single IP address.
 
-- Logs of applications and APIs are not monitored for suspicious activity.
+Q:: What's the risk of storing logs only locally?  
+A:: Loss of critical data if the local system is compromised or fails.  
+Example: An attacker deleting local logs to cover their tracks after a successful intrusion.
 
-- Logs are only stored locally.
+Q:: Why are alerting thresholds important in security monitoring?  
+A:: To promptly notify security teams when suspicious activity occurs.  
+Example: Sending an alert when more than 10 failed login attempts occur within a minute.
 
-- Alerting thresholds and response escalation processes are absent or ineffective.
+Q:: How can penetration testing improve monitoring?  
+A:: By ensuring monitoring systems can detect and alert on simulated attacks.  
+Example: Verifying that a web application firewall alerts on SQL injection attempts during a pentest.
 
-- Penetration testing and DAST tool scans do not trigger alerts.
+Q:: Why is real-time attack detection crucial?  
+A:: To minimize damage by enabling immediate response to security incidents.  
+Example: Automatically blocking an IP address when it starts a DDoS attack.
 
-- The application cannot detect, escalate, or alert for active attacks in real-time or near real-time.
+Q:: What's the importance of log retention policies?  
+A:: To ensure logs are available for future forensic analysis if needed.  
+Example: Keeping authentication logs for 90 days to investigate potential past breaches.
 
-Q:: Why is it important to log auditable events like logins and high-value transactions?  
-A:: Logging auditable events is important for tracking and auditing user actions, which can help in detecting unauthorized or malicious activity.
-
-Q:: What is the risk of generating inadequate or unclear log messages for warnings and errors?  
-A:: Inadequate or unclear log messages can hinder the ability to understand and respond to potential issues or attacks.
-
-Q:: Why should logs of applications and APIs be monitored for suspicious activity?  
-A:: Monitoring logs for suspicious activity is crucial for early detection of security threats and breaches.
-
-Q:: What are the consequences of only storing logs locally?  
-A:: Storing logs only locally can be a security risk because it may result in the loss of critical log data in the event of a breach or system failure, making it difficult to investigate incidents.
-
-Q:: What is the significance of alerting thresholds and response escalation processes?  
-A:: Alerting thresholds and response escalation processes help ensure that security incidents are promptly detected, reported, and escalated for action.
-
-Q:: How can penetration testing and DAST tool scans be integrated with monitoring?  
-A:: Penetration testing and DAST tool scans should trigger alerts when potential vulnerabilities or attacks are detected.
-
-Q:: Why is real-time or near real-time detection of active attacks important?  
-A:: Real-time or near real-time detection of active attacks allows for immediate response, reducing the potential impact of security incidents.
+Q:: How can log integrity be ensured?  
+A:: By using tamper-evident logging mechanisms and secure storage.  
+Example: Using blockchain technology to create an immutable audit log of system changes.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: What should be ensured regarding the logging of login, access control, and server-side input validation failures?  
-A:: Ensure that all login, access control, and server-side input validation failures can be logged with sufficient user context to identify suspicious or malicious accounts and held for enough time for forensic analysis.
+Q:: What should be logged for security-related events?  
+A:: All login attempts, access control, and server-side input validation failures with sufficient context.  
+Example: Logging failed login attempts with username, IP address, and timestamp.
 
-Q:: Why is it important to generate logs in a format that log management solutions can easily consume?  
-A:: Logs should be generated in a format that log management solutions can easily consume to facilitate efficient analysis and monitoring.
+Q:: Why use standardized log formats?  
+A:: To ensure easy consumption by log management solutions for efficient analysis.  
+Example: Using the Common Log Format for web server logs to facilitate processing by various tools.
 
-Q:: How can log data be protected from injections or attacks on logging and monitoring systems?  
-A:: Ensure log data is encoded correctly to prevent injections or attacks on the logging or monitoring systems, enhancing data integrity.
+Q:: How can log injection attacks be prevented?  
+A:: By properly encoding log data to prevent manipulation of log content or systems.  
+Example: Escaping special characters in user input before including it in log messages.
 
-Q:: What should be established for high-value transactions to prevent tampering or deletion?  
-A:: High-value transactions should have an audit trail with integrity controls to prevent tampering or deletion, such as append-only database tables or similar mechanisms.
+Q:: What are integrity controls for high-value transactions?  
+A:: Mechanisms to prevent tampering or deletion of audit trails for critical operations.  
+Example: Using an append-only database table to store financial transaction logs.
 
-Q:: What is the role of DevSecOps teams in preventing security logging and monitoring failures?  
-A:: DevSecOps teams should establish effective monitoring and alerting systems to quickly detect and respond to suspicious activities, enhancing security.
+Q:: How can DevSecOps teams enhance security monitoring?  
+A:: By implementing effective monitoring and alerting systems for quick incident detection and response.  
+Example: Setting up a SIEM system to correlate logs from various sources and generate alerts.
 
-Q:: What plans should be established or adopted to address security incidents?  
-A:: Establish or adopt an incident response and recovery plan, such as NIST 800-61r2 or later, to effectively address security incidents.
+Q:: Why is an incident response plan important?  
+A:: To ensure a coordinated and effective approach to handling security incidents.  
+Example: Having a documented process for responding to a detected data breach, including roles and communication protocols.
+
+Q:: What's the importance of log retention?  
+A:: To ensure sufficient data is available for forensic analysis after an incident.  
+Example: Keeping authentication logs for 90 days to trace the origin of a recently discovered breach.
+
+Q:: How can log analysis be automated?  
+A:: By using tools that can process logs in real-time and flag suspicious patterns.  
+Example: Using machine learning algorithms to detect anomalies in user behavior from log data.
+
+Q:: Why is context important in security logging?  
+A:: To provide enough information for accurate analysis and incident response.  
+Example: Including user ID, resource accessed, and action performed in every access log entry.
+
+Q:: How can log confidentiality be maintained?  
+A:: By encrypting sensitive log data and controlling access to log storage systems.  
+Example: Encrypting logs containing personal data before transmitting them to a central log server.
+
+Q:: What role do log reviews play in security?  
+A:: Regular log reviews can help identify security issues and improve monitoring processes.  
+Example: Weekly reviews of failed login attempts to identify potential brute force attack patterns.
 
 #### Chapter 3 - Example Attack Scenarios
 
@@ -905,64 +931,99 @@ A:: A09 Security Logging and Monitoring Failures
 
 #### Chapter 1 - Overview
 
-Q:: What is the "Server-Side Request Forgery" category about?  
-A:: ***A10:2021 - Server-Side Request Forgery**: Added from the Top 10 community survey, this category represents scenarios where security community members have identified the importance, even though it may not be widely illustrated in the data. It deals with the risk of server-side request forgery attacks.
+Q:: What is Server-Side Request Forgery (SSRF)?  
+A:: An attack where an application is tricked into making unintended server-side requests.  
+Example: An attacker manipulating a URL parameter to make an internal API call to delete user data.
 
-Q:: What is SSRF, and when does it occur in web applications?  
-A:: SSRF stands for Server-Side Request Forgery, and it occurs in web applications when they fetch a remote resource without properly validating the user-supplied URL. It allows attackers to manipulate the application into sending crafted requests to unexpected destinations.
+Q:: Why is SSRF considered a significant security risk?  
+A:: It can bypass security controls and access sensitive internal resources.  
+Example: An SSRF attack accessing AWS metadata to steal cloud credentials.
 
-Q:: What can make SSRF attacks particularly severe?  
-A:: SSRF attacks can be particularly severe due to the growing adoption of cloud services and the increasing complexity of application architectures. These factors raise the potential impact of SSRF vulnerabilities.
+Q:: How does cloud computing increase SSRF risks?  
+A:: Cloud architectures often have complex internal networks vulnerable to SSRF.  
+Example: An SSRF vulnerability allowing access to other customers' data in a multi-tenant cloud environment.
 
-Q:: How can SSRF vulnerabilities occur in modern web applications?  
-A:: SSRF vulnerabilities are increasingly common in modern web applications because fetching URLs has become a standard scenario. This convenience feature can inadvertently expose applications to SSRF risks.
+Q:: Why are modern web apps prone to SSRF?  
+A:: They often include features for fetching external URLs, which can be exploited.  
+Example: A website preview feature that can be manipulated to access internal network resources.
 
-Q:: Why is it a concern that SSRF can bypass network access control mechanisms like firewalls and VPNs?  
-A:: SSRF is a concern because it allows attackers to coerce the application into sending requests to unexpected destinations even when protected by firewalls, VPNs, or other network access control lists (ACLs).
+Q:: How can SSRF bypass network security measures?  
+A:: By originating requests from within the trusted network perimeter.  
+Example: An SSRF attack accessing an internal database server that's not exposed to the internet.
+
+Q:: What makes SSRF detection challenging?  
+A:: The malicious requests often appear to come from legitimate internal sources.  
+Example: An SSRF attack mimicking normal API calls between microservices.
+
+Q:: How can SSRF lead to data breaches?  
+A:: By allowing attackers to access and exfiltrate sensitive internal data.  
+Example: Using SSRF to retrieve and leak customer information from an internal database.
+
+Q:: What role does input validation play in preventing SSRF?  
+A:: Proper validation can prevent malicious URLs from being processed.  
+Example: Whitelisting allowed domains for a URL fetching feature to prevent SSRF.
+
+Q:: How can SSRF impact containerized environments?  
+A:: It may allow access to the host system or other containers.  
+Example: An SSRF vulnerability in a container allowing access to the Docker socket on the host.
+
+Q:: Why is SSRF particularly dangerous in microservices architectures?  
+A:: It can allow attackers to move laterally between different services.  
+Example: Using SSRF in one microservice to attack another internal service not exposed externally.
 
 #### Chapter 2 - How to Prevent?
 
-Q:: How can SSRF be reduced from a network layer?  
-A:: SSRF can be reduced by segmenting remote resource access functionality in separate networks.
+Q:: How can network segmentation reduce SSRF risks?  
+A:: By isolating remote resource access functionality in separate networks.  
+Example: Placing web servers in a DMZ, separate from internal application servers.
 
-Q:: What policies can be enforced to prevent SSRF?  
-A:: "Deny by default" firewall policies or network access control rules can be enforced to block all but essential intranet traffic.
+Q:: Why use "deny by default" firewall policies?  
+A:: To block all but essential intranet traffic, reducing potential SSRF targets.  
+Example: Only allowing specific ports and protocols needed for application functionality.
 
-Q:: What should be built around firewall rules based on applications to prevent SSRF?  
-A:: An ownership and a lifecycle should be established for firewall rules based on applications.
+Q:: Why establish ownership for firewall rules?  
+A:: To ensure proper management and regular review of access controls.  
+Example: Assigning each firewall rule to a specific team or application owner.
 
-Q:: What is recommended for logging on firewalls to prevent SSRF?  
-A:: It is recommended to log all accepted and blocked network flows on firewalls to prevent SSRF.
+Q:: How does logging network flows help prevent SSRF?  
+A:: By providing visibility into potential SSRF attempts and anomalies.  
+Example: Logging all blocked requests to internal resources from web servers.
 
-Q:: What does SSRF stand for in the context of web application security?  
-A:: Server-Side Request Forgery.
+Q:: Why sanitize and validate all client-supplied input?  
+A:: To prevent malicious data from being used in server-side requests.  
+Example: Validating and encoding URL parameters before using them in API calls.
 
-Q:: Why should developers sanitize and validate all client-supplied input data to prevent SSRF?  
-A:: To eliminate harmful, strange, or unexpected data which may lead to SSRF attack.
+Q:: How does a positive allow list help prevent SSRF?  
+A:: By restricting outbound requests to only trusted and known destinations.  
+Example: Only allowing API calls to whitelisted internal service endpoints.
 
-Q:: In SSRF prevention, how does enforcing the URL schema, port, and destination with a positive allow list help?  
-A:: It restricts the outbound HTTP traffic to trusted and known destinations, thereby reducing SSRF attack surface.
+Q:: Why avoid sending raw responses to clients?  
+A:: To prevent exposure of sensitive information obtained through SSRF.  
+Example: Sanitizing error messages before sending them to the client.
 
-Q:: Why is it important not to send raw responses to clients as part of SSRF prevention?  
-A:: It prevents the exposure of potentially sensitive information obtained from the attack to the client.
+Q:: Why disable HTTP redirections for SSRF prevention?  
+A:: To prevent the application from being tricked into accessing malicious sites.  
+Example: Disabling automatic following of 3xx redirect responses in HTTP clients.
 
-Q:: Why should HTTP redirections be disabled in preventing SSRF attacks?  
-A:: To stop the application from being tricked into accessing untrusted or manipulated sites.
+Q:: How can URL consistency awareness prevent attacks?  
+A:: By mitigating risks like DNS rebinding and TOCTOU race conditions.  
+Example: Verifying that the resolved IP address matches the expected domain.
 
-Q:: What attack risks can you avoid by being aware of the URL consistency?  
-A:: DNS rebinding attacks and TOCTOU (time of check, time of use) race conditions.
+Q:: Why are deny lists ineffective against SSRF?  
+A:: Attackers have techniques to bypass these measures.  
+Example: Using URL encoding to bypass a blacklist of prohibited characters.
 
-Q:: Why is denial list or regular expression mitigation not advised in preventing SSRF attacks?  
-A:: Because attackers have payload lists, tools, and masking techniques to bypass these security measures.
+Q:: Why minimize services on front-end systems?  
+A:: To reduce the attack surface exposed to potential SSRF attempts.  
+Example: Keeping only the web server on the front-end, moving application logic to separate servers.
 
-Q:: Why is it important not to deploy other security-relevant services on front systems?  
-A:: It's important not to deploy other security-relevant services on front systems to minimize the attack surface. By keeping front systems dedicated to their primary purpose, you reduce the risk of exposing additional attack vectors.
+Q:: How to secure local traffic on front-end systems?  
+A:: By restricting requests to security-relevant services to the local system.  
+Example: Configuring internal APIs to only accept requests from 'localhost'.
 
-Q:: How can you control local traffic on front systems to enhance security?  
-A:: You can control local traffic on front systems by ensuring that requests to security-relevant services are restricted to the local system, for example, by using "localhost" as the destination address.
-
-Q:: What is the recommended security measure for frontends with dedicated and manageable user groups?  
-A:: For frontends with dedicated and manageable user groups, it is recommended to use network encryption, such as VPNs, on independent systems. This is advised for scenarios where very high protection needs exist.
+Q:: When should you consider using VPNs for frontend access?  
+A:: For scenarios with high protection needs and manageable user groups.  
+Example: Using a VPN for admin access to a high-security financial application.
 
 #### Chapter 3 - Example Attack Scenarios
 
