@@ -1,15 +1,15 @@
 ========== Question ==========  
 
-### What is OWASP?  
+### What is the OWASP Top 10?  
 
 ========== Answer ==========  
 
-A non-profit organization providing free resources on web application security.
+A regularly updated list of the most critical web application security risks.
 
-**Example**: OWASP offers tools like ZAP (Zed Attack Proxy) for security testing.
+**Example**: "Broken Access Control" was the top risk in the 2021 edition.
 
 ========== Id ==========  
-1
+2
 
 ---
 
@@ -17,7 +17,7 @@ DECK INFO
 
 TARGET DECK: Web Security::OWASP Top 10::OAOT - Anki owasp top 10 - owasp::Part I - Introduction::Chapter 1 - What is OWASP
 
-FILE TAGS: #OWASP::#OWASP-Top-10::#Web-Security::#OAOT-Anki-owasp-top-10-owasp::#Part-I-Introduction::#Chapter-1-What-is-OWASP::#1-What-is-owasp
+FILE TAGS: #OWASP::#OWASP-Top-10::#Web-Security::#OAOT-Anki-owasp-top-10-owasp::#Part-I-Introduction::#Chapter-1-What-is-OWASP::#2-What-is-the-owasp-top-10
 
 Reference:
 
